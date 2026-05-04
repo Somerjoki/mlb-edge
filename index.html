@@ -2583,6 +2583,17 @@ async function fetchAndStoreOdds(){
             modelPHome:g.model_p_home, modelPAway:g.model_p_away,
             result:g.result, homeScore:g.home_score, awayScore:g.away_score
           };
+          // Laske mallin todennäköisyys frontendissä jos palvelin ei ole laskenut
+          const entry = db[g.id];
+          if(!entry.modelPHome && entry.homeId && entry.awayId){
+            const stH = getTeamStatsForBacktest(entry.homeId);
+            const stA = getTeamStatsForBacktest(entry.awayId);
+            if(stH && stA){
+              const res = computeProb(stH, stA, true, null, null);
+              entry.modelPHome = res.pA;
+              entry.modelPAway = 1 - res.pA;
+            }
+          }
         }
         saveDB(db);
         const now = new Date().toLocaleTimeString('fi-FI',{hour:'2-digit',minute:'2-digit'});
