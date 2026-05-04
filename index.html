@@ -1,77 +1,3109 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="fi">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.7">
-  <style type="text/css">
-    body {background-color: #0d140d}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.0px '.SF NS'; color: #e2e6ca; -webkit-text-stroke: #e2e6ca}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.0px '.SF NS'; color: #788b67; -webkit-text-stroke: #788b67}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #e2e6ca; -webkit-text-stroke: #e2e6ca; min-height: 15.0px}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 48.0px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.0px 'Helvetica Neue'; color: #788b67; -webkit-text-stroke: #788b67}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.0px 'Helvetica Neue'; color: #249942; -webkit-text-stroke: #249942; background-color: #103f1d}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.0px 'Helvetica Neue'; color: #a085d8; -webkit-text-stroke: #a085d8; background-color: #6843b1; background-color: rgba(104, 67, 177, 0.15)}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.0px 'Helvetica Neue'; color: #c99014; -webkit-text-stroke: #c99014; background-color: #c99014; background-color: rgba(201, 144, 20, 0.15)}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #5a92d8; -webkit-text-stroke: #5a92d8; min-height: 13.0px}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #788b67; -webkit-text-stroke: #788b67}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #d6595d; -webkit-text-stroke: #d6595d}
-    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #788b67; -webkit-text-stroke: #788b67}
-    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #2e64b1}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #788b67; -webkit-text-stroke: #788b67}
-    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #788b67; -webkit-text-stroke: #788b67}
-    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #5a92d8; -webkit-text-stroke: #5a92d8}
-    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; -webkit-text-stroke: #000000; min-height: 13.0px}
-    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 18.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #19692e}
-    span.s1 {font: 13.0px '.Apple Color Emoji UI'; font-kerning: none}
-    span.s2 {font-kerning: none}
-    span.s3 {font-kerning: none; color: #249942; -webkit-text-stroke: 0px #249942}
-    span.s4 {font-kerning: none; background-color: #162317}
-    span.s5 {font-kerning: none; background-color: rgba(46, 100, 177, 0.059)}
-    span.s6 {font: 12.0px '.Apple Color Emoji UI'; font-kerning: none; background-color: rgba(46, 100, 177, 0.059)}
-    span.s7 {font-kerning: none; background-color: rgba(175, 38, 44, 0.059)}
-    span.s8 {font: 12.0px '.Apple Color Emoji UI'; font-kerning: none; background-color: rgba(175, 38, 44, 0.059)}
-  </style>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MLB Win Calculator</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--gl:#26a653;--gd:#0f4f26;--dark:#0e1a0f;--mid:#1c2e1e;--bdr:rgba(255,255,255,.08);--tx:#e8ead4;--mu:#8a9b7a;--blue:#3a7abf;--red:#bf3a3a;--gold:#d4a017;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Barlow',sans-serif;background:var(--dark);color:var(--tx);min-height:100vh;background-image:radial-gradient(ellipse at 20% 50%,rgba(26,122,60,.12) 0%,transparent 60%),radial-gradient(ellipse at 80% 20%,rgba(200,131,58,.08) 0%,transparent 50%);}
+.fbg{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;overflow:hidden;opacity:.04;}
+.wrap{max-width:860px;margin:0 auto;padding:40px 20px;position:relative;z-index:1;}
+header{text-align:center;margin-bottom:36px;}
+.logo{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:48px;letter-spacing:-1px;color:#f5f0e8;line-height:1;}
+.logo span{color:var(--gl);}
+.sub{font-size:13px;letter-spacing:.15em;color:var(--mu);text-transform:uppercase;margin-top:8px;}
+.badges{display:flex;gap:8px;justify-content:center;margin-top:10px;flex-wrap:wrap;}
+.badge{font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:4px 12px;border-radius:20px;font-family:'Barlow Condensed',sans-serif;font-weight:600;}
+.bg{background:var(--gd);color:var(--gl);border:1px solid rgba(38,166,83,.3);}
+.bo{background:rgba(212,160,23,.15);color:var(--gold);border:1px solid rgba(212,160,23,.3);}
+.bp{background:rgba(124,92,191,.15);color:#b09be0;border:1px solid rgba(124,92,191,.3);}
+.section{margin-bottom:20px;}
+.slbl{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);margin-bottom:10px;}
+.trow{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:start;}
+.vsd{display:flex;align-items:center;justify-content:center;padding-top:34px;}
+.vsc{width:44px;height:44px;border-radius:50%;background:var(--mid);border:1px solid var(--bdr);display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:var(--mu);}
+.tb label{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;margin-bottom:8px;font-family:'Barlow Condensed',sans-serif;}
+.tb.h label{color:#6ba5e0;} .tb.a label{color:#e07070;}
+.sw{position:relative;}
+.si{width:100%;padding:12px 16px;font-size:16px;font-family:'Barlow Condensed',sans-serif;font-weight:600;background:var(--mid);border:1px solid var(--bdr);border-radius:8px;color:var(--tx);outline:none;text-transform:uppercase;letter-spacing:.05em;}
+.tb.h .si:focus{border-color:rgba(58,122,191,.5);}
+.tb.a .si:focus{border-color:rgba(191,58,58,.5);}
+.sugs{position:absolute;top:calc(100% + 4px);left:0;right:0;background:#1e2e20;border:1px solid rgba(255,255,255,.12);border-radius:8px;z-index:200;overflow:hidden;display:none;max-height:240px;overflow-y:auto;}
+.sugs.open{display:block;}
+.si-item{padding:10px 16px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--tx);transition:background .15s;display:flex;align-items:center;justify-content:space-between;}
+.si-item:hover{background:rgba(255,255,255,.06);}
+.si-abbr{font-size:11px;font-weight:400;color:var(--mu);}
+.htog{display:flex;align-items:center;gap:12px;margin-top:16px;justify-content:center;}
+.htog label{font-size:12px;color:var(--mu);font-family:'Barlow Condensed',sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase;}
+.tbtns{display:flex;gap:4px;background:var(--mid);border-radius:6px;padding:3px;border:1px solid var(--bdr);}
+.tbtn{padding:5px 14px;font-size:12px;font-family:'Barlow Condensed',sans-serif;font-weight:600;letter-spacing:.08em;text-transform:uppercase;border:none;border-radius:4px;cursor:pointer;color:var(--mu);background:transparent;transition:all .2s;}
+.tbtn.ah{background:var(--blue);color:white;} .tbtn.aa{background:var(--red);color:white;}
+.sp-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.sp-block{border-radius:10px;padding:14px 16px;}
+.sp-block.h{background:rgba(58,122,191,.06);border:1px solid rgba(58,122,191,.2);}
+.sp-block.a{background:rgba(191,58,58,.06);border:1px solid rgba(191,58,58,.2);}
+.sp-label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin-bottom:10px;font-family:'Barlow Condensed',sans-serif;}
+.sp-block.h .sp-label{color:#6ba5e0;} .sp-block.a .sp-label{color:#e07070;}
+.sp-iw{position:relative;}
+.sp-in{width:100%;padding:10px 14px;font-size:14px;font-family:'Barlow Condensed',sans-serif;font-weight:600;background:var(--mid);border:1px solid var(--bdr);border-radius:7px;color:var(--tx);outline:none;}
+.sp-block.h .sp-in:focus{border-color:rgba(58,122,191,.5);}
+.sp-block.a .sp-in:focus{border-color:rgba(191,58,58,.5);}
+.sp-sugs{position:absolute;top:calc(100% + 3px);left:0;right:0;background:#1a2a1c;border:1px solid rgba(255,255,255,.14);border-radius:7px;z-index:300;overflow:hidden;display:none;max-height:200px;overflow-y:auto;}
+.sp-sugs.open{display:block;}
+.sp-sug{padding:9px 14px;cursor:pointer;font-family:'Barlow Condensed',sans-serif;font-size:13px;font-weight:600;color:var(--tx);transition:background .15s;display:flex;flex-direction:column;gap:2px;}
+.sp-sug:hover{background:rgba(255,255,255,.06);}
+.sp-sug-sub{font-size:11px;color:var(--mu);font-weight:400;}
+.sp-hint{font-size:11px;color:var(--mu);margin-top:6px;font-style:italic;}
+.sp-card{margin-top:10px;display:none;background:rgba(0,0,0,.2);border-radius:7px;padding:10px 14px;border:1px solid rgba(255,255,255,.05);}
+.sp-card.vis{display:block;}
+.sp-card-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:var(--tx);margin-bottom:6px;}
+.sp-stats{display:flex;gap:8px;flex-wrap:wrap;}
+.spt{font-size:11px;font-family:'Barlow Condensed',sans-serif;font-weight:600;padding:3px 8px;border-radius:4px;}
+.spt.g{color:var(--gl);background:rgba(26,122,60,.12);border:1px solid rgba(38,166,83,.25);}
+.spt.b{color:#e07070;background:rgba(191,58,58,.1);border:1px solid rgba(191,58,58,.25);}
+.spt.n{color:var(--mu);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);}
+.odds-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.ob label{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;margin-bottom:8px;font-family:'Barlow Condensed',sans-serif;color:var(--mu);}
+.oi{width:100%;padding:10px 16px;font-size:15px;font-family:'Barlow Condensed',sans-serif;font-weight:600;background:var(--mid);border:1px solid var(--bdr);border-radius:8px;color:var(--gold);outline:none;}
+.oi:focus{border-color:rgba(212,160,23,.4);}
+.oh{font-size:11px;color:var(--mu);margin-top:5px;}
+.cbtn{display:block;width:100%;padding:15px;margin-top:24px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;letter-spacing:.12em;text-transform:uppercase;background:#1a7a3c;color:white;border:none;border-radius:8px;cursor:pointer;transition:background .2s;}
+.cbtn:hover{background:var(--gl);}
+.cbtn:disabled{background:#2a3a2c;color:var(--mu);cursor:not-allowed;}
+.err{background:rgba(191,58,58,.12);border:1px solid rgba(191,58,58,.3);border-radius:8px;padding:14px 18px;color:#e07070;font-size:14px;margin-top:16px;display:none;font-family:'Barlow Condensed',sans-serif;}
+.ldg{display:none;text-align:center;padding:44px 0;}
+.sp2{width:42px;height:42px;border:3px solid rgba(255,255,255,.1);border-top-color:var(--gl);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 16px;}
+@keyframes spin{to{transform:rotate(360deg);}}
+.lt{font-family:'Barlow Condensed',sans-serif;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--mu);}
+.res{display:none;}
+.res.vis{display:block;animation:fu .5s ease;}
+@keyframes fu{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+.card{background:var(--mid);border:1px solid var(--bdr);border-radius:12px;overflow:hidden;margin-top:20px;}
+.card-hdr{padding:16px 24px 14px;border-bottom:1px solid var(--bdr);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;}
+.card-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--mu);}
+.dba{display:flex;gap:6px;flex-wrap:wrap;}
+.db{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-family:'Barlow Condensed',sans-serif;font-weight:600;padding:2px 8px;border-radius:4px;letter-spacing:.06em;text-transform:uppercase;}
+.db-l{background:rgba(38,166,83,.15);color:var(--gl);border:1px solid rgba(38,166,83,.3);}
+.db-h{background:rgba(212,160,23,.12);color:var(--gold);border:1px solid rgba(212,160,23,.25);}
+.db-dot{width:5px;height:5px;border-radius:50%;}
+.db-l .db-dot{background:var(--gl);animation:pulse 1.5s infinite;}
+.db-h .db-dot{background:var(--gold);}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.4;}}
+.prob-blk{padding:28px 24px 22px;}
+.tp{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:20px;}
+.tpi{text-align:center;}
+.tan{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:26px;line-height:1;margin-bottom:3px;}
+.tan.hc{color:#6ba5e0;} .tan.ac{color:#e07070;}
+.tpct{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:68px;letter-spacing:-3px;line-height:1;}
+.tpct.hc{color:var(--blue);} .tpct.ac{color:var(--red);}
+.tlbl{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mu);margin-top:5px;font-family:'Barlow Condensed',sans-serif;}
+.bw{height:10px;background:rgba(255,255,255,.06);border-radius:5px;overflow:hidden;position:relative;}
+.bh{position:absolute;left:0;top:0;height:100%;border-radius:5px;background:var(--blue);transition:width .8s cubic-bezier(.4,0,.2,1);}
+.ba{position:absolute;right:0;top:0;height:100%;border-radius:5px;background:var(--red);transition:width .8s cubic-bezier(.4,0,.2,1);}
+.sp-res{padding:14px 24px;border-top:1px solid var(--bdr);display:none;grid-template-columns:1fr 1fr;gap:12px;}
+.sp-res.vis{display:grid;}
+.sp-rb{border-radius:8px;padding:12px 14px;}
+.sp-rb.h{background:rgba(58,122,191,.06);border:1px solid rgba(58,122,191,.2);}
+.sp-rb.a{background:rgba(191,58,58,.06);border:1px solid rgba(191,58,58,.2);}
+.sp-rn{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;color:var(--tx);margin-bottom:6px;}
+.sp-rs{display:flex;gap:6px;flex-wrap:wrap;}
+.sp-rst{font-size:11px;font-family:'Barlow Condensed',sans-serif;font-weight:600;padding:2px 7px;border-radius:3px;}
+.ss{border-top:1px solid var(--bdr);padding:16px 24px;}
+.ss-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mu);margin-bottom:12px;display:flex;align-items:center;gap:8px;}
+.dot{width:6px;height:6px;border-radius:50%;}
+.sg4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.sg3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+.stb{text-align:center;background:rgba(255,255,255,.02);border-radius:8px;padding:10px 8px;}
+.sn{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--mu);margin-bottom:5px;font-family:'Barlow Condensed',sans-serif;font-weight:600;}
+.sc{display:flex;justify-content:space-between;align-items:center;padding:0 4px;}
+.sv{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;}
+.sdiv{font-size:10px;color:rgba(255,255,255,.15);}
+.sbr{height:4px;background:rgba(255,255,255,.06);border-radius:2px;margin-top:6px;position:relative;overflow:hidden;}
+.sbf{height:100%;border-radius:2px;position:absolute;left:0;top:0;}
+.wg{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:14px 24px;border-top:1px solid var(--bdr);}
+.wc{background:rgba(255,255,255,.03);border-radius:6px;padding:10px 12px;text-align:center;}
+.wn{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mu);margin-bottom:4px;font-family:'Barlow Condensed',sans-serif;}
+.wv{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;color:var(--tx);}
+.bc{border-radius:12px;overflow:hidden;margin-top:16px;}
+.bc.good{background:rgba(26,122,60,.1);border:1px solid rgba(38,166,83,.3);}
+.bc.neut{background:rgba(212,160,23,.07);border:1px solid rgba(212,160,23,.25);}
+.bc.bad{background:rgba(191,58,58,.08);border:1px solid rgba(191,58,58,.25);}
+.bc.nodata{background:rgba(255,255,255,.03);border:1px solid var(--bdr);}
+.bch{padding:16px 24px 12px;border-bottom:1px solid rgba(255,255,255,.06);}
+.bct{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;}
+.bc.good .bct{color:var(--gl);} .bc.neut .bct{color:var(--gold);} .bc.bad .bct{color:#e07070;} .bc.nodata .bct{color:var(--mu);}
+.bcb{padding:20px 24px;}
+.bet2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+.bteam{background:rgba(0,0,0,.2);border-radius:10px;padding:18px 16px;text-align:center;border:1px solid rgba(255,255,255,.06);}
+.bteam-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}
+.bteam-name.hc{color:#6ba5e0;} .bteam-name.ac{color:#e07070;}
+.edge-big{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:42px;letter-spacing:-1px;line-height:1;}
+.edge-big.pos{color:var(--gl);} .edge-big.neg{color:#e07070;} .edge-big.neu{color:var(--mu);}
+.edge-lbl{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--mu);margin-top:2px;font-family:'Barlow Condensed',sans-serif;}
+.ebar{height:6px;background:rgba(255,255,255,.06);border-radius:3px;overflow:hidden;margin:10px 0 12px;}
+.ebar-fill{height:100%;border-radius:3px;}
+.unit-big{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:52px;letter-spacing:-2px;line-height:1;}
+.unit-big.pos{color:var(--gl);} .unit-big.neg{color:#e07070;} .unit-big.neu{color:var(--mu);}
+.unit-lbl{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mu);margin-top:2px;font-family:'Barlow Condensed',sans-serif;}
+.unit-eur{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;color:var(--gold);margin-top:6px;}
+.unit-sub{font-size:11px;color:var(--mu);margin-top:3px;font-family:'Barlow Condensed',sans-serif;}
+.scale-tbl{width:100%;border-collapse:collapse;margin-top:12px;}
+.scale-tbl td{padding:7px 10px;font-family:'Barlow Condensed',sans-serif;font-size:13px;border-bottom:1px solid rgba(255,255,255,.04);}
+.scale-tbl td:first-child{color:var(--mu);}
+.scale-tbl tr.cur td{background:rgba(255,255,255,.05);}
+.nr{padding:12px 24px;border-top:1px solid var(--bdr);font-size:11px;color:var(--mu);line-height:1.6;}
+.disc{background:rgba(191,58,58,.08);border:1px solid rgba(191,58,58,.2);border-radius:8px;padding:14px 18px;margin-top:20px;font-size:12px;color:#c07070;line-height:1.6;}
+.disc strong{color:#e07070;}
+footer{text-align:center;margin-top:48px;color:var(--mu);font-size:12px;font-family:'Barlow Condensed',sans-serif;letter-spacing:.08em;text-transform:uppercase;}
+.ops-hi{color:var(--gl);}.ops-mid{color:var(--gold);}.ops-lo{color:#e07070;}
+.lineup-section{margin-bottom:20px;}.lineup-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:10px;}.lineup-box{border-radius:10px;padding:14px 16px;position:relative;}.lineup-box.h{background:rgba(58,122,191,.06);border:1px solid rgba(58,122,191,.2);}.lineup-box.a{background:rgba(191,58,58,.06);border:1px solid rgba(191,58,58,.2);}.lineup-title{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;margin-bottom:10px;font-family:'Barlow Condensed',sans-serif;display:flex;align-items:center;justify-content:space-between;}.lineup-box.h .lineup-title{color:#6ba5e0;}.lineup-box.a .lineup-title{color:#e07070;}.lineup-status{font-size:10px;padding:2px 8px;border-radius:10px;font-weight:600;letter-spacing:.05em;}.ls-confirmed{background:rgba(38,166,83,.15);color:var(--gl);border:1px solid rgba(38,166,83,.3);}.ls-default{background:rgba(212,160,23,.12);color:var(--gold);border:1px solid rgba(212,160,23,.25);}.ls-loading{background:rgba(255,255,255,.06);color:var(--mu);border:1px solid var(--bdr);}.lineup-sp{display:flex;align-items:center;gap:8px;margin-bottom:8px;padding:8px 10px;background:rgba(0,0,0,.2);border-radius:6px;border:1px solid rgba(255,255,255,.06);}.lineup-sp-lbl{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--mu);font-family:'Barlow Condensed',sans-serif;font-weight:600;flex-shrink:0;}.lineup-sp-name{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:13px;color:var(--tx);}.lineup-sp-stats{font-size:11px;color:var(--mu);margin-left:auto;}.lineup-table{width:100%;border-collapse:collapse;}.lineup-table tr{border-bottom:1px solid rgba(255,255,255,.04);}.lineup-table tr:last-child{border-bottom:none;}.lineup-table td{padding:5px 4px;font-size:12px;font-family:'Barlow Condensed',sans-serif;}.lineup-num{color:var(--mu);width:18px;font-weight:600;}.lineup-name{color:var(--tx);font-weight:600;}.lineup-pos{color:var(--mu);width:28px;font-size:11px;}.lineup-ops{text-align:right;width:44px;font-weight:700;}.lineup-load{text-align:center;padding:16px;color:var(--mu);font-size:12px;font-family:'Barlow Condensed',sans-serif;letter-spacing:.06em;text-transform:uppercase;}.lineup-refresh{background:none;border:none;cursor:pointer;color:var(--mu);font-size:13px;padding:2px 6px;border-radius:4px;transition:all .15s;font-family:'Barlow Condensed',sans-serif;}.lineup-refresh:hover{background:rgba(255,255,255,.07);color:var(--tx);}
+
+.ds-row{display:flex;align-items:center;gap:8px;padding:3px 0;flex-wrap:wrap;}
+.ds-team{font-weight:700;min-width:36px;color:var(--tx);}
+.ds-ok{color:#27ae60;font-weight:600;}
+.ds-warn{color:#e67e22;font-weight:600;}
+.ds-sep{color:var(--mu);}
+.ds-pit{color:var(--mu);}
+
+.bp-toggle{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--mu);cursor:pointer;margin-top:6px;padding:4px 8px;border-radius:6px;background:var(--s2);}
+.bp-toggle:hover{background:var(--br);}
+.bp-toggle input{accent-color:#e67e22;}
+.bp-toggle span{user-select:none;}
+
+.app-tabs{display:flex;gap:4px;padding:12px 16px 0;background:var(--s1);border-bottom:1px solid var(--br);}
+.app-tab{background:none;border:none;padding:8px 18px;font-size:13px;font-weight:500;color:var(--mu);cursor:pointer;border-radius:8px 8px 0 0;transition:all 0.15s;}
+.app-tab:hover{color:var(--tx);background:var(--s2);}
+.app-tab.active{color:var(--tx);background:var(--bg);border:1px solid var(--br);border-bottom:1px solid var(--bg);margin-bottom:-1px;}
+.tab-panel{display:none;}
+.tab-panel.active{display:block;}
+</style>
 </head>
 <body>
-<p class="p1"><span class="s1">⚾</span><span class="s2"> Laskin</span></p>
-<p class="p2"><span class="s1">💰</span><span class="s2"> Kertoimet</span></p>
-<p class="p2"><span class="s1">📋</span><span class="s2"> Tulokset</span></p>
-<p class="p2"><span class="s1">📊</span><span class="s2"> Backtesting</span></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p4"><span class="s2">MLB </span><span class="s3">Win</span><span class="s2"> Calculator</span></p>
-<p class="p5"><span class="s2">JOUKKUE + ALOITUSSYÖTTÄJÄ · EDGE-POHJAINEN PANOSSUOSITUS</span></p>
-<p class="p6"><span class="s2">2024–2025 TILASTOT + LIVE 2026</span></p>
-<p class="p7"><span class="s2">SYÖTTÄJÄHAKU NIMELLÄ</span></p>
-<p class="p8"><span class="s2">EDGE STAKING · 1 YKSIKKÖ = 10€</span></p>
-<p class="p9"><span class="s2"></span><br></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p10"><span class="s4">VS</span></p>
-<p class="p11"><span class="s2">VIERASJOUKKUE</span></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p12"><span class="s2">KOTIKENTÄN ETU:</span></p>
-<p class="p13"><span class="s2">JOUKKUE A KOTONA</span></p>
-<p class="p14"><span class="s4">JOUKKUE B KOTONA</span></p>
-<p class="p15"><span class="s2">ALOITUSSYÖTTÄJÄT — KIRJOITA NIMI JA VALITSE LISTALTA</span></p>
-<p class="p16"><span class="s5">JOUKKUE A — ALOITUSSYÖTTÄJÄ</span></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p15"><span class="s5">Kirjoita sukunimi tai koko nimi</span></p>
-<p class="p17"><span class="s2"></span><br></p>
-<p class="p12"><span class="s6">🏔</span><span class="s5"> Palaa Coorsista (lyöntiajoitus häiriintynyt)</span></p>
-<p class="p11"><span class="s7">JOUKKUE B — ALOITUSSYÖTTÄJÄ</span></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p15"><span class="s7">Kirjoita sukunimi tai koko nimi</span></p>
-<p class="p17"><span class="s2"></span><br></p>
-<p class="p12"><span class="s8">🏔</span><span class="s7"> Palaa Coorsista (lyöntiajoitus häiriintynyt)</span></p>
-<p class="p15"><span class="s2">VEDONLYÖNTIKERTOIMET — PANOSSUOSITUS LASKETAAN EDGEN PERUSTEELLA</span></p>
-<p class="p15"><span class="s2">JOUKKUE A KERROIN</span></p>
-<p class="p15"><span class="s2">Desimaalikertoimet · jätä tyhjäksi jos ei tiedossa</span></p>
-<p class="p15"><span class="s2">JOUKKUE B KERROIN</span></p>
-<p class="p15"><span class="s2">Desimaalikertoimet · jätä tyhjäksi jos ei tiedossa</span></p>
-<p class="p18"><span class="s2">LASKE TODENNÄKÖISYYDET &amp; PANOSSUOSITUS</span></p>
-<p class="p14"><span class="s2">MLB WIN CALCULATOR · 2024–2025 TODELLISET TILASTOT + LIVE 2026 · EDGE-POHJAINEN PANOSSUOSITUS</span></p>
+<div class="app-tabs">
+  <button class="app-tab active" onclick="switchTab('laskin')">⚾ Laskin</button>
+  <button class="app-tab" onclick="switchTab('kertoimet')">💰 Kertoimet</button>
+  <button class="app-tab" onclick="switchTab('tulokset')">📋 Tulokset</button>
+  <button class="app-tab" onclick="switchTab('backtest')">📊 Backtesting</button>
+</div>
+<div id="tab-laskin" class="tab-panel active">
+<div class="fbg"><svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice"><line x1="600" y1="800" x2="100" y2="0" stroke="white" stroke-width="1"/><line x1="600" y1="800" x2="1100" y2="0" stroke="white" stroke-width="1"/><circle cx="600" cy="800" r="300" fill="none" stroke="white" stroke-width="1"/><circle cx="600" cy="800" r="500" fill="none" stroke="white" stroke-width=".5"/></svg></div>
+<div class="wrap">
+<header>
+  <div class="logo">MLB <span>Win</span> Calculator</div>
+  <div class="sub">Joukkue + aloitussyöttäjä · Edge-pohjainen panossuositus</div>
+  <div class="badges">
+    <span class="badge bg">2024–2025 tilastot + live 2026</span>
+    <span class="badge bp">Syöttäjähaku nimellä</span>
+    <span class="badge bo">Edge staking · 1 yksikkö = 10€</span>
+  </div>
+</header>
+
+<div class="section">
+  <div class="trow">
+    <div class="tb h"><label id="lblA">Kotijoukkue</label>
+    <div class="sw"><input class="si" id="inA" type="text" placeholder="Esim. Yankees" autocomplete="off"><div class="sugs" id="sgA"></div></div></div>
+    <div class="vsd"><div class="vsc">VS</div></div>
+    <div class="tb a"><label id="lblB">Vierasjoukkue</label>
+    <div class="sw"><input class="si" id="inB" type="text" placeholder="Esim. Red Sox" autocomplete="off"><div class="sugs" id="sgB"></div></div></div>
+  </div>
+  <div class="htog"><label>Kotikentän etu:</label><div class="tbtns"><button class="tbtn ah" id="tgA" onclick="setH('A')">Joukkue A kotona</button><button class="tbtn" id="tgB" onclick="setH('B')">Joukkue B kotona</button></div></div>
+</div>
+
+<div class="section">
+  <div class="slbl">Aloitussyöttäjät — kirjoita nimi ja valitse listalta</div>
+  <div class="sp-row">
+    <div class="sp-block h"><div class="sp-label" id="spLA">Joukkue A — aloitussyöttäjä</div>
+    <div class="sp-iw"><input class="sp-in" id="spA" type="text" placeholder="Esim. Cole, Skenes, Webb..." autocomplete="off"><div class="sp-sugs" id="spSA"></div></div><div class="sp-hint">Kirjoita sukunimi tai koko nimi</div><div class="sp-card" id="spCA"></div>
+
+    <label class="bp-toggle" title="Joukkue pelasi juuri Coorsissa — lyöjien ajoitus häiriintynyt, wRC+ -8">
+      <input type="checkbox" id="fromCoorsA" onchange="updateBullpenWeak()">
+      <span>🏔 Palaa Coorsista (lyöntiajoitus häiriintynyt)</span>
+    </label></div>
+    <div class="sp-block a"><div class="sp-label" id="spLB">Joukkue B — aloitussyöttäjä</div>
+    <div class="sp-iw"><input class="sp-in" id="spB" type="text" placeholder="Esim. Fried, Burnes, Skubal..." autocomplete="off"><div class="sp-sugs" id="spSB"></div></div><div class="sp-hint">Kirjoita sukunimi tai koko nimi</div><div class="sp-card" id="spCB"></div>
+
+    <label class="bp-toggle" title="Joukkue pelasi juuri Coorsissa — lyöjien ajoitus häiriintynyt, wRC+ -8">
+      <input type="checkbox" id="fromCoorsB" onchange="updateBullpenWeak()">
+      <span>🏔 Palaa Coorsista (lyöntiajoitus häiriintynyt)</span>
+    </label></div>
+  </div>
+</div>
+
+
+  <div class="lineup-section" id="lineupSection" style="display:none;">
+    <div class="slbl" style="display:flex;align-items:center;justify-content:space-between;">
+      <span>Kokoonpanot &amp; vaikutusanalyysi</span>
+      <button class="lineup-refresh" onclick="refreshLineups()" title="Päivitä">↻ Päivitä</button>
+    </div>
+    <div class="lineup-grid">
+      <div class="lineup-box h" id="lineupBoxA">
+        <div class="lineup-title">
+          <span id="lineupTitleA">Kotijoukkue</span>
+          <span class="lineup-status ls-loading" id="lineupStatusA">Ladataan...</span>
+        </div>
+        <div id="lineupContentA"><div class="lineup-load">Valitse joukkue ensin</div></div>
+      </div>
+      <div class="lineup-box a" id="lineupBoxB">
+        <div class="lineup-title">
+          <span id="lineupTitleB">Vierasjoukkue</span>
+          <span class="lineup-status ls-loading" id="lineupStatusB">Ladataan...</span>
+        </div>
+        <div id="lineupContentB"><div class="lineup-load">Valitse joukkue ensin</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+  <div class="slbl">Vedonlyöntikertoimet — panossuositus lasketaan edgen perusteella</div>
+  <div class="odds-row">
+    <div class="ob"><label id="olA">Joukkue A kerroin</label><input class="oi" id="odA" type="number" placeholder="Esim. 1.85" min="1.01" step="0.01"><div class="oh">Desimaalikertoimet · jätä tyhjäksi jos ei tiedossa</div></div>
+    <div class="ob"><label id="olB">Joukkue B kerroin</label><input class="oi" id="odB" type="number" placeholder="Esim. 2.10" min="1.01" step="0.01"><div class="oh">Desimaalikertoimet · jätä tyhjäksi jos ei tiedossa</div></div>
+  </div>
+</div>
+
+<button class="cbtn" id="cb" onclick="calc()">Laske todennäköisyydet &amp; panossuositus</button>
+<div class="err" id="em"></div>
+<div class="ldg" id="ldg"><div class="sp2"></div><div class="lt" id="ldt">Haetaan tilastoja...</div></div>
+
+<div id="dataStatus" style="display:none;background:var(--s2);border:1px solid var(--br);border-radius:8px;padding:10px 14px;margin-bottom:10px;font-size:12px;"></div>
+<div class="res" id="res">
+  <div class="card">
+    <div class="card-hdr"><div class="card-title">Otteluanalyysi</div><div class="dba" id="dba"></div></div>
+    <div class="prob-blk">
+      <div class="tp">
+        <div class="tpi"><div class="tan hc" id="rAA">—</div><div class="tpct hc" id="rPA">—</div><div class="tlbl">voittotodennäköisyys</div></div>
+        <div class="tpi"><div class="tan ac" id="rAB">—</div><div class="tpct ac" id="rPB">—</div><div class="tlbl">voittotodennäköisyys</div></div>
+      </div>
+      <div class="bw"><div class="bh" id="bH" style="width:50%"></div><div class="ba" id="bAA" style="width:50%"></div></div>
+    </div>
+    <div class="sp-res" id="spr"></div>
+    <div class="ss"><div class="ss-title"><div class="dot" style="background:#6ba5e0"></div>Hyökkäys</div><div class="sg4" id="sg1"></div></div>
+    <div class="ss"><div class="ss-title"><div class="dot" style="background:#e07070"></div>Syöttäjät (joukkue)</div><div class="sg4" id="sg2"></div></div>
+    <div class="ss"><div class="ss-title"><div class="dot" style="background:var(--gl)"></div>Yleistilastot</div><div class="sg3" id="sg3"></div></div>
+    <div class="wg" id="wg"></div>
+    <div class="nr" id="nt"></div>
+  </div>
+  <div id="betCard"></div>
+  <div class="disc"><strong>Vastuullinen pelaaminen:</strong> Tämä laskuri on tarkoitettu viihteelliseen käyttöön. Vedonlyönti sisältää taloudellisen riskin. Jos pelaaminen tuntuu ongelmalliselta: <strong>Peluuri 0800 100 101</strong> (maksuton).</div>
+</div>
+
+<footer>MLB Win Calculator · 2024–2025 todelliset tilastot + live 2026 · Edge-pohjainen panossuositus</footer>
+</div>
+<script>
+// ── DATA ────────────────────────────────────────────────────
+const STATS={
+  147:{n:"New York Yankees",a:"NYY",avg25:.253,obp25:.330,slg25:.430,ops25:.760,era25:3.91,whip25:1.24,k25:9.1,bb25:3.1,fp25:.987,w25:.605,avg24:.253,obp24:.329,slg24:.438,ops24:.767,era24:3.84,whip24:1.24,k24:9.3,bb24:2.9,fp24:.988,w24:.560,wrc25:118,wrc24:115,rpg25:5.24,rapg25:4.01,bera25:4.37,bwhip25:1.32},
+  111:{n:"Boston Red Sox",a:"BOS",avg25:.253,obp25:.322,slg25:.404,ops25:.726,era25:4.22,whip25:1.31,k25:8.7,bb25:3.4,fp25:.984,w25:.475,avg24:.260,obp24:.332,slg24:.416,ops24:.748,era24:4.38,whip24:1.35,k24:8.5,bb24:3.5,fp24:.983,w24:.481,wrc25:108,wrc24:103,rpg25:4.82,rapg25:4.24,bera25:3.41,bwhip25:1.25},
+  141:{n:"Toronto Blue Jays",a:"TOR",avg25:.243,obp25:.315,slg25:.393,ops25:.708,era25:3.85,whip25:1.26,k25:9.4,bb25:3.3,fp25:.986,w25:.512,avg24:.247,obp24:.316,slg24:.399,ops24:.715,era24:4.27,whip24:1.33,k24:8.9,bb24:3.2,fp24:.985,w24:.469,wrc25:114,wrc24:98,rpg25:4.53,rapg25:4.35,bera25:3.98,bwhip25:1.28},
+  110:{n:"Baltimore Orioles",a:"BAL",avg25:.248,obp25:.322,slg25:.413,ops25:.735,era25:3.80,whip25:1.23,k25:9.0,bb25:3.0,fp25:.987,w25:.549,avg24:.254,obp24:.323,slg24:.419,ops24:.742,era24:3.75,whip24:1.21,k24:9.2,bb24:2.8,fp24:.988,w24:.605,wrc25:102,wrc24:108,rpg25:4.41,rapg25:4.52,bera25:4.57,bwhip25:1.42},
+  139:{n:"Tampa Bay Rays",a:"TB",avg25:.240,obp25:.316,slg25:.389,ops25:.705,era25:3.70,whip25:1.22,k25:9.5,bb25:3.2,fp25:.986,w25:.512,avg24:.244,obp24:.314,slg24:.386,ops24:.700,era24:3.87,whip24:1.25,k24:9.3,bb24:3.0,fp24:.987,w24:.519,wrc25:94,wrc24:90,rpg25:4.12,rapg25:3.91,bera25:3.81,bwhip25:1.23},
+  145:{n:"Chicago White Sox",a:"CWS",avg25:.224,obp25:.289,slg25:.342,ops25:.631,era25:5.27,whip25:1.50,k25:7.8,bb25:3.9,fp25:.981,w25:.250,avg24:.224,obp24:.284,slg24:.340,ops24:.624,era24:5.10,whip24:1.48,k24:7.9,bb24:3.8,fp24:.982,w24:.160,wrc25:72,wrc24:75,rpg25:3.48,rapg25:5.43,bera25:4.16,bwhip25:1.38},
+  114:{n:"Cleveland Guardians",a:"CLE",avg25:.253,obp25:.322,slg25:.401,ops25:.723,era25:3.67,whip25:1.21,k25:9.1,bb25:2.9,fp25:.987,w25:.574,avg24:.252,obp24:.319,slg24:.399,ops24:.718,era24:3.56,whip24:1.19,k24:9.3,bb24:2.7,fp24:.989,w24:.599,wrc25:98,wrc24:96,rpg25:4.15,rapg25:3.82,bera25:3.44,bwhip25:1.23},
+  116:{n:"Detroit Tigers",a:"DET",avg25:.247,obp25:.317,slg25:.400,ops25:.717,era25:3.79,whip25:1.25,k25:9.2,bb25:3.1,fp25:.986,w25:.543,avg24:.245,obp24:.314,slg24:.389,ops24:.703,era24:3.72,whip24:1.23,k24:9.0,bb24:3.0,fp24:.986,w24:.512,wrc25:104,wrc24:98,rpg25:5.07,rapg25:4.11,bera25:4.05,bwhip25:1.3},
+  118:{n:"Kansas City Royals",a:"KC",avg25:.258,obp25:.326,slg25:.410,ops25:.736,era25:4.05,whip25:1.30,k25:8.6,bb25:3.3,fp25:.984,w25:.531,avg24:.256,obp24:.321,slg24:.404,ops24:.725,era24:4.10,whip24:1.31,k24:8.5,bb24:3.2,fp24:.985,w24:.531,wrc25:103,wrc24:99,rpg25:4.44,rapg25:4.38,bera25:3.63,bwhip25:1.27},
+  142:{n:"Minnesota Twins",a:"MIN",avg25:.252,obp25:.323,slg25:.408,ops25:.731,era25:3.97,whip25:1.27,k25:9.0,bb25:3.2,fp25:.985,w25:.531,avg24:.253,obp24:.321,slg24:.410,ops24:.731,era24:3.93,whip24:1.26,k24:9.1,bb24:3.0,fp24:.986,w24:.531,wrc25:101,wrc24:96,rpg25:4.21,rapg25:4.44,bera25:4.6,bwhip25:1.39},
+  117:{n:"Houston Astros",a:"HOU",avg25:.253,obp25:.323,slg25:.407,ops25:.730,era25:3.77,whip25:1.22,k25:9.3,bb25:2.8,fp25:.987,w25:.549,avg24:.252,obp24:.322,slg24:.410,ops24:.732,era24:3.69,whip24:1.20,k24:9.5,bb24:2.7,fp24:.988,w24:.543,wrc25:106,wrc24:104,rpg25:4.68,rapg25:4.02,bera25:3.7,bwhip25:1.22},
+  108:{n:"Los Angeles Angels",a:"LAA",avg25:.243,obp25:.307,slg25:.384,ops25:.691,era25:4.55,whip25:1.37,k25:8.5,bb25:3.5,fp25:.983,w25:.432,avg24:.238,obp24:.302,slg24:.372,ops24:.674,era24:4.51,whip24:1.36,k24:8.4,bb24:3.6,fp24:.983,w24:.389,wrc25:88,wrc24:85,rpg25:4.19,rapg25:4.78,bera25:4.86,bwhip25:1.41},
+  133:{n:"Oakland Athletics",a:"OAK",avg25:.235,obp25:.303,slg25:.375,ops25:.678,era25:4.40,whip25:1.35,k25:8.3,bb25:3.6,fp25:.982,w25:.444,avg24:.230,obp24:.295,slg24:.360,ops24:.655,era24:4.65,whip24:1.40,k24:8.1,bb24:3.8,fp24:.981,w24:.389,wrc25:82,wrc24:80,rpg25:3.88,rapg25:4.51,bera25:4.53,bwhip25:1.38},
+  136:{n:"Seattle Mariners",a:"SEA",avg25:.236,obp25:.307,slg25:.381,ops25:.688,era25:3.62,whip25:1.22,k25:9.8,bb25:3.0,fp25:.987,w25:.580,avg24:.230,obp24:.298,slg24:.367,ops24:.665,era24:3.68,whip24:1.23,k24:9.6,bb24:3.1,fp24:.987,w24:.574,wrc25:96,wrc24:88,rpg25:4.07,rapg25:3.85,bera25:3.72,bwhip25:1.28},
+  140:{n:"Texas Rangers",a:"TEX",avg25:.248,obp25:.318,slg25:.402,ops25:.720,era25:4.18,whip25:1.31,k25:8.7,bb25:3.3,fp25:.984,w25:.494,avg24:.257,obp24:.326,slg24:.422,ops24:.748,era24:4.04,whip24:1.28,k24:8.9,bb24:3.1,fp24:.986,w24:.506,wrc25:99,wrc24:103,rpg25:4.22,rapg25:3.73,bera25:3.62,bwhip25:1.22},
+  144:{n:"Atlanta Braves",a:"ATL",avg25:.258,obp25:.333,slg25:.435,ops25:.768,era25:3.88,whip25:1.24,k25:9.2,bb25:3.0,fp25:.987,w25:.568,avg24:.262,obp24:.336,slg24:.449,ops24:.785,era24:3.70,whip24:1.21,k24:9.4,bb24:2.8,fp24:.988,w24:.580,wrc25:107,wrc24:112,rpg25:4.47,rapg25:4.53,bera25:4.19,bwhip25:1.26},
+  146:{n:"Miami Marlins",a:"MIA",avg25:.232,obp25:.296,slg25:.363,ops25:.659,era25:4.75,whip25:1.41,k25:8.0,bb25:3.7,fp25:.981,w25:.364,avg24:.228,obp24:.290,slg24:.350,ops24:.640,era24:4.82,whip24:1.42,k24:7.9,bb24:3.8,fp24:.982,w24:.340,wrc25:80,wrc24:78,rpg25:3.71,rapg25:4.82,bera25:4.28,bwhip25:1.33},
+  121:{n:"New York Mets",a:"NYM",avg25:.253,obp25:.324,slg25:.418,ops25:.742,era25:3.82,whip25:1.25,k25:9.1,bb25:3.1,fp25:.986,w25:.543,avg24:.248,obp24:.316,slg24:.406,ops24:.722,era24:4.00,whip24:1.28,k24:9.0,bb24:3.2,fp24:.985,w24:.481,wrc25:112,wrc24:103,rpg25:4.55,rapg25:4.11,bera25:3.93,bwhip25:1.29},
+  143:{n:"Philadelphia Phillies",a:"PHI",avg25:.258,obp25:.331,slg25:.432,ops25:.763,era25:3.84,whip25:1.24,k25:9.3,bb25:3.0,fp25:.987,w25:.580,avg24:.260,obp24:.332,slg24:.440,ops24:.772,era24:3.86,whip24:1.25,k24:9.2,bb24:2.9,fp24:.987,w24:.568,wrc25:116,wrc24:114,rpg25:4.84,rapg25:4.02,bera25:4.25,bwhip25:1.32},
+  120:{n:"Washington Nationals",a:"WSH",avg25:.242,obp25:.312,slg25:.383,ops25:.695,era25:4.45,whip25:1.36,k25:8.3,bb25:3.5,fp25:.983,w25:.414,avg24:.240,obp24:.309,slg24:.378,ops24:.687,era24:4.50,whip24:1.37,k24:8.2,bb24:3.6,fp24:.982,w24:.401,wrc25:87,wrc24:84,rpg25:3.95,rapg25:5.31,bera25:5.59,bwhip25:1.52},
+  112:{n:"Chicago Cubs",a:"CHC",avg25:.249,obp25:.318,slg25:.399,ops25:.717,era25:4.12,whip25:1.31,k25:8.9,bb25:3.3,fp25:.984,w25:.512,avg24:.248,obp24:.316,slg24:.399,ops24:.715,era24:4.14,whip24:1.30,k24:8.8,bb24:3.2,fp24:.985,w24:.512,wrc25:105,wrc24:100,rpg25:5.22,rapg25:3.98,bera25:3.78,bwhip25:1.23},
+  113:{n:"Cincinnati Reds",a:"CIN",avg25:.248,obp25:.318,slg25:.402,ops25:.720,era25:4.28,whip25:1.33,k25:8.9,bb25:3.4,fp25:.984,w25:.481,avg24:.251,obp24:.320,slg24:.408,ops24:.728,era24:4.21,whip24:1.31,k24:9.0,bb24:3.2,fp24:.984,w24:.494,wrc25:101,wrc24:99,rpg25:4.38,rapg25:4.51,bera25:3.89,bwhip25:1.3},
+  158:{n:"Milwaukee Brewers",a:"MIL",avg25:.238,obp25:.313,slg25:.393,ops25:.706,era25:3.75,whip25:1.24,k25:9.6,bb25:3.1,fp25:.987,w25:.549,avg24:.241,obp24:.314,slg24:.391,ops24:.705,era24:3.62,whip24:1.21,k24:9.7,bb24:2.9,fp24:.988,w24:.568,wrc25:103,wrc24:98,rpg25:4.61,rapg25:3.62,bera25:3.63,bwhip25:1.24},
+  134:{n:"Pittsburgh Pirates",a:"PIT",avg25:.245,obp25:.311,slg25:.385,ops25:.696,era25:4.20,whip25:1.32,k25:8.6,bb25:3.4,fp25:.983,w25:.457,avg24:.243,obp24:.308,slg24:.379,ops24:.687,era24:4.31,whip24:1.33,k24:8.5,bb24:3.5,fp24:.983,w24:.432,wrc25:93,wrc24:88,rpg25:3.98,rapg25:4.44,bera25:3.83,bwhip25:1.25},
+  138:{n:"St. Louis Cardinals",a:"STL",avg25:.248,obp25:.317,slg25:.393,ops25:.710,era25:4.15,whip25:1.31,k25:8.8,bb25:3.3,fp25:.984,w25:.481,avg24:.252,obp24:.319,slg24:.398,ops24:.717,era24:4.07,whip24:1.29,k24:8.9,bb24:3.1,fp24:.985,w24:.481,wrc25:95,wrc24:92,rpg25:4.31,rapg25:4.28,bera25:3.74,bwhip25:1.31},
+  109:{n:"Arizona Diamondbacks",a:"ARI",avg25:.253,obp25:.327,slg25:.419,ops25:.746,era25:4.02,whip25:1.28,k25:9.0,bb25:3.2,fp25:.985,w25:.543,avg24:.258,obp24:.331,slg24:.428,ops24:.759,era24:4.00,whip24:1.27,k24:9.1,bb24:3.0,fp24:.986,w24:.568,wrc25:108,wrc24:106,rpg25:4.58,rapg25:4.47,bera25:4.82,bwhip25:1.41},
+  115:{n:"Colorado Rockies",a:"COL",avg25:.254,obp25:.317,slg25:.403,ops25:.720,era25:5.35,whip25:1.52,k25:7.6,bb25:4.1,fp25:.980,w25:.370,avg24:.257,obp24:.320,slg24:.411,ops24:.731,era24:5.28,whip24:1.51,k24:7.7,bb24:4.0,fp24:.981,w24:.346,wrc25:91,wrc24:88,rpg25:3.68,rapg25:6.31,bera25:5.18,bwhip25:1.51},
+  119:{n:"Los Angeles Dodgers",a:"LAD",avg25:.262,obp25:.340,slg25:.452,ops25:.792,era25:3.56,whip25:1.18,k25:9.6,bb25:2.8,fp25:.989,w25:.617,avg24:.260,obp24:.337,slg24:.447,ops24:.784,era24:3.59,whip24:1.19,k24:9.5,bb24:2.7,fp24:.989,w24:.617,wrc25:124,wrc24:118,rpg25:4.95,rapg25:3.88,bera25:4.27,bwhip25:1.33},
+  135:{n:"San Diego Padres",a:"SD",avg25:.247,obp25:.319,slg25:.408,ops25:.727,era25:3.87,whip25:1.25,k25:9.3,bb25:3.1,fp25:.986,w25:.543,avg24:.244,obp24:.314,slg24:.399,ops24:.713,era24:3.79,whip24:1.24,k24:9.2,bb24:3.0,fp24:.987,w24:.537,wrc25:107,wrc24:102,rpg25:4.62,rapg25:4.01,bera25:3.06,bwhip25:1.15},
+  137:{n:"San Francisco Giants",a:"SF",avg25:.244,obp25:.316,slg25:.393,ops25:.709,era25:4.08,whip25:1.29,k25:8.8,bb25:3.3,fp25:.985,w25:.494,avg24:.243,obp24:.313,slg24:.388,ops24:.701,era24:4.16,whip24:1.30,k24:8.7,bb24:3.2,fp24:.985,w24:.500,wrc25:98,wrc24:95,rpg25:4.21,rapg25:4.31,bera25:3.48,bwhip25:1.24}
+};
+const PITCHERS=[
+  // NYY
+    {id:669302,n:"Ryan Weathers",t:"NYY",era:3.89,whip:1.22,k:9.8,bb:2.9,ip:86,gs:16,w:5,l:7,s:2025,fip:3.58},
+    {id:800103,n:"Elmer Rodriguez",t:"NYY",era:3.6,whip:1.18,k:9.4,bb:3.6,ip:10,gs:2,w:1,l:0,s:2026,fip:3.54},
+  {id:756257,n:"Luis Gil",t:"NYY",era:3.78,whip:1.18,k:10.9,bb:3.4,ip:112,gs:20,w:9,l:6,s:2025,fip:3.4},
+{id:543037,n:"Gerrit Cole",t:"NYY",era:3.41,whip:1.10,k:11.2,bb:2.2,ip:177,gs:28,w:12,l:5,s:2025,fip:2.67},
+  {id:571578,n:"Nestor Cortes",t:"NYY",era:3.60,whip:1.14,k:9.5,bb:2.3,ip:158,gs:27,w:9,l:8,s:2025,fip:3.19},
+  {id:677194,n:"Carlos Rodon",t:"NYY",era:4.47,whip:1.31,k:9.8,bb:3.1,ip:124,gs:22,w:7,l:7,s:2025,fip:4.21},
+  {id:593958,n:"Marcus Stroman",t:"NYY",era:4.01,whip:1.28,k:7.8,bb:2.6,ip:143,gs:25,w:8,l:9,s:2025,fip:3.99},
+  {id:700360,n:"Will Warren",t:"NYY",era:4.22,whip:1.29,k:8.9,bb:3.0,ip:98,gs:18,w:5,l:6,s:2025,fip:4.1},
+  {id:693645,n:"Cam Schlittler",t:"NYY",era:3.82,whip:1.18,k:10.4,bb:2.8,ip:88,gs:15,w:6,l:4,s:2025,fip:3.38},
+  // BOS
+    {id:669160,n:"Cooper Criswell",t:"BOS",era:4.21,whip:1.31,k:7.8,bb:3.1,ip:88,gs:17,w:5,l:7,s:2025,fip:4.31},
+{id:681867,n:"Garrett Crochet",t:"BOS",era:3.84,whip:1.21,k:11.7,bb:3.0,ip:155,gs:26,w:9,l:9,s:2025,fip:3.21},
+  {id:669085,n:"Brayan Bello",t:"BOS",era:3.96,whip:1.27,k:8.4,bb:2.9,ip:148,gs:26,w:8,l:9,s:2025,fip:3.9},
+  {id:663993,n:"Tanner Houck",t:"BOS",era:3.78,whip:1.18,k:9.2,bb:2.4,ip:141,gs:25,w:9,l:7,s:2025,fip:3.45},
+  {id:621244,n:"Walker Buehler",t:"BOS",era:4.56,whip:1.34,k:8.7,bb:3.2,ip:88,gs:16,w:4,l:7,s:2025,fip:4.52},
+  {id:694973,n:"Richard Fitts",t:"BOS",era:4.78,whip:1.38,k:7.9,bb:3.3,ip:75,gs:14,w:3,l:5,s:2025,fip:4.91},
+  // TOR
+    {id:702056,n:"Trey Yesavage",t:"TOR",era:3.58,whip:1.08,k:12.2,bb:2.8,ip:22,gs:3,w:1,l:0,s:2025,fip:2.81},
+  {id:663555,n:"Eric Lauer",t:"TOR",era:4.44,whip:1.28,k:9.1,bb:3.2,ip:98,gs:19,w:7,l:8,s:2025,fip:4.33},
+{id:664074,n:"Cody Ponce",t:"TOR",era:3.85,whip:1.26,k:9.4,bb:3.3,ip:0,gs:0,w:0,l:0,s:2026,fip:3.71,useTeamAvg:true},
+  {id:453286,n:"Max Scherzer",t:"TOR",era:5.19,whip:1.29,k:8.7,bb:2.4,ip:85,gs:17,w:5,l:5,s:2025,fip:4.95},
+  {id:664856,n:"Chris Bassitt",t:"TOR",era:4.12,whip:1.25,k:8.8,bb:2.6,ip:188,gs:31,w:12,l:10,s:2025,fip:3.92},
+  {id:592332,n:"Kevin Gausman",t:"TOR",era:3.62,whip:1.14,k:9.4,bb:2.1,ip:167,gs:28,w:10,l:8,s:2025,fip:3.18},
+  {id:664068,n:"Jose Berrios",t:"TOR",era:3.86,whip:1.22,k:8.8,bb:2.4,ip:178,gs:30,w:11,l:9,s:2025,fip:3.61},
+  {id:677774,n:"Bowden Francis",t:"TOR",era:3.98,whip:1.21,k:9.6,bb:2.8,ip:113,gs:20,w:7,l:6,s:2025,fip:3.68},
+  {id:688543,n:"Yariel Rodriguez",t:"TOR",era:4.44,whip:1.33,k:8.3,bb:3.5,ip:79,gs:14,w:4,l:6,s:2025,fip:4.55},
+  // BAL
+    {id:669060,n:"Kyle Bradish",t:"BAL",era:2.83,whip:1.07,k:10.2,bb:2.4,ip:64,gs:11,w:5,l:3,s:2023,fip:2.32},
+  {id:641540,n:"Zach Eflin",t:"BAL",era:3.84,whip:1.19,k:8.4,bb:2.1,ip:143,gs:26,w:10,l:9,s:2025,fip:3.58},
+{id:621237,n:"Corbin Burnes",t:"BAL",era:2.92,whip:1.06,k:9.8,bb:2.3,ip:194,gs:32,w:15,l:9,s:2025,fip:2.46},
+  {id:669302,n:"Grayson Rodriguez",t:"LAA",era:3.18,whip:1.14,k:9.9,bb:3.0,ip:182,gs:30,w:14,l:8,s:2025,fip:2.88},
+  {id:670970,n:"Trevor Rogers",t:"BAL",era:3.85,whip:1.24,k:9.7,bb:3.2,ip:98,gs:18,w:7,l:4,s:2025,fip:3.63},
+  {id:681867,n:"Dean Kremer",t:"BAL",era:4.38,whip:1.30,k:8.2,bb:2.8,ip:86,gs:16,w:4,l:6,s:2025,fip:4.33},
+  {id:672580,n:"Albert Suarez",t:"BAL",era:4.10,whip:1.28,k:7.8,bb:2.7,ip:92,gs:17,w:5,l:5,s:2025,fip:4.1},
+  // TB
+    {id:453178,n:"Nick Martinez",t:"TB",era:4.46,whip:1.21,k:7.8,bb:2.2,ip:156,gs:28,w:11,l:14,s:2025,fip:4.34},
+  {id:592511,n:"Steven Matz",t:"TB",era:4.12,whip:1.29,k:8.2,bb:3.1,ip:98,gs:19,w:7,l:8,s:2025,fip:4.15},
+{id:663556,n:"Shane McClanahan",t:"TB",era:3.29,whip:1.08,k:10.8,bb:2.9,ip:177,gs:29,w:13,l:8,s:2023,fip:2.8},
+  {id:657006,n:"Zack Littell",t:"TB",era:3.67,whip:1.21,k:8.4,bb:2.5,ip:158,gs:27,w:10,l:8,s:2025,fip:3.51},
+  {id:656876,n:"Drew Rasmussen",t:"TB",era:2.76,whip:1.02,k:7.6,bb:2.2,ip:150,gs:31,w:10,l:5,s:2025,fip:2.67},
+  {id:670174,n:"Shane Baz",t:"BAL",era:3.88,whip:1.18,k:9.7,bb:2.6,ip:121,gs:22,w:7,l:6,s:2025,fip:3.51},
+  {id:669022,n:"Ryan Pepiot",t:"TB",era:3.72,whip:1.20,k:9.3,bb:2.9,ip:133,gs:23,w:8,l:7,s:2025,fip:3.5},
+  {id:676075,n:"Taj Bradley",t:"TB",era:4.24,whip:1.27,k:9.8,bb:3.3,ip:108,gs:20,w:6,l:7,s:2025,fip:4.03},
+  // CWS
+    {id:657140,n:"Anthony Kay",t:"CWS",era:4.38,whip:1.34,k:8.6,bb:3.2,ip:76,gs:15,w:4,l:8,s:2025,fip:4.36},
+  {id:669454,n:"Davis Martin",t:"CWS",era:4.72,whip:1.38,k:7.9,bb:3.4,ip:82,gs:16,w:4,l:9,s:2025,fip:4.88},
+{id:694497,n:"Jonathan Cannon",t:"CWS",era:4.89,whip:1.41,k:7.4,bb:3.2,ip:107,gs:20,w:4,l:10,s:2025,fip:5.09},
+  {id:680698,n:"Erick Fedde",t:"CWS",era:5.12,whip:1.46,k:7.1,bb:3.6,ip:88,gs:17,w:3,l:10,s:2025,fip:5.47},
+  {id:699974,n:"Sean Burke",t:"CWS",era:5.44,whip:1.52,k:8.0,bb:4.1,ip:68,gs:13,w:2,l:8,s:2025,fip:5.75},
+  {id:5201814,n:"Shane Smith",t:"CWS",era:3.81,whip:1.20,k:8.8,bb:2.6,ip:150,gs:28,w:8,l:9,s:2025,fip:3.61},
+  // CLE
+    {id:686596,n:"Slade Cecconi",t:"CLE",era:3.96,whip:1.24,k:9.4,bb:3.0,ip:89,gs:17,w:6,l:7,s:2025,fip:3.75},
+  {id:680686,n:"Joey Cantillo",t:"CLE",era:3.61,whip:1.28,k:9.8,bb:3.4,ip:95,gs:18,w:7,l:6,s:2025,fip:3.43},
+  {id:681911,n:"Logan Allen",t:"CLE",era:4.18,whip:1.32,k:9.1,bb:3.6,ip:104,gs:19,w:6,l:9,s:2025,fip:4.17},
+{id:683003,n:"Tanner Bibee",t:"CLE",era:3.47,whip:1.16,k:9.2,bb:2.7,ip:172,gs:29,w:12,l:8,s:2025,fip:3.22},
+  {id:671272,n:"Gavin Williams",t:"CLE",era:3.82,whip:1.21,k:9.8,bb:3.0,ip:145,gs:25,w:9,l:7,s:2025,fip:3.54},
+  {id:669184,n:"Ben Lively",t:"CLE",era:3.91,whip:1.24,k:7.9,bb:2.4,ip:151,gs:26,w:10,l:8,s:2025,fip:3.82},
+  {id:669456,n:"Matthew Boyd",t:"CLE",era:3.64,whip:1.19,k:9.4,bb:2.6,ip:128,gs:22,w:8,l:6,s:2025,fip:3.33},
+  // DET
+  {id:669373,n:"Tarik Skubal",t:"DET",era:2.94,whip:1.01,k:10.4,bb:1.8,ip:192,gs:31,w:18,l:4,s:2025,fip:2.25},
+  {id:666135,n:"Jack Flaherty",t:"DET",era:3.17,whip:1.11,k:9.6,bb:2.6,ip:158,gs:27,w:10,l:6,s:2025,fip:2.82},
+  {id:663837,n:"Reese Olson",t:"DET",era:3.88,whip:1.22,k:9.3,bb:2.7,ip:124,gs:22,w:7,l:7,s:2025,fip:3.61},
+  {id:665184,n:"Casey Mize",t:"DET",era:3.54,whip:1.17,k:8.8,bb:2.3,ip:137,gs:24,w:8,l:7,s:2025,fip:3.26},
+  {id:628317,n:"Kenta Maeda",t:"DET",era:4.31,whip:1.30,k:8.7,bb:2.9,ip:88,gs:17,w:4,l:6,s:2025,fip:4.2},
+  // KC
+      {id:642152,n:"Michael Wacha",t:"KC",era:3.9,whip:1.24,k:7.8,bb:2.8,ip:145,gs:26,w:9,l:9,s:2025,fip:3.93},
+  {id:702070,n:"Noah Cameron",t:"KC",era:2.99,whip:1.10,k:7.4,bb:2.8,ip:138,gs:24,w:9,l:7,s:2025,fip:4.17},
+  {id:668000,n:"Kris Bubic",t:"KC",era:2.89,whip:1.1,k:10.2,bb:2.8,ip:68,gs:13,w:7,l:3,s:2025,fip:2.48},
+  {id:686780,n:"Alec Cameron",t:"KC",era:2.99,whip:1.18,k:8.8,bb:2.6,ip:138,gs:26,w:10,l:8,s:2025,fip:2.79},
+{id:680694,n:"Cole Ragans",t:"KC",era:3.14,whip:1.14,k:11.1,bb:3.3,ip:180,gs:30,w:13,l:7,s:2025,fip:2.7},
+  {id:641553,n:"Seth Lugo",t:"KC",era:3.44,whip:1.18,k:8.6,bb:2.4,ip:171,gs:29,w:11,l:8,s:2025,fip:3.22},
+  {id:571918,n:"Michael Lorenzen",t:"KC",era:4.02,whip:1.27,k:8.2,bb:2.8,ip:132,gs:23,w:8,l:7,s:2025,fip:3.97},
+  {id:663511,n:"Brady Singer",t:"KC",era:4.18,whip:1.29,k:8.7,bb:2.9,ip:144,gs:25,w:8,l:9,s:2025,fip:4.07},
+  {id:681867,n:"Alec Marsh",t:"KC",era:4.57,whip:1.35,k:9.1,bb:3.4,ip:96,gs:18,w:5,l:7,s:2025,fip:4.51},
+  // MIN
+    {id:800102,n:"Noah Prielipp",t:"MIN",era:3.8,whip:1.22,k:9.8,bb:3.2,ip:12,gs:3,w:1,l:1,s:2026,fip:3.57},
+  {id:605151,n:"Pablo Lopez",t:"MIN",era:3.34,whip:1.09,k:9.9,bb:2.4,ip:175,gs:30,w:13,l:7,s:2025,fip:2.89},
+  {id:622491,n:"Joe Ryan",t:"MIN",era:3.58,whip:1.15,k:9.7,bb:2.6,ip:168,gs:29,w:12,l:8,s:2025,fip:3.21},
+  {id:669062,n:"Bailey Ober",t:"MIN",era:3.61,whip:1.14,k:9.3,bb:2.1,ip:168,gs:29,w:12,l:7,s:2025,fip:3.19},
+  {id:663853,n:"Chris Paddack",t:"MIN",era:3.97,whip:1.24,k:9.1,bb:2.7,ip:104,gs:19,w:6,l:6,s:2025,fip:3.74},
+  {id:666293,n:"Simeon Woods Richardson",t:"MIN",era:4.24,whip:1.28,k:8.8,bb:3.1,ip:82,gs:15,w:4,l:5,s:2025,fip:4.16},
+  // HOU
+  {id:664285,n:"Framber Valdez",t:"DET",era:2.91,whip:1.18,k:8.5,bb:2.7,ip:201,gs:33,w:14,l:8,s:2025,fip:2.79},
+    {id:664299,n:"Cristian Javier",t:"HOU",era:3.88,whip:1.19,k:10.4,bb:3.2,ip:112,gs:21,w:8,l:7,s:2025,fip:3.54},
+    {id:800101,n:"Justin Teng",t:"HOU",era:4.2,whip:1.32,k:8.4,bb:3.4,ip:18,gs:4,w:1,l:2,s:2026,fip:4.27},
+  {id:800000,n:"Tatsuya Imai",t:"HOU",era:3.2,whip:1.15,k:9.2,bb:2.8,ip:170,gs:29,w:12,l:8,s:2025,fip:2.97},
+  {id:593958,n:"Lance McCullers Jr.",t:"HOU",era:3.44,whip:1.18,k:9.8,bb:3.1,ip:88,gs:17,w:7,l:5,s:2025,fip:3.18},
+{id:663423,n:"Ronel Blanco",t:"HOU",era:3.41,whip:1.15,k:9.4,bb:2.9,ip:174,gs:29,w:13,l:8,s:2025,fip:3.17},
+  {id:686613,n:"Hunter Brown",t:"HOU",era:3.88,whip:1.24,k:9.4,bb:3.1,ip:162,gs:28,w:11,l:8,s:2025,fip:3.69},
+  {id:682847,n:"Spencer Arrighetti",t:"HOU",era:4.02,whip:1.26,k:9.7,bb:3.2,ip:141,gs:25,w:8,l:8,s:2025,fip:3.8},
+  {id:628317,n:"Yusei Kikuchi",t:"HOU",era:3.71,whip:1.19,k:9.2,bb:2.6,ip:128,gs:22,w:8,l:6,s:2025,fip:3.43},
+  // LAA
+  {id:660271,n:"Reid Detmers",t:"LAA",era:3.72,whip:1.20,k:9.8,bb:2.8,ip:155,gs:27,w:10,l:9,s:2025,fip:3.39},
+  {id:680694,n:"Patrick Sandoval",t:"LAA",era:4.62,whip:1.36,k:8.7,bb:3.4,ip:78,gs:15,w:3,l:7,s:2025,fip:4.63},
+  {id:686946,n:"Jose Soriano",t:"LAA",era:3.88,whip:1.22,k:10.1,bb:3.0,ip:104,gs:19,w:6,l:6,s:2025,fip:3.54},
+  {id:663738,n:"Griffin Canning",t:"LAA",era:4.44,whip:1.34,k:8.3,bb:3.1,ip:88,gs:16,w:4,l:7,s:2025,fip:4.45},
+  {id:622072,n:"Tyler Anderson",t:"LAA",era:4.31,whip:1.32,k:8.0,bb:2.9,ip:119,gs:22,w:6,l:8,s:2025,fip:4.32},
+  // OAK
+    {id:650644,n:"Aaron Civale",t:"OAK",era:4.85,whip:1.26,k:7.8,bb:2.9,ip:102,gs:18,w:4,l:9,s:2025,fip:4.9},
+  {id:641154,n:"Jeffrey Springs",t:"OAK",era:3.76,whip:1.22,k:9.4,bb:2.9,ip:96,gs:18,w:6,l:8,s:2025,fip:3.52},
+  {id:686919,n:"Jacob Lopez",t:"OAK",era:4.88,whip:1.41,k:8.2,bb:3.8,ip:72,gs:14,w:3,l:8,s:2025,fip:5.08},
+  {id:700833,n:"Luis Morales",t:"OAK",era:4.12,whip:1.28,k:9.6,bb:3.4,ip:88,gs:17,w:5,l:7,s:2025,fip:3.97},
+{id:683296,n:"Luis Medina",t:"OAK",era:4.28,whip:1.32,k:9.4,bb:4.0,ip:122,gs:22,w:6,l:8,s:2025,fip:4.32},
+  {id:686668,n:"JP Sears",t:"OAK",era:4.11,whip:1.28,k:8.6,bb:2.7,ip:136,gs:24,w:7,l:8,s:2025,fip:3.97},
+  {id:622663,n:"Luis Severino",t:"OAK",era:4.54,whip:1.30,k:6.9,bb:2.8,ip:162,gs:29,w:8,l:11,s:2025,fip:4.73},
+  {id:700360,n:"Joey Estes",t:"OAK",era:4.54,whip:1.37,k:8.2,bb:3.3,ip:91,gs:17,w:4,l:7,s:2025,fip:4.62},
+  {id:681768,n:"Mitch Spence",t:"OAK",era:4.78,whip:1.40,k:7.9,bb:3.1,ip:82,gs:15,w:3,l:7,s:2025,fip:4.86},
+  // SEA
+    {id:592518,n:"Luis Castillo",t:"SEA",era:3.58,whip:1.18,k:9.8,bb:2.8,ip:172,gs:29,w:12,l:9,s:2025,fip:3.25},
+{id:669302,n:"Logan Gilbert",t:"SEA",era:3.44,whip:1.03,k:11.8,bb:2.1,ip:131,gs:25,w:6,l:6,s:2025,fip:2.57},
+  {id:669923,n:"George Kirby",t:"SEA",era:3.48,whip:1.13,k:9.0,bb:1.8,ip:172,gs:29,w:12,l:8,s:2025,fip:3.04},
+  {id:683227,n:"Bryce Miller",t:"SEA",era:3.57,whip:1.19,k:9.1,bb:2.7,ip:162,gs:28,w:12,l:9,s:2025,fip:3.34},
+  {id:680757,n:"Bryan Woo",t:"SEA",era:3.71,whip:1.18,k:9.4,bb:2.5,ip:134,gs:23,w:8,l:7,s:2025,fip:3.37},
+  {id:686501,n:"Emerson Hancock",t:"SEA",era:4.02,whip:1.24,k:8.8,bb:2.9,ip:103,gs:19,w:6,l:6,s:2025,fip:3.89},
+  // TEX
+    {id:668701,n:"Jack Leiter",t:"TEX",era:4.02,whip:1.26,k:9.8,bb:3.6,ip:96,gs:19,w:6,l:8,s:2025,fip:3.89},
+{id:605275,n:"Nathan Eovaldi",t:"TEX",era:3.88,whip:1.23,k:8.4,bb:2.3,ip:153,gs:27,w:9,l:8,s:2025,fip:3.67},
+  {id:594798,n:"Jacob deGrom",t:"TEX",era:3.12,whip:1.04,k:11.4,bb:2.0,ip:118,gs:21,w:9,l:4,s:2025,fip:2.3},
+  {id:685536,n:"Kumar Rocker",t:"TEX",era:4.01,whip:1.25,k:9.6,bb:3.0,ip:112,gs:20,w:6,l:7,s:2025,fip:3.76},
+  {id:676391,n:"Cody Bradford",t:"TEX",era:3.94,whip:1.22,k:8.2,bb:2.4,ip:98,gs:18,w:6,l:6,s:2025,fip:3.79},
+  {id:605160,n:"Andrew Heaney",t:"TEX",era:4.22,whip:1.28,k:10.1,bb:2.8,ip:96,gs:18,w:5,l:6,s:2025,fip:3.83},
+  // ATL
+    {id:660761,n:"Jose Suarez",t:"ATL",era:3.53,whip:1.18,k:9.1,bb:3.4,ip:120,gs:20,w:8,l:7,s:2022,fip:3.47},
+  {id:701538,n:"Grant Holmes",t:"ATL",era:4.44,whip:1.32,k:8.8,bb:3.4,ip:78,gs:15,w:5,l:7,s:2025,fip:4.44},
+  {id:683737,n:"AJ Smith-Shawver",t:"ATL",era:3.96,whip:1.28,k:10.2,bb:3.8,ip:66,gs:13,w:4,l:6,s:2025,fip:3.8},
+{id:608334,n:"Max Fried",t:"NYY",era:3.25,whip:1.12,k:9.2,bb:2.4,ip:176,gs:29,w:11,l:7,s:2025,fip:2.92},
+  {id:572971,n:"Chris Sale",t:"ATL",era:3.21,whip:1.08,k:10.3,bb:2.1,ip:179,gs:29,w:18,l:5,s:2025,fip:2.61},
+  {id:669923,n:"Spencer Strider",t:"ATL",era:3.44,whip:1.01,k:13.1,bb:2.3,ip:99,gs:16,w:7,l:4,s:2025,fip:2.39},
+  {id:680695,n:"Reynaldo Lopez",t:"ATL",era:3.62,whip:1.18,k:9.6,bb:2.8,ip:138,gs:24,w:9,l:6,s:2025,fip:3.32},
+  {id:669623,n:"Ian Anderson",t:"ATL",era:4.24,whip:1.29,k:8.7,bb:3.2,ip:76,gs:14,w:4,l:5,s:2025,fip:4.2},
+  // MIA
+    {id:676083,n:"Janson Junk",t:"MIA",era:4.17,whip:1.14,k:6.3,bb:1.1,ip:110,gs:16,w:6,l:4,s:2025,fip:4.04},
+  {id:683737,n:"Edward Cabrera",t:"MIA",era:3.72,whip:1.22,k:10.8,bb:3.6,ip:98,gs:19,w:7,l:7,s:2025,fip:3.41},
+{id:645261,n:"Sandy Alcantara",t:"MIA",era:3.21,whip:1.10,k:8.7,bb:2.4,ip:162,gs:27,w:10,l:8,s:2025,fip:2.97},
+  {id:685553,n:"Eury Perez",t:"MIA",era:3.78,whip:1.20,k:10.2,bb:2.9,ip:114,gs:20,w:6,l:7,s:2025,fip:3.4},
+  {id:650974,n:"Valente Bellozo",t:"MIA",era:4.56,whip:1.34,k:8.4,bb:3.4,ip:71,gs:13,w:3,l:6,s:2025,fip:4.63},
+  {id:695243,n:"Roddery Munoz",t:"MIA",era:4.88,whip:1.42,k:8.1,bb:3.8,ip:64,gs:12,w:2,l:6,s:2025,fip:5.1},
+  // NYM
+    {id:694765,n:"Nolan McLean",t:"NYM",era:3.88,whip:1.24,k:9.4,bb:3.2,ip:76,gs:14,w:5,l:5,s:2025,fip:3.72},
+{id:676265,n:"Kodai Senga",t:"NYM",era:3.38,whip:1.07,k:10.3,bb:2.5,ip:170,gs:29,w:11,l:7,s:2025,fip:2.88},
+  {id:640455,n:"Sean Manaea",t:"NYM",era:3.47,whip:1.16,k:9.1,bb:2.7,ip:162,gs:28,w:10,l:8,s:2025,fip:3.24},
+  {id:660513,n:"David Peterson",t:"NYM",era:3.74,whip:1.21,k:8.9,bb:2.6,ip:134,gs:23,w:8,l:7,s:2025,fip:3.52},
+  {id:608379,n:"Jose Quintana",t:"NYM",era:3.97,whip:1.24,k:8.2,bb:2.5,ip:116,gs:21,w:6,l:7,s:2025,fip:3.85},
+  {id:641154,n:"Clay Holmes",t:"NYM",era:3.22,whip:1.14,k:8.8,bb:2.8,ip:78,gs:14,w:5,l:4,s:2025,fip:3.07},
+  // PHI
+  {id:554430,n:"Zack Wheeler",t:"PHI",era:2.57,whip:0.94,k:10.4,bb:1.7,ip:192,gs:32,w:16,l:7,s:2025,fip:1.85},
+  {id:691725,n:"Andrew Painter",t:"PHI",era:5.26,whip:1.49,k:9.4,bb:3.6,ip:118,gs:26,w:5,l:8,s:2025,fip:5.2},
+  {id:672515,n:"Cristopher Sanchez",t:"PHI",era:3.44,whip:1.22,k:8.5,bb:2.8,ip:188,gs:31,w:13,l:9,s:2025,fip:3.34},
+  {id:605400,n:"Aaron Nola",t:"PHI",era:3.74,whip:1.18,k:9.6,bb:2.4,ip:183,gs:31,w:12,l:9,s:2025,fip:3.34},
+  {id:622107,n:"Ranger Suarez",t:"BOS",era:3.31,whip:1.15,k:8.8,bb:2.5,ip:157,gs:27,w:10,l:7,s:2025,fip:3.08},
+  {id:669622,n:"Jesus Luzardo",t:"PHI",era:3.88,whip:1.22,k:9.8,bb:2.9,ip:121,gs:21,w:7,l:6,s:2025,fip:3.57},
+  // WSH
+    {id:676571,n:"PJ Poulin",t:"WSH",era:3.65,whip:1.46,k:9.9,bb:4.7,ip:24,gs:0,w:2,l:1,s:2025,fip:3.77},
+  {id:685546,n:"Cade Cavalli",t:"WSH",era:4.12,whip:1.31,k:9.2,bb:3.8,ip:86,gs:17,w:4,l:8,s:2025,fip:4.14},
+  {id:685496,n:"Josiah Gray",t:"WSH",era:3.88,whip:1.26,k:9.8,bb:3.4,ip:8,gs:2,w:0,l:1,s:2025,fip:3.7},
+{id:656492,n:"Foster Griffin",t:"WSH",era:4.45,whip:1.36,k:8.3,bb:3.5,ip:0,gs:0,w:0,l:0,s:2026,fip:4.56,useTeamAvg:true},
+  {id:666201,n:"MacKenzie Gore",t:"TEX",era:3.32,whip:1.19,k:10.5,bb:3.4,ip:162,gs:27,w:10,l:8,s:2025,fip:3.01},
+  {id:681148,n:"Jake Irvin",t:"WSH",era:4.12,whip:1.28,k:8.1,bb:2.7,ip:143,gs:25,w:7,l:9,s:2025,fip:4.07},
+  {id:683786,n:"Mitchell Parker",t:"WSH",era:3.88,whip:1.22,k:9.3,bb:3.0,ip:128,gs:22,w:7,l:8,s:2025,fip:3.69},
+  {id:518516,n:"Patrick Corbin",t:"WSH",era:5.14,whip:1.48,k:7.2,bb:3.6,ip:82,gs:16,w:3,l:9,s:2025,fip:5.47},
+  {id:684903,n:"DJ Herz",t:"WSH",era:4.44,whip:1.31,k:10.2,bb:3.7,ip:91,gs:17,w:4,l:7,s:2025,fip:4.26},
+  // CHC
+    {id:694192,n:"Cade Horton",t:"CHC",era:3.44,whip:1.18,k:11.2,bb:3.4,ip:78,gs:15,w:6,l:4,s:2025,fip:3.0},
+{id:669160,n:"Shota Imanaga",t:"CHC",era:3.00,whip:1.06,k:9.8,bb:2.1,ip:174,gs:29,w:12,l:6,s:2025,fip:2.49},
+  {id:669923,n:"Justin Steele",t:"CHC",era:3.44,whip:1.18,k:9.4,bb:2.7,ip:154,gs:27,w:10,l:7,s:2025,fip:3.15},
+  {id:601713,n:"Jameson Taillon",t:"CHC",era:3.88,whip:1.23,k:8.2,bb:2.5,ip:143,gs:25,w:8,l:8,s:2025,fip:3.76},
+  {id:670950,n:"Jordan Wicks",t:"CHC",era:3.77,whip:1.21,k:8.7,bb:2.8,ip:112,gs:20,w:7,l:6,s:2025,fip:3.63},
+  // CIN
+  {id:682227,n:"Brandon Williamson",t:"CIN",era:4.44,whip:1.36,k:9.6,bb:4.2,ip:79,gs:16,w:4,l:4,s:2023,fip:4.49},
+  {id:663412,n:"Hunter Greene",t:"CIN",era:3.94,whip:1.18,k:11.1,bb:2.9,ip:173,gs:29,w:11,l:8,s:2025,fip:3.4},
+  {id:680977,n:"Nick Lodolo",t:"CIN",era:3.62,whip:1.17,k:9.8,bb:2.7,ip:144,gs:25,w:9,l:7,s:2025,fip:3.26},
+  {id:683579,n:"Andrew Abbott",t:"CIN",era:3.88,whip:1.22,k:10.2,bb:3.1,ip:131,gs:23,w:7,l:7,s:2025,fip:3.55},
+  {id:665565,n:"Graham Ashcraft",t:"CIN",era:4.22,whip:1.30,k:7.8,bb:3.0,ip:98,gs:18,w:5,l:7,s:2025,fip:4.3},
+  // MIL
+    {id:621566,n:"Frankie Montas",t:"MIL",era:4.22,whip:1.28,k:8.4,bb:3.0,ip:98,gs:19,w:6,l:8,s:2025,fip:4.19},
+{id:596448,n:"Brandon Woodruff",t:"MIL",era:3.2,whip:1.10,k:11.5,bb:2.8,ip:64,gs:12,w:5,l:4,s:2025,fip:2.56},
+  {id:665921,n:"Freddy Peralta",t:"NYM",era:3.47,whip:1.12,k:10.7,bb:2.9,ip:162,gs:28,w:10,l:7,s:2025,fip:3.0},
+  {id:694819,n:"Jacob Misiorowski",t:"MIL",era:4.36,whip:1.24,k:11.9,bb:4.2,ip:66,gs:14,w:5,l:3,s:2025,fip:4.0},
+  {id:686792,n:"Tobias Myers",t:"MIL",era:4.01,whip:1.25,k:8.8,bb:2.7,ip:124,gs:22,w:7,l:7,s:2025,fip:3.83},
+  {id:669313,n:"Colin Rea",t:"MIL",era:3.82,whip:1.21,k:8.4,bb:2.6,ip:148,gs:26,w:9,l:7,s:2025,fip:3.69},
+  {id:624133,n:"Wade Miley",t:"MIL",era:4.56,whip:1.35,k:7.4,bb:2.9,ip:79,gs:15,w:4,l:6,s:2025,fip:4.68},
+  // PIT
+    {id:669387,n:"Carmen Mlodzinski",t:"PIT",era:3.97,whip:1.38,k:8.8,bb:3.4,ip:99,gs:12,w:5,l:8,s:2025,fip:3.97},
+  {id:694786,n:"Bubba Chandler",t:"PIT",era:3.62,whip:1.22,k:10.4,bb:3.2,ip:88,gs:17,w:6,l:5,s:2025,fip:3.28},
+  {id:669004,n:"Quinn Priester",t:"PIT",era:4.14,whip:1.32,k:9.2,bb:3.4,ip:96,gs:18,w:5,l:8,s:2025,fip:4.06},
+{id:694973,n:"Paul Skenes",t:"PIT",era:1.96,whip:0.95,k:10.8,bb:2.0,ip:133,gs:23,w:11,l:3,s:2025,fip:1.25},
+  {id:681347,n:"Mike Burrows",t:"HOU",era:3.94,whip:1.24,k:9.3,bb:3.5,ip:96,gs:19,w:2,l:5,s:2025,fip:3.87},
+  {id:666142,n:"Mitch Keller",t:"PIT",era:3.91,whip:1.24,k:9.1,bb:2.8,ip:156,gs:27,w:9,l:9,s:2025,fip:3.7},
+  {id:680573,n:"Bailey Falter",t:"PIT",era:3.88,whip:1.22,k:8.4,bb:2.6,ip:144,gs:25,w:8,l:8,s:2025,fip:3.75},
+  {id:683668,n:"Luis L. Ortiz",t:"PIT",era:4.12,whip:1.27,k:8.8,bb:2.9,ip:98,gs:18,w:5,l:6,s:2025,fip:3.99},
+  // STL
+  {id:642585,n:"Sonny Gray",t:"BOS",era:3.42,whip:1.12,k:10.1,bb:2.6,ip:148,gs:25,w:10,l:6,s:2025,fip:2.98},
+    {id:800100,n:"Jordan Sprout",t:"STL",era:2.35,whip:1.18,k:7.2,bb:3.1,ip:32,gs:7,w:2,l:2,s:2026,fip:2.56},
+  {id:518516,n:"Lance Lynn",t:"STL",era:3.84,whip:1.27,k:8.8,bb:3.1,ip:165,gs:28,w:11,l:9,s:2025,fip:3.76},
+  {id:527048,n:"Miles Mikolas",t:"STL",era:4.12,whip:1.29,k:7.4,bb:2.2,ip:148,gs:26,w:8,l:9,s:2025,fip:4.07},
+  {id:542882,n:"Kyle Gibson",t:"STL",era:4.44,whip:1.33,k:7.8,bb:2.7,ip:111,gs:21,w:6,l:8,s:2025,fip:4.44},
+  {id:669461,n:"Matthew Liberatore",t:"STL",era:4.21,whip:1.31,k:7.2,bb:2.8,ip:151,gs:29,w:8,l:12,s:2025,fip:4.34},
+  {id:669813,n:"Andre Pallante",t:"STL",era:4.22,whip:1.30,k:7.6,bb:2.8,ip:98,gs:18,w:5,l:7,s:2025,fip:4.28},
+  // ARI
+  {id:665988,n:"Zac Gallen",t:"ARI",era:3.47,whip:1.14,k:9.2,bb:2.4,ip:168,gs:28,w:11,l:8,s:2025,fip:3.14},
+  {id:621244,n:"Merrill Kelly",t:"ARI",era:3.74,whip:1.20,k:8.3,bb:2.6,ip:162,gs:28,w:10,l:9,s:2025,fip:3.63},
+  {id:613534,n:"Eduardo Rodriguez",t:"ARI",era:3.88,whip:1.22,k:9.4,bb:2.8,ip:143,gs:25,w:8,l:8,s:2025,fip:3.62},
+  {id:686613,n:"Brandon Pfaadt",t:"ARI",era:3.62,whip:1.18,k:9.7,bb:2.7,ip:158,gs:27,w:10,l:7,s:2025,fip:3.28},
+  {id:680598,n:"Ryne Nelson",t:"ARI",era:4.12,whip:1.27,k:8.8,bb:2.9,ip:107,gs:20,w:6,l:7,s:2025,fip:3.99},
+  // COL
+    {id:800001,n:"Tomoyuki Sugano",t:"COL",era:4.88,whip:1.38,k:7.8,bb:2.4,ip:106,gs:20,w:5,l:10,s:2025,fip:4.81},
+{id:641771,n:"Cal Quantrill",t:"COL",era:4.88,whip:1.41,k:7.4,bb:2.7,ip:129,gs:23,w:5,l:10,s:2025,fip:4.95},
+  {id:607536,n:"Kyle Freeland",t:"COL",era:4.98,whip:1.42,k:7.2,bb:2.9,ip:162,gs:31,w:5,l:17,s:2025,fip:5.14},
+  {id:641540,n:"Austin Gomber",t:"COL",era:5.22,whip:1.48,k:7.1,bb:3.1,ip:108,gs:20,w:4,l:9,s:2025,fip:5.45},
+  {id:664029,n:"Ryan Feltner",t:"COL",era:5.44,whip:1.52,k:7.8,bb:3.4,ip:88,gs:17,w:3,l:8,s:2025,fip:5.62},
+  {id:686592,n:"Connor Seabold",t:"COL",era:5.78,whip:1.56,k:7.2,bb:3.6,ip:72,gs:14,w:2,l:7,s:2025,fip:6.11},
+  // LAD
+    {id:660271,n:"Shohei Ohtani",t:"LAD",era:3.14,whip:1.06,k:11.4,bb:2.8,ip:132,gs:23,w:10,l:5,s:2023,fip:2.52},
+  {id:808982,n:"Roki Sasaki",t:"LAD",era:3.04,whip:1.08,k:10.8,bb:2.6,ip:122,gs:22,w:9,l:5,s:2025,fip:2.48},
+{id:808967,n:"Yoshinobu Yamamoto",t:"LAD",era:3.00,whip:1.06,k:9.9,bb:2.2,ip:90,gs:17,w:7,l:2,s:2025,fip:2.5},
+  {id:656976,n:"Tyler Glasnow",t:"LAD",era:3.49,whip:1.05,k:11.4,bb:2.5,ip:144,gs:25,w:10,l:6,s:2025,fip:2.79},
+  {id:666135,n:"Jack Flaherty",t:"LAD",era:3.22,whip:1.10,k:9.8,bb:2.7,ip:153,gs:26,w:11,l:6,s:2025,fip:2.86},
+  {id:686218,n:"Emmet Sheehan",t:"LAD",era:2.82,whip:0.97,k:10.9,bb:3.2,ip:73,gs:12,w:4,l:2,s:2025,fip:2.39},
+  {id:621111,n:"Dustin May",t:"LAD",era:3.64,whip:1.16,k:8.6,bb:2.4,ip:118,gs:21,w:7,l:5,s:2025,fip:3.42},
+  {id:669160,n:"Bobby Miller",t:"LAD",era:3.92,whip:1.22,k:9.7,bb:2.9,ip:106,gs:19,w:6,l:5,s:2025,fip:3.63},
+  {id:660457,n:"Blake Snell",t:"LAD",era:3.22,whip:1.08,k:11.2,bb:3.4,ip:143,gs:25,w:9,l:5,s:2025,fip:2.78},
+  // SD
+    {id:622493,n:"German Marquez",t:"SD",era:4.62,whip:1.38,k:7.4,bb:2.8,ip:96,gs:18,w:5,l:9,s:2025,fip:4.72},
+{id:506433,n:"Yu Darvish",t:"SD",era:3.52,whip:1.13,k:9.4,bb:2.4,ip:168,gs:28,w:11,l:8,s:2025,fip:3.16},
+  {id:656302,n:"Dylan Cease",t:"TOR",era:3.10,whip:1.12,k:10.6,bb:3.2,ip:196,gs:33,w:14,l:11,s:2025,fip:2.72},
+  {id:641745,n:"Nick Pivetta",t:"SD",era:2.87,whip:1.11,k:9.8,bb:3.1,ip:176,gs:31,w:13,l:5,s:2025,fip:2.61},
+  {id:650633,n:"Michael King",t:"SD",era:2.95,whip:1.10,k:10.4,bb:2.8,ip:173,gs:30,w:13,l:9,s:2025,fip:2.51},
+  {id:676446,n:"Randy Vasquez",t:"SD",era:4.01,whip:1.26,k:9.2,bb:3.0,ip:112,gs:20,w:6,l:7,s:2025,fip:3.83},
+  // SF
+    {id:641154,n:"Tyler Mahle",t:"SF",era:3.44,whip:1.16,k:9.8,bb:2.6,ip:152,gs:27,w:11,l:7,s:2025,fip:3.06},
+  {id:624543,n:"Adrian Houser",t:"SF",era:3.68,whip:1.24,k:7.2,bb:2.8,ip:98,gs:19,w:7,l:7,s:2025,fip:3.81},
+  {id:700432,n:"Landen Roupp",t:"SF",era:3.88,whip:1.22,k:9.4,bb:3.0,ip:88,gs:17,w:5,l:7,s:2025,fip:3.67},
+{id:657277,n:"Logan Webb",t:"SF",era:3.24,whip:1.09,k:9.0,bb:2.1,ip:207,gs:33,w:11,l:13,s:2025,fip:2.88},
+  {id:660457,n:"Blake Snell",t:"SF",era:3.22,whip:1.08,k:11.2,bb:3.4,ip:143,gs:25,w:9,l:5,s:2025,fip:2.78},
+  {id:622547,n:"Jordan Hicks",t:"SF",era:3.62,whip:1.18,k:8.4,bb:3.0,ip:122,gs:22,w:7,l:7,s:2025,fip:3.59},
+  {id:608379,n:"Robbie Ray",t:"SF",era:3.88,whip:1.22,k:9.6,bb:2.9,ip:134,gs:23,w:8,l:7,s:2025,fip:3.61},
+  {id:694819,n:"Mason Black",t:"SF",era:4.12,whip:1.28,k:9.1,bb:3.2,ip:94,gs:17,w:5,l:6,s:2025,fip:4.01},
+];
+const TEAMS=Object.entries(STATS).map(([id,v])=>({id:+id,name:v.n,abbr:v.a}));
+const LG={era:4.20,whip:1.30,kper9:8.5,bbper9:3.2};
+// Safari estää API-kutsut paikallisista tiedostoista — tunnistetaan ja ohitetaan
+// safeFetch käsittelee kaikki verkkovirheet hiljaisesti
+async function safeFetch(url){
+  try{
+    const r=await fetch(url);
+    if(!r.ok) return null;
+    return r;
+  }catch(e){ return null; }
+}
+const UNIT=10,BANK=1000;
+
+// ── STATE ───────────────────────────────────────────────────
+let sA=null,sB=null,hT='A',pitA=null,pitB=null;
+let bullpenGameA=false,bullpenGameB=false;
+
+// ── BULLPEN-HEIKKOUS TOGGLE ───────────────────────────────────
+let bullpenWeakA=false, bullpenWeakB=false,fromCoorsA=false,fromCoorsB=false;
+function updateBullpenWeak(){
+  // bpWeakA/B poistettu — bullpen-väsymys haetaan automaattisesti
+  bullpenWeakA = false;
+  bullpenWeakB = false;
+  fromCoorsA = document.getElementById('fromCoorsA')?.checked||false;
+  fromCoorsB = document.getElementById('fromCoorsB')?.checked||false;
+}
+
+
+// ── JOUKKUEHAKU ─────────────────────────────────────────────
+function setupTeam(iid,sid,slot){
+  const inp=document.getElementById(iid),sg=document.getElementById(sid);
+  inp.addEventListener('input',()=>{
+    const q=inp.value.trim().toLowerCase();
+    if(!q){sg.className='sugs';return;}
+    const hits=TEAMS.filter(t=>t.name.toLowerCase().includes(q)||t.abbr.toLowerCase().includes(q)).slice(0,8);
+    if(!hits.length){sg.className='sugs';return;}
+    sg.innerHTML=hits.map(t=>`<div class="si-item" ontouchend="event.preventDefault();pickTeam('${iid}','${sid}',${t.id},'${slot}')" onclick="pickTeam('${iid}','${sid}',${t.id},'${slot}')">${t.name}<span class="si-abbr">${t.abbr}</span></div>`).join('');
+    sg.className='sugs open';
+  });
+  document.addEventListener('click',e=>{if(!inp.contains(e.target)&&!sg.contains(e.target))sg.className='sugs';});document.addEventListener('touchstart',e=>{if(!inp.contains(e.target)&&!sg.contains(e.target))sg.className='sugs';});
+}
+function pickTeam(iid,sid,id,slot){
+  const t=TEAMS.find(x=>x.id===id);
+  document.getElementById(iid).value=t.name;
+  document.getElementById(sid).className='sugs';
+  if(slot==='A'){sA=t;document.getElementById('olA').textContent=t.abbr+' kerroin';document.getElementById('spLA').textContent=t.abbr+' — aloitussyöttäjä';document.getElementById('lineupSection').style.display='block';document.getElementById('lineupTitleA').textContent=t.name;loadLineup('A');}
+  else{sB=t;document.getElementById('olB').textContent=t.abbr+' kerroin';document.getElementById('spLB').textContent=t.abbr+' — aloitussyöttäjä';document.getElementById('lineupSection').style.display='block';document.getElementById('lineupTitleB').textContent=t.name;loadLineup('B');}
+}
+setupTeam('inA','sgA','A');
+setupTeam('inB','sgB','B');
+
+// ── KOTIJOUKKUE ─────────────────────────────────────────────
+function setH(t){
+  hT=t;
+  document.getElementById('tgA').className=t==='A'?'tbtn ah':'tbtn';
+  document.getElementById('tgB').className=t==='B'?'tbtn aa':'tbtn';
+  document.getElementById('lblA').textContent=t==='A'?'Kotijoukkue':'Vierasjoukkue';
+  document.getElementById('lblB').textContent=t==='B'?'Kotijoukkue':'Vierasjoukkue';
+}
+
+// ── SYÖTTÄJÄHAKU ─────────────────────────────────────────────
+function spCls(v,ref,hi){if(v==null)return'n';return(hi?v>ref*1.05:v<ref*0.95)?'g':(hi?v<ref*0.95:v>ref*1.05)?'b':'n';}
+function showSpCard(cid,name,st){
+  const c=document.getElementById(cid);
+  const l5html=st.l5era!=null?`<span class="spt ${spCls(st.l5era,LG.era,false)}" title="Viimeiset ${st.l5starts||5} starttia">L5 ${st.l5era.toFixed(2)}</span>`:'';
+  const bpTag=st.isBullpen?'<span style="background:#e67e22;color:#fff;font-size:10px;padding:1px 6px;border-radius:4px;font-weight:700;margin-left:4px">BULLPEN</span>':''
+  c.innerHTML=`<div class="sp-card-name">${name}${bpTag} <span style="font-size:11px;color:var(--mu);font-weight:400">${st.useTeamAvg?"(joukkueen ka — päivittyy 5 pelistä)":"("+st.season+")"}</span></div><div class="sp-stats">${st.era!=null?`<span class="spt ${spCls(st.era,LG.era,false)}">ERA ${st.era.toFixed(2)}</span>`:''} ${l5html} ${st.fip!=null?`<span class="spt ${spCls(st.fip,LG.era,false)}" title="xFIP — ennustava fielding-independent pitching">xFIP ${st.fip.toFixed(2)}</span>`:''} ${st.whip!=null?`<span class="spt ${spCls(st.whip,LG.whip,false)}">WHIP ${st.whip.toFixed(2)}</span>`:''} ${st.kper9!=null?`<span class="spt ${spCls(st.kper9,LG.kper9,true)}">K/9 ${st.kper9.toFixed(1)}</span>`:''} ${st.bbper9!=null?`<span class="spt n">BB/9 ${st.bbper9.toFixed(1)}</span>`:''}<span class="spt n">${st.wins}-${st.losses} · ${st.ip}IP</span></div>`;
+  c.className='sp-card vis';
+}
+function setupSP(iid,sid,cid,slot){
+  const inp=document.getElementById(iid),sg=document.getElementById(sid),tk='_sp'+slot;
+  inp.addEventListener('input',()=>{
+    const q=inp.value.trim();
+    sg.className='sp-sugs';
+    if(slot==='A')pitA=null;else pitB=null;
+    document.getElementById(cid).className='sp-card';
+    if(q.length<2)return;
+    const ql=q.toLowerCase();
+    const loc=PITCHERS.filter(p=>p.n.toLowerCase().includes(ql)).sort((a,b)=>{
+      const aLast=a.n.split(' ').pop().toLowerCase(),bLast=b.n.split(' ').pop().toLowerCase();
+      const aMatch=aLast.startsWith(ql)||aLast.includes(ql),bMatch=bLast.startsWith(ql)||bLast.includes(ql);
+      if(aMatch&&!bMatch)return -1;if(!aMatch&&bMatch)return 1;return 0;
+    }).slice(0,6);
+    if(loc.length){
+      sg.innerHTML=loc.map(p=>`<div class="sp-sug" onclick="pickSpByName('${p.n.replace(/'/g,"\\'")}','${sid}','${cid}','${slot}')"><span>${p.n}</span><span class="sp-sug-sub">${p.t} · ERA ${p.era} · ${p.s}</span></div>`).join('');
+      sg.className='sp-sugs open';
+    } else {
+      sg.innerHTML=`<div class="sp-sug" style="color:var(--mu)">Ei löydy — kokeile sukunimellä</div>`;
+      sg.className='sp-sugs open';
+    }
+  });
+  document.addEventListener('click',e=>{if(!inp.contains(e.target)&&!sg.contains(e.target))sg.className='sp-sugs';});document.addEventListener('touchstart',e=>{if(!inp.contains(e.target)&&!sg.contains(e.target))sg.className='sp-sugs';});
+}
+
+
+
+// ── LOUKKAANTUMISDATA MLB API:STA ────────────────────────────
+async function fetchInjuries(teamId){
+  try{
+    const r = await safeFetch(`https://statsapi.mlb.com/api/v1/teams/${teamId}/roster?rosterType=injuries&season=2026`);
+    if(!r) return [];
+    const d = await r.json();
+    const roster = d.roster||[];
+    return roster.map(p=>({
+      id: p.person?.id,
+      name: p.person?.fullName,
+      status: p.status?.description||'IL',
+      pos: p.position?.abbreviation
+    })).filter(p=>p.pos==='P'||p.pos==='SP'||p.pos==='RP');
+  }catch(e){ return []; }
+}
+
+// Näytä loukkaantuneet syöttäjät kokoonpanoboksissa
+async function loadInjuries(slot){
+  const team = slot==='A'?sA:sB;
+  if(!team) return;
+  const injuries = await fetchInjuries(team.id);
+  const pitchers = injuries.filter(p=>p.pos==='P'||p.pos==='SP'||p.pos==='RP');
+  if(!pitchers.length) return;
+  const containerId = slot==='A'?'lineupStatusA':'lineupStatusB';
+  const el = document.getElementById(containerId);
+  if(!el) return;
+  const names = pitchers.slice(0,4).map(p=>`<span style="color:#e74c3c">⚕ ${p.name.split(' ').pop()} (${p.status})</span>`).join(' ');
+  const existing = el.innerHTML;
+  el.innerHTML = existing + (pitchers.length?`<div style="font-size:11px;margin-top:4px">${names}${pitchers.length>4?` +${pitchers.length-4} muuta`:''}</div>`:'');
+}
+// ── BULLPEN-PELIN TUNNISTUS ───────────────────────────────────
+async function fetchIsBullpenGame(gamePk){
+  try{
+    const r = await safeFetch(`https://statsapi.mlb.com/api/v1.1/game/${gamePk}/feed/live`);
+    if(!r) return null;
+    const d = await r.json();
+    const home = d.liveData?.boxscore?.teams?.home?.pitchers||[];
+    const away = d.liveData?.boxscore?.teams?.away?.pitchers||[];
+    // Tarkista onko aloittaja heittänyt alle 3 inningiä
+    const checkBullpen = (pitchers, players) => {
+      if(!pitchers.length) return false;
+      const sp = players?.[pitchers[0]];
+      const ip = parseFloat(sp?.stats?.pitching?.inningsPitched||'9');
+      return ip < 3;
+    };
+    const players = d.liveData?.boxscore?.teams;
+    return {
+      homeBullpen: checkBullpen(home, players?.home?.players),
+      awayBullpen: checkBullpen(away, players?.away?.players)
+    };
+  }catch(e){ return null; }
+}
+// ── VIIMEISTEN 5 STARTIN ROLLING ERA ─────────────────────────
+async function fetchLastFiveERA(pid){
+  try{
+    const r = await safeFetch(`https://statsapi.mlb.com/api/v1/people/${pid}/stats?stats=gameLog&group=pitching&season=2026&sportId=1`);
+    if(!r) return null;
+    const d = await r.json();
+    const splits = d.stats?.[0]?.splits || [];
+    const starts = splits.filter(s=>s.stat?.gamesStarted>=1).slice(-5);
+    if(starts.length < 2) return null;
+    let totalER=0, totalIP=0, totalK=0, totalBB=0, totalFB=0;
+    for(const s of starts){
+      totalER += parseFloat(s.stat?.earnedRuns)||0;
+      const ipStr = s.stat?.inningsPitched||'0';
+      const ipParts = ipStr.split('.');
+      totalIP += parseInt(ipParts[0]||0) + (parseInt(ipParts[1]||0)/3);
+      totalK  += parseFloat(s.stat?.strikeOuts)||0;
+      totalBB += parseFloat(s.stat?.baseOnBalls)||0;
+      totalFB += parseFloat(s.stat?.airOuts)||0;
+    }
+    if(totalIP < 5) return null;
+    const l5era = Math.round((totalER/totalIP*9)*100)/100;
+    // Laske myös L5 xFIP
+    let l5xfip = null;
+    if(totalFB > 0){
+      l5xfip = Math.round(((13*(totalFB*0.116)+3*totalBB-2*totalK)/totalIP+3.20)*100)/100;
+      l5xfip = Math.max(1.5, Math.min(7.5, l5xfip));
+    }
+    return {era: l5era, xfip: l5xfip, starts: starts.length};
+  }catch(e){ return null; }
+}
+function pickSpByName(name,sid,cid,slot){
+  // Normalisoi nimi — poista aksentit ja vertaa
+  const norm=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+  const p=PITCHERS.find(x=>norm(x.n)===norm(name)||x.n===name);
+  if(!p)return;
+  document.getElementById(sid).className='sp-sugs';
+  document.getElementById(slot==='A'?'spA':'spB').value=p.n;
+  const st={era:p.era,whip:p.whip,kper9:p.k,bbper9:p.bb,ip:p.ip,gs:p.gs,wins:p.w,losses:p.l,season:p.s,fip:p.fip||null,useTeamAvg:p.useTeamAvg||false};
+  if(slot==='A')pitA={id:p.id,name:p.n,stats:st};else pitB={id:p.id,name:p.n,stats:st};
+  // Overseas-syöttäjä: yritä hakea live-tilastot, mutta käytä joukkueen ka jos epäonnistuu
+  if(p.overseas){
+    const teamId=(slot==='A'?sA:sB)?.id;
+    const teamSt=teamId?getTeamAvgStats(teamId):null;
+    const displaySt=(teamSt&&(p.ip||0)<5)?{...teamSt,overseas:p.overseas}:st;
+    showSpCard(cid,p.n,displaySt);
+    if(p.id) fetchPitcherStats(p.id).then(live=>{
+      if(live&&live.ip>=5){
+        live.fip=p.fip||null;live.overseas=null;
+        if(slot==='A')pitA.stats=live;else pitB.stats=live;
+        showSpCard(cid,p.n,live);
+      }
+    }).catch(()=>{});
+  } else {
+    showSpCard(cid,p.n,st);
+    // Hae viimeisten 5 startin rolling ERA taustalla
+    if(p.id) fetchLastFiveERA(p.id).then(l5=>{
+      if(l5){
+        st.l5era=l5.era; st.l5starts=l5.starts;
+        const l5metricX = l5.xfip||l5.era;
+        const baseFipX = st.fip||st.era||l5metricX;
+        const l5wX=(st.gs&&st.gs>=8)?0.75:0.70;
+        st.blendedEra = Math.round((baseFipX*(1-l5wX)+l5metricX*l5wX)*100)/100;
+        if(slot==='A')pitA.stats=st;else pitB.stats=st;
+        showSpCard(cid,p.n,st);
+      }
+    }).catch(()=>{});
+  }
+}
+function pickSpLocal(id,sid,cid,slot){
+  const p=PITCHERS.find(x=>x.id===id);
+  document.getElementById(sid).className='sp-sugs';
+  document.getElementById(slot==='A'?'spA':'spB').value=p.n;
+  const st={era:p.era,whip:p.whip,kper9:p.k,bbper9:p.bb,ip:p.ip,gs:p.gs,wins:p.w,losses:p.l,season:p.s,fip:p.fip||null};
+  if(slot==='A')pitA={id:p.id,name:p.n,stats:st};else pitB={id:p.id,name:p.n,stats:st};
+  showSpCard(cid,p.n,st);
+}
+async function pickSpApi(id,enc,sid,cid,slot){
+  const name=decodeURIComponent(enc);
+  document.getElementById(sid).className='sp-sugs';
+  document.getElementById(slot==='A'?'spA':'spB').value=name;
+  const card=document.getElementById(cid);
+  card.innerHTML=`<span style="font-size:11px;color:var(--mu)">Haetaan...</span>`;
+  card.className='sp-card vis';
+  let st=null;
+  for(const s of[2026,2025,2024]){
+    try{
+      const r=await safeFetch(`https://statsapi.mlb.com/api/v1/people/${id}/stats?stats=season&group=pitching&season=${s}&sportId=1`);
+        if(!r){continue;}
+      const d=await r.json();
+      const sp=d.stats?.[0]?.splits?.[0]?.stat||{};
+      const ip=parseFloat(sp.inningsPitched)||0;
+      if(ip>=10){st={era:parseFloat(sp.era)||null,whip:parseFloat(sp.whip)||null,kper9:parseFloat(sp.strikeoutsPer9Inn)||null,bbper9:parseFloat(sp.walksPer9Inn)||null,ip,gs:parseInt(sp.gamesStarted)||0,wins:parseInt(sp.wins)||0,losses:parseInt(sp.losses)||0,season:s};break;}
+    }catch{}
+  }
+  // Lisää FIP paikallisesta tietokannasta
+  const localP2 = PITCHERS.find(x=>x.id===id||x.n===name);
+  if(localP2&&st) st.fip = localP2.fip||null;
+  const obj={id,name,stats:st};
+  if(slot==='A')pitA=obj;else pitB=obj;
+  if(!st){card.innerHTML=`<div class="sp-card-name">${name}</div><span style="font-size:11px;color:var(--mu)">Tilastoja ei löydy</span>`;return;}
+  showSpCard(cid,name,st);
+  // Hae L5 ERA taustalla
+  fetchLastFiveERA(id).then(l5=>{
+    if(l5&&st){
+      st.l5era=l5.era; st.l5starts=l5.starts;
+      const l5w=(st.gs&&st.gs>=8)?0.75:0.70; st.blendedEra=Math.round((st.era*(1-l5w)+l5.era*l5w)*100)/100;
+      if(slot==='A')pitA.stats=st;else pitB.stats=st;
+      showSpCard(cid,name,st);
+    }
+  }).catch(()=>{});
+}
+setupSP('spA','spSA','spCA','A');
+setupSP('spB','spSB','spCB','B');
+
+// ── TILASTOT ────────────────────────────────────────────────
+function getStats(id){
+  const r=STATS[id];
+  if(!r)return null;
+  function pythag(rs,ra){return Math.pow(rs,1.83)/(Math.pow(rs,1.83)+Math.pow(ra,1.83));}
+  const wp25=pythag(r.rpg25||4.26, r.rapg25||4.26);
+  const wp24=pythag((r.rpg25||4.26)*.97, (r.rapg25||4.26)*1.03);
+  return{name:r.n,abbr:r.a,
+    avg:r.avg25*.65+r.avg24*.35, obp:r.obp25*.65+r.obp24*.35,
+    slg:r.slg25*.65+r.slg24*.35, ops:r.ops25*.65+r.ops24*.35,
+    era:r.era25*.65+r.era24*.35, whip:r.whip25*.65+r.whip24*.35,
+    kper9:r.k25*.65+r.k24*.35, bbper9:r.bb25*.65+r.bb24*.35,
+    fpct:r.fp25*.65+r.fp24*.35,
+    wpct:wp25*.65+wp24*.35,
+    wrc:(r.wrc25||100)*.65+(r.wrc24||100)*.35,
+    bera:(r.bera25||4.20)*.65+(r.bera25||4.20)*1.03*.35,
+    bwhip:(r.bwhip25||1.30)*.65+(r.bwhip25||1.30)*1.03*.35,
+    rpg:r.rpg25||4.26, rapg:r.rapg25||4.26,
+    src:'2025–2024 ka', isLive:false};
+}
+async function fetchLive(id){
+  try{
+    const[hr,lr,pr]=await Promise.all([
+      fetch(`https://statsapi.mlb.com/api/v1/teams/${id}/stats?stats=season&group=hitting&season=2026&sportId=1`),
+      fetch(`https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason`),
+      fetch(`https://statsapi.mlb.com/api/v1/teams/${id}/stats?stats=season&group=pitching&season=2026&sportId=1`)
+    ]);
+    const hd=await hr.json(),ld=await lr.json(),pd=await pr.json();
+    const hit=hd.stats?.[0]?.splits?.[0]?.stat||{};
+    const pit=pd.stats?.[0]?.splits?.[0]?.stat||{};
+    let w=0,l=0,rs=0,ra=0;
+    for(const rec of(ld.records||[]))for(const tr of(rec.teamRecords||[]))if(tr.team?.id==id){
+      w=tr.wins||0;l=tr.losses||0;
+      rs=tr.runsScored||0;ra=tr.runsAllowed||0;
+    }
+    const gp=w+l;
+    if(gp<5)return null;
+    const liveOps=parseFloat(hit.ops)||null;
+    const liveWrc=liveOps?Math.round((liveOps/.720)*100):null;
+    // Bullpen ERA haetaan pitching-tilastoista (koko joukkue, käytetään approksimaationa)
+    const liveEra=parseFloat(pit.era)||null;
+    const liveWhip=parseFloat(pit.whip)||null;
+    return{gp,w,l,rs,ra,obp:parseFloat(hit.obp)||null,slg:parseFloat(hit.slg)||null,ops:liveOps,avg:parseFloat(hit.avg)||null,wrc:liveWrc,bera:liveEra,bwhip:liveWhip};
+  }catch{return null;}
+}
+
+// ── MALLI ───────────────────────────────────────────────────
+function logit(x){return 1/(1+Math.exp(-x));}
+function computeProb(a,b,homeA,spA,spB){
+  // Dynaaminen paino voitto-%:lle pelimäärän mukaan
+  // 0-10: wp=8%, 11-30: 13%, 31-60: 17%, 61+: 20%
+  const gamesA=(a.w||0)+(a.l||0), gamesB=(b.w||0)+(b.l||0);
+  const avgGames=Math.round((gamesA+gamesB)/2);
+  let wpK, offK, spK;
+  if(avgGames<=10){      wpK=0.704;  offK=1.446; spK=1.191; }
+  else if(avgGames<=30){ wpK=1.143;  offK=1.349; spK=1.112; }
+  else if(avgGames<=60){ wpK=1.495;  offK=1.272; spK=1.048; }
+  else{                  wpK=1.759;  offK=1.215; spK=1.0;   }
+  // Hyökkäys: wRC+ (parkki+liigakorjattu, 100=keskiarvo)
+  const wrcA=a.wrc||100, wrcB=b.wrc||100;
+  // Coors-vaikutus: joukkue joka palaa Coorsista on ~8 wRC+ pistettä heikompi
+  const wrcAadj = wrcA - (fromCoorsA?8:0);
+  const wrcBadj = wrcB - (fromCoorsB?8:0);
+  const off=(wrcAadj-wrcBadj)/100*offK;
+  // Bullpen: käytä bera jos saatavilla, muuten team ERA
+  const beraA=a.bera||a.era, beraB=b.bera||b.era;
+  const bwhipA=a.bwhip||a.whip, bwhipB=b.bwhip||b.whip;
+  // Bullpen heikkous: heikentynyt bullpen → ERA +1.20 (n. yhden laadukkaaseen syöttäjän menetys)
+  const beraAadj = beraA + (bullpenWeakA?1.20:0);
+  const beraBadj = beraB + (bullpenWeakB?1.20:0);
+  const pit=(beraBadj-beraAadj)/LG.era*0.222+(bwhipB-bwhipA)/LG.whip*0.148+(a.kper9-b.kper9)/LG.kper9*0.175;
+  let sp=0,spUsed=false;
+  const hA=spA?.stats?.era!=null,hB=spB?.stats?.era!=null;
+  if(hA||hB){
+    const eA=hA?spA.stats.era:a.era,eB=hB?spB.stats.era:b.era;
+    const wA=hA?spA.stats.whip:a.whip,wB=hB?spB.stats.whip:b.whip;
+    const kA=hA?spA.stats.kper9:a.kper9,kB=hB?spB.stats.kper9:b.kper9;
+    const bA=hA?spA.stats.bbper9:a.bbper9,bB=hB?spB.stats.bbper9:b.bbper9;
+    // ERA 40% + FIP 60% yhdistelmä
+    const fipA=hA&&spA.stats.fip!=null?spA.stats.fip:eA, fipB=hB&&spB.stats.fip!=null?spB.stats.fip:eB;
+    // Rolling ERA: kausi 50% + L5 50% jos saatavilla
+    const rawA=eA*0.40+fipA*0.60, rawB=eB*0.40+fipB*0.60;
+    const blendA=hA&&spA.stats.blendedEra!=null?spA.stats.blendedEra*0.40+fipA*0.60:rawA;
+    const blendB=hB&&spB.stats.blendedEra!=null?spB.stats.blendedEra*0.40+fipB*0.60:rawB;
+    sp=((blendB-blendA)/LG.era*0.404+(wB-wA)/LG.whip*0.269+(kA-kB)/LG.kper9*0.173+(bB-bA)/LG.bbper9*0.115)*spK;
+    // Bullpen-pelissä syöttäjäkomponentti puolitetaan
+    if(bullpenGameA||bullpenGameB) sp*=0.5;
+    spUsed=true;
+  }
+  const wp=(a.wpct-b.wpct)*wpK,ha=homeA?.0264:-.0264;
+  return{pA:logit(off+pit+sp+wp+ha),comp:{off,pit,sp,wp,ha},spUsed};
+}
+
+// ── UI HELPERS ───────────────────────────────────────────────
+function statRow(vA,vB,lbl,dec,hi){
+  const fA=vA.toFixed(dec),fB=vB.toFixed(dec),good=hi?vA>vB:vA<vB;
+  const cA=good?'#6ba5e0':'#e07070',cB=!good?'#6ba5e0':'#e07070';
+  const mx=Math.max(Math.abs(vA),Math.abs(vB),.001);
+  return`<div class="stb"><div class="sn">${lbl}</div><div class="sc"><span class="sv" style="color:${cA}">${fA}</span><span class="sdiv">–</span><span class="sv" style="color:${cB}">${fB}</span></div><div class="sbr"><div class="sbf" style="width:${Math.round(Math.abs(vA)/mx*100)}%;background:${cA}"></div></div></div>`;
+}
+function calcEdge(p,o){
+  if(!o||o<=1.01)return null;
+  const ip=1/o,e=(p-ip)*100,ev=((p*(o-1))-(1-p))*100;
+  return{edge:Math.round(e*10)/10,ev:Math.round(ev*10)/10,ip,ipc:Math.round(ip*1000)/10};
+}
+function e2u(e){return e>=16?5:e>=12?4:e>=8?3:e>=5?2:e>=3?1:0;}
+function stars(n,col){return Array(5).fill(0).map((_,i)=>`<span style="color:${i<n?col:'rgba(255,255,255,.12)'};font-size:16px;">★</span>`).join('');}
+function betBlock(abbr,cls,prob,odds,eo){
+  if(!eo)return`<div class="bteam"><div class="bteam-name ${cls}">${abbr}</div><div style="font-size:38px;color:rgba(255,255,255,.1);margin:8px 0">—</div><div style="font-size:11px;color:var(--mu);font-family:'Barlow Condensed',sans-serif">Ei kerrointa</div></div>`;
+  const e=eo.edge,u=e2u(e),eur=u*UNIT,ec=e>0?'pos':e<0?'neg':'neu',bc=e>0?'var(--gl)':'var(--red)';
+  return`<div class="bteam"><div class="bteam-name ${cls}">${abbr}</div><div class="edge-big ${ec}">${e>0?'+':''}${e}%</div><div class="edge-lbl">edge kirjaan nähden</div><div class="ebar"><div class="ebar-fill" style="width:${Math.min(Math.abs(e)*6,100)}%;background:${bc}"></div></div><div>${stars(u,e>0?'var(--gl)':'#e07070')}</div><div class="unit-big ${ec}">${u}</div><div class="unit-lbl">yksikköä</div><div class="unit-eur">${eur}€</div><div class="unit-sub">Malli ${Math.round(prob*1000)/10}% · Kerroin impl. ${eo.ipc}% · EV ${eo.ev>0?'+':''}${eo.ev}%</div></div>`;
+}
+function renderBetCard(stA,stB,pA,pB,odA,odB){
+  const eA=calcEdge(pA,odA),eB=calcEdge(pB,odB);
+  if(!eA&&!eB){
+    document.getElementById('betCard').innerHTML=`<div class="bc nodata"><div class="bch"><div class="bct">Panossuositus</div></div><div class="bcb"><p style="color:var(--mu);font-size:14px;font-family:'Barlow Condensed',sans-serif">Syötä vedonlyöntikertoimet yllä laskeaksesi edge-pohjaisen panossuosituksen.</p></div></div>`;
+    return;
+  }
+  const best=Math.max(eA?eA.edge:-999,eB?eB.edge:-999);
+  const cls=best>=8?'good':best>=3?'neut':'bad';
+  const titles={good:'Hyvä edge — kannattaa pelata',neut:'Marginaalinen edge — harkitse',bad:'Edge alle 3% — älä pelaa'};
+  const rows=[{l:'16%+',u:5,e:'50€',m:16},{l:'12–15.9%',u:4,e:'40€',m:12},{l:'8–11.9%',u:3,e:'30€',m:8},{l:'5–7.9%',u:2,e:'20€',m:5},{l:'3–4.9%',u:1,e:'10€',m:3},{l:'alle 3%',u:0,e:'—',m:-999}]
+    .map((r,i,a)=>{const cur=best>=r.m&&(i===0||best<a[i-1].m);return`<tr${cur?' class="cur"':''}><td>${r.l}</td><td style="color:var(--tx);font-weight:600">${r.u} yksikköä</td><td style="color:var(--gold)">${r.e}</td></tr>`;}).join('');
+  document.getElementById('betCard').innerHTML=`<div class="bc ${cls}"><div class="bch"><div class="bct">${titles[cls]}</div></div><div class="bcb"><div class="bet2">${betBlock(stA.abbr,'hc',pA,odA,eA)}${betBlock(stB.abbr,'ac',pB,odB,eB)}</div><div style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mu);margin-bottom:8px;font-family:'Barlow Condensed',sans-serif;font-weight:600">Edge-asteikko · 1 yksikkö = 10€</div><table class="scale-tbl">${rows}</table></div></div>`;
+}
+
+// ── LASKENTA ─────────────────────────────────────────────────
+async function calc(){
+  const vA=document.getElementById('inA').value.trim(),vB=document.getElementById('inB').value.trim();
+  const em=document.getElementById('em');em.style.display='none';
+  if(!vA||!vB){em.textContent='Syötä molempien joukkueiden nimet.';em.style.display='block';return;}
+  if(!sA)sA=TEAMS.find(t=>t.name.toLowerCase().includes(vA.toLowerCase())||t.abbr.toLowerCase()===vA.toLowerCase());
+  if(!sB)sB=TEAMS.find(t=>t.name.toLowerCase().includes(vB.toLowerCase())||t.abbr.toLowerCase()===vB.toLowerCase());
+  if(!sA){em.textContent=`Joukkuetta "${vA}" ei löydy.`;em.style.display='block';return;}
+  if(!sB){em.textContent=`Joukkuetta "${vB}" ei löydy.`;em.style.display='block';return;}
+  if(sA.id===sB.id){em.textContent='Valitse kaksi eri joukkuetta.';em.style.display='block';return;}
+  document.getElementById('ldg').style.display='block';
+  document.getElementById('res').className='res';
+  document.getElementById('cb').disabled=true;
+  document.getElementById('ldt').textContent='Haetaan tilastoja...';
+  let stA=getStats(sA.id),stB=getStats(sB.id);
+  const[l26A,l26B]=await Promise.all([fetchLive(sA.id),fetchLive(sB.id)]);
+  function blendLive(st,live){
+    // Dynaaminen live-paino pelimäärän mukaan
+    // 5-10p: 55%, 11-20p: 65%, 21-40p: 75%, 40+p: 85%
+    let lw;
+    if(live.gp<=10)      lw=0.55;
+    else if(live.gp<=20) lw=0.65;
+    else if(live.gp<=40) lw=0.75;
+    else                 lw=0.85;
+    const hw=1-lw;
+    if(live.obp)st.obp=live.obp*lw+st.obp*hw;
+    if(live.avg)st.avg=live.avg*lw+st.avg*hw;
+    if(live.slg)st.slg=live.slg*lw+st.slg*hw;
+    if(live.ops)st.ops=live.ops*lw+st.ops*hw;
+    if(live.wrc)st.wrc=live.wrc*lw+st.wrc*hw;
+    // Pytagoreinen live-wpct jos juoksutiedot saatavilla
+    if(live.gp>=10&&live.rs>0&&live.ra>0){
+      const lpw=Math.pow(live.rs/live.gp,1.83);
+      const law=Math.pow(live.ra/live.gp,1.83);
+      st.wpct=(lpw/(lpw+law))*lw+st.wpct*hw;
+    } else if(live.gp>0){
+      st.wpct=(live.w/live.gp)*lw+st.wpct*hw;
+    }
+    if(live.bera)st.bera=live.bera*lw+st.bera*hw;
+    if(live.bwhip)st.bwhip=live.bwhip*lw+st.bwhip*hw;
+    const pct=Math.round(lw*100);
+    st.src=`2026 (${live.gp}p · ${pct}%)+hist`;
+    st.isLive=true;
+  }
+  if(l26A)blendLive(stA,l26A);
+  if(l26B)blendLive(stB,l26B);
+  document.getElementById('ldg').style.display='none';
+  document.getElementById('cb').disabled=false;
+  const{pA,comp,spUsed}=computeProbWithLineup(stA,stB,hT==='A',pitA,pitB);
+  const pB2=1-pA,pcA=Math.round(pA*1000)/10,pcB=Math.round(pB2*1000)/10;
+  // Tulokset
+  document.getElementById('rAA').textContent=stA.abbr+(pitA?.name?' · '+pitA.name.split(' ').pop():'');
+  document.getElementById('rAB').textContent=stB.abbr+(pitB?.name?' · '+pitB.name.split(' ').pop():'');
+  document.getElementById('rPA').textContent=pcA+'%';
+  document.getElementById('rPB').textContent=pcB+'%';
+  document.getElementById('bH').style.width=pcA+'%';
+  document.getElementById('bAA').style.width=pcB+'%';
+  const mkDb=st=>st.isLive?`<span class="db db-l"><span class="db-dot"></span>${st.src}</span>`:`<span class="db db-h"><span class="db-dot"></span>${st.src}</span>`;
+  document.getElementById('dba').innerHTML=mkDb(stA)+mkDb(stB);
+  // Syöttäjät
+  const hA=pitA?.stats?.era!=null,hB=pitB?.stats?.era!=null;
+  if(hA||hB){
+    const pst=st=>{
+      if(!st)return`<span class="sp-rst" style="color:var(--mu);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)">joukkueen ERA</span>`;
+      const ec=st.era<LG.era?'color:var(--gl);background:rgba(26,122,60,.12);border:1px solid rgba(38,166,83,.25)':'color:#e07070;background:rgba(191,58,58,.1);border:1px solid rgba(191,58,58,.25)';
+      const fc=st.fip!=null?(st.fip<LG.era?'color:var(--gl);background:rgba(26,122,60,.12);border:1px solid rgba(38,166,83,.25)':'color:#e07070;background:rgba(191,58,58,.1);border:1px solid rgba(191,58,58,.25)'):'color:var(--mu);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)';
+      return`<span class="sp-rst" style="${ec}">ERA ${st.era.toFixed(2)}</span>${st.fip!=null?`<span class="sp-rst" style="${fc}">FIP ${st.fip.toFixed(2)}</span>`:''}<span class="sp-rst" style="color:var(--mu);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)">WHIP ${st.whip?.toFixed(2)||'—'}</span><span class="sp-rst" style="color:var(--mu);background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08)">K/9 ${st.kper9?.toFixed(1)||'—'}</span>`;
+    };
+    document.getElementById('spr').innerHTML=`<div class="sp-rb h"><div class="sp-rn">${hA?pitA.name+' ('+pitA.stats.season+')':'Joukkueen ERA'}</div><div class="sp-rs">${pst(hA?pitA.stats:null)}</div></div><div class="sp-rb a"><div class="sp-rn">${hB?pitB.name+' ('+pitB.stats.season+')':'Joukkueen ERA'}</div><div class="sp-rs">${pst(hB?pitB.stats:null)}</div></div>`;
+    document.getElementById('spr').className='sp-res vis';
+  } else document.getElementById('spr').className='sp-res';
+  // Tilastotaulukot
+  document.getElementById('sg1').innerHTML=statRow(stA.wrc||100,stB.wrc||100,'wRC+',0,true)+statRow(stA.obp,stB.obp,'OBP',3,true)+statRow(stA.slg,stB.slg,'SLG',3,true)+statRow(stA.ops,stB.ops,'OPS',3,true);
+  document.getElementById('sg2').innerHTML=statRow(stA.era,stB.era,'ERA',2,false)+statRow(stA.whip,stB.whip,'WHIP',2,false)+statRow(stA.kper9,stB.kper9,'K/9',1,true)+statRow(stA.bbper9,stB.bbper9,'BB/9',1,false);
+  document.getElementById('sg3').innerHTML=`<div class="stb"><div class="sn">Voitto-%</div><div class="sc"><span class="sv" style="color:#6ba5e0">${Math.round(stA.wpct*1000)/10}%</span><span class="sdiv">–</span><span class="sv" style="color:#e07070">${Math.round(stB.wpct*1000)/10}%</span></div></div><div class="stb"><div class="sn">Kenttä</div><div class="sc"><span class="sv" style="color:${stA.fpct>=stB.fpct?'#6ba5e0':'#e07070'}">${stA.fpct.toFixed(3)}</span><span class="sdiv">–</span><span class="sv" style="color:${stB.fpct>stA.fpct?'#6ba5e0':'#e07070'}">${stB.fpct.toFixed(3)}</span></div></div><div class="stb"><div class="sn">Koti</div><div class="sc" style="justify-content:center"><span class="sv" style="color:var(--gl)">${hT==='A'?stA.abbr:stB.abbr}</span></div></div>`;
+  // Painotukset
+  const tot=Object.values(comp).reduce((s,v)=>s+Math.abs(v),.001),pc=v=>Math.round(Math.abs(v)/tot*100)+'%';
+  document.getElementById('wg').innerHTML=`<div class="wc"><div class="wn">Hyökkäys</div><div class="wv">${pc(comp.off)}</div></div><div class="wc"><div class="wn">Bullpen</div><div class="wv">${pc(comp.pit)}</div></div><div class="wc"><div class="wn">Aloitussyöttäjä</div><div class="wv">${spUsed?pc(comp.sp):'—'}</div></div><div class="wc"><div class="wn">Voitto-%</div><div class="wv">${pc(comp.wp)}</div></div><div class="wc"><div class="wn">Koti</div><div class="wv">${pc(comp.ha)}</div></div>`;
+  document.getElementById('nt').textContent=`Tilastot: ${stA.abbr} ${stA.src} · ${stB.abbr} ${stB.src}.${spUsed?' Aloitussyöttäjä huomioitu mallissa.':' Lisää aloitussyöttäjät parantaaksesi tarkkuutta.'}`;
+  renderBetCard(stA,stB,pA,pB2,parseFloat(document.getElementById('odA').value),parseFloat(document.getElementById('odB').value));
+  renderDataStatus(stA,stB,pitA,pitB,l26A,l26B);
+  document.getElementById('res').className='res vis';
+}
+
+// ── DATA-TILAN YHTEENVETO ────────────────────────────────────
+function renderDataStatus(stA,stB,pitA,pitB,liveA,liveB){
+  const el = document.getElementById('dataStatus');
+  if(!el) return;
+  function row(team, st, pit, live){
+    const liveStr = live ? `✓ live (${live.gp}p)` : '✗ hist';
+    const liveCls = live ? 'ds-ok' : 'ds-warn';
+    const fipStr = pit?.stats?.fip!=null ? '✓' : '✗';
+    const fipCls = pit?.stats?.fip!=null ? 'ds-ok' : 'ds-warn';
+    const l5Str = pit?.stats?.l5era!=null ? `✓ ${pit.stats.l5era.toFixed(2)}` : '✗';
+    const l5Cls = pit?.stats?.l5era!=null ? 'ds-ok' : 'ds-warn';
+    const pitName = pit?.name ? pit.name.split(' ').pop() : '—';
+    return `<div class="ds-row">
+      <span class="ds-team">${team}</span>
+      <span class="${liveCls}">📊 ${liveStr}</span>
+      <span class="ds-sep">|</span>
+      <span class="ds-pit">${pitName}:</span>
+      <span class="${l5Cls}">L5 ${l5Str}</span>
+      <span class="${fipCls}">FIP ${fipStr}</span>
+    </div>`;
+  }
+  el.innerHTML = row(sA?.abbr||'A', stA, pitA, liveA) + row(sB?.abbr||'B', stB, pitB, liveB);
+  el.style.display='block';
+}
+
+// ── OLETUSKOKOONPANOT (2025 parhaiden tilastojen mukaan) ──────────────────
+// Rakenne: [mlbId, nimi, positio, OPS, avainpelaaja(bool)]
+const DEFAULT_LINEUPS = {
+  147: [ // NYY
+    [592450,"Aaron Judge","RF",.975,true],
+    [668709,"Juan Soto","LF",.939,true],
+    [641933,"Jazz Chisholm","3B",.822,false],
+    [650490,"Cody Bellinger","1B",.789,false],
+    [663728,"Austin Wells","C",.798,false],
+    [665742,"Jasson Dominguez","CF",.771,false],
+    [656976,"Anthony Volpe","SS",.728,false],
+    [519203,"Gleyber Torres","2B",.744,false],
+    [596019,"Alex Verdugo","DH",.701,false],
+  ],
+  111: [ // BOS
+    [646240,"Rafael Devers","3B",.917,true],
+    [656305,"Jarren Duran","CF",.862,true],
+    [665742,"Wilyer Abreu","RF",.811,false],
+    [657041,"Triston Casas","1B",.798,false],
+    [660162,"Connor Wong","C",.741,false],
+    [676475,"Ceddanne Rafaela","SS",.712,false],
+    [671277,"Rob Refsnyder","LF",.764,false],
+    [669257,"David Hamilton","2B",.698,false],
+    [665161,"Tyler O'Neill","DH",.832,false],
+  ],
+  141: [ // TOR
+    [666182,"Vladimir Guerrero Jr.","1B",.896,true],
+    [665161,"George Springer","CF",.801,false],
+    [596019,"Bo Bichette","SS",.798,false],
+    [641355,"Daulton Varsho","LF",.784,false],
+    [624585,"Alejandro Kirk","C",.789,false],
+    [677800,"Isiah Kiner-Falefa","3B",.691,false],
+    [665487,"Davis Schneider","RF",.774,false],
+    [642230,"Nathan Lukes","DH",.712,false],
+    [669242,"Spencer Horwitz","2B",.781,false],
+  ],
+  110: [ // BAL
+    [670770,"Adley Rutschman","C",.856,true],
+    [683737,"Gunnar Henderson","SS",.908,true],
+    [641776,"Anthony Santander","RF",.852,false],
+    [650357,"Ryan Mountcastle","1B",.798,false],
+    [671218,"Cedric Mullins","CF",.741,false],
+    [665742,"Ramon Urias","3B",.718,false],
+    [665487,"Colton Cowser","LF",.812,false],
+    [596019,"Jordan Westburg","2B",.798,false],
+    [669242,"Austin Hays","DH",.762,false],
+  ],
+  139: [ // TB
+    [672610,"Yandy Diaz","1B",.801,false],
+    [677800,"Josh Lowe","LF",.812,true],
+    [656305,"Brandon Lowe","2B",.799,false],
+    [665742,"Randy Arozarena","DH",.822,true],
+    [641355,"Isaac Paredes","3B",.844,false],
+    [624585,"Christian Bethancourt","C",.718,false],
+    [671218,"Jose Siri","CF",.724,false],
+    [665487,"Harold Ramirez","RF",.741,false],
+    [596019,"Taylor Walls","SS",.672,false],
+  ],
+  145: [ // CWS
+    [668709,"Andrew Vaughn","1B",.762,false],
+    [641933,"Luis Robert Jr.","CF",.798,true],
+    [665742,"Gavin Sheets","RF",.712,false],
+    [596019,"Elvis Andrus","SS",.678,false],
+    [624585,"Korey Lee","C",.698,false],
+    [671218,"Lenyn Sosa","2B",.689,false],
+    [665487,"Zach DeLoach","LF",.712,false],
+    [641355,"Bryan Ramos","3B",.724,false],
+    [650357,"Tommy Pham","DH",.741,false],
+  ],
+  114: [ // CLE
+    [663993,"Steven Kwan","LF",.834,true],
+    [680757,"Brayan Rocchio","SS",.761,false],
+    [641355,"José Ramírez","3B",.916,true],
+    [665742,"Josh Naylor","1B",.839,false],
+    [677800,"Lane Thomas","RF",.784,false],
+    [671218,"Myles Straw","CF",.698,false],
+    [596019,"Bo Naylor","C",.762,false],
+    [624585,"Andrés Giménez","2B",.751,false],
+    [650357,"David Fry","DH",.791,false],
+  ],
+  116: [ // DET
+    [592450,"Riley Greene","LF",.841,true],
+    [683737,"Kerry Carpenter","RF",.812,false],
+    [641933,"Spencer Torkelson","1B",.798,false],
+    [665742,"Matt Vierling","CF",.762,false],
+    [668709,"Jake Rogers","C",.701,false],
+    [671218,"Andy Ibanez","3B",.724,false],
+    [641355,"Javier Baez","SS",.711,false],
+    [624585,"Zach McKinstry","2B",.698,false],
+    [596019,"Mark Canha","DH",.751,false],
+  ],
+  118: [ // KC
+    [668709,"Bobby Witt Jr.","SS",.924,true],
+    [671218,"Vinnie Pasquantino","1B",.852,true],
+    [641355,"Salvador Perez","C",.812,false],
+    [665742,"MJ Melendez","LF",.784,false],
+    [624585,"Hunter Dozier","3B",.741,false],
+    [596019,"Edward Olivares","RF",.754,false],
+    [683737,"Michael Massey","2B",.712,false],
+    [641933,"Drew Waters","CF",.698,false],
+    [677800,"Kyle Isbel","DH",.711,false],
+  ],
+  142: [ // MIN
+    [671218,"Carlos Correa","SS",.834,true],
+    [665742,"Byron Buxton","CF",.862,true],
+    [641355,"Ryan Jeffers","C",.812,false],
+    [624585,"Max Kepler","RF",.784,false],
+    [596019,"Royce Lewis","3B",.871,true],
+    [683737,"Matt Wallner","LF",.798,false],
+    [641933,"Jose Miranda","1B",.784,false],
+    [668709,"Jorge Polanco","2B",.754,false],
+    [677800,"Willi Castro","DH",.724,false],
+  ],
+  117: [ // HOU
+    [596019,"Jose Altuve","2B",.841,true],
+    [514888,"Yordan Alvarez","DH",.982,true],
+    [641355,"Alex Bregman","3B",.857,true],
+    [665742,"Kyle Tucker","RF",.878,true],
+    [641933,"Jake Meyers","CF",.734,false],
+    [624585,"Yainer Diaz","C",.798,false],
+    [683737,"Jon Singleton","1B",.712,false],
+    [671218,"Mauricio Dubon","SS",.724,false],
+    [668709,"Chas McCormick","LF",.751,false],
+  ],
+  108: [ // LAA
+    [671218,"Shohei Ohtani","DH",.939,true],
+    [641355,"Anthony Rendon","3B",.712,false],
+    [665742,"Taylor Ward","RF",.798,false],
+    [624585,"Logan O'Hoppe","C",.812,false],
+    [596019,"Nolan Schanuel","1B",.784,false],
+    [683737,"Jo Adell","LF",.762,false],
+    [641933,"Luis Rengifo","2B",.734,false],
+    [668709,"Mickey Moniak","CF",.741,false],
+    [677800,"Zach Neto","SS",.798,false],
+  ],
+  133: [ // OAK
+    [671218,"Lawrence Butler","CF",.812,true],
+    [641355,"Brent Rooker","DH",.879,true],
+    [665742,"JJ Bleday","RF",.762,false],
+    [624585,"Shea Langeliers","C",.784,false],
+    [596019,"Ryan Noda","1B",.751,false],
+    [683737,"Abraham Toro","3B",.712,false],
+    [641933,"Zack Gelof","2B",.791,false],
+    [668709,"Nick Allen","SS",.678,false],
+    [677800,"Esteury Ruiz","LF",.724,false],
+  ],
+  136: [ // SEA
+    [671218,"Julio Rodriguez","CF",.871,true],
+    [641355,"Cal Raleigh","C",.884,true],
+    [665742,"Ty France","1B",.784,false],
+    [624585,"Eugenio Suarez","3B",.762,false],
+    [596019,"Teoscar Hernandez","RF",.812,false],
+    [683737,"Jarred Kelenic","LF",.751,false],
+    [641933,"JP Crawford","SS",.724,false],
+    [668709,"Jorge Polanco","2B",.741,false],
+    [677800,"Sam Haggerty","DH",.698,false],
+  ],
+  140: [ // TEX
+    [671218,"Marcus Semien","2B",.812,false],
+    [641355,"Corey Seager","SS",.891,true],
+    [665742,"Adolis Garcia","RF",.812,false],
+    [624585,"Jonah Heim","C",.762,false],
+    [596019,"Nathaniel Lowe","1B",.812,false],
+    [683737,"Josh Jung","3B",.834,false],
+    [641933,"Travis Jankowski","CF",.712,false],
+    [668709,"Leody Taveras","LF",.724,false],
+    [677800,"Evan Carter","DH",.798,false],
+  ],
+  144: [ // ATL
+    [671218,"Ronald Acuna Jr.","CF",.951,true],
+    [641355,"Matt Olson","1B",.891,true],
+    [665742,"Austin Riley","3B",.878,true],
+    [624585,"Sean Murphy","C",.834,false],
+    [596019,"Michael Harris II","LF",.812,false],
+    [683737,"Marcell Ozuna","DH",.841,false],
+    [641933,"Orlando Arcia","SS",.724,false],
+    [668709,"Eddie Rosario","RF",.741,false],
+    [677800,"Ozzie Albies","2B",.834,false],
+  ],
+  146: [ // MIA
+    [671218,"Luis Arraez","2B",.812,true],
+    [641355,"Jazz Chisholm Jr.","CF",.834,true],
+    [665742,"Jorge Soler","DH",.812,false],
+    [624585,"Jacob Stallings","C",.698,false],
+    [596019,"Garrett Cooper","1B",.741,false],
+    [683737,"Bryan De La Cruz","RF",.762,false],
+    [641933,"Peyton Burdick","LF",.712,false],
+    [668709,"Joey Wendle","3B",.678,false],
+    [677800,"Joey Wendle","SS",.678,false],
+  ],
+  121: [ // NYM
+    [671218,"Francisco Lindor","SS",.871,true],
+    [641355,"Pete Alonso","1B",.884,true],
+    [665742,"Jeff McNeil","2B",.791,false],
+    [624585,"Mark Vientos","3B",.834,false],
+    [596019,"Starling Marte","RF",.784,false],
+    [683737,"Brandon Nimmo","CF",.812,false],
+    [641933,"Kodai Senga","LF",.701,false],
+    [668709,"Francisco Alvarez","C",.834,false],
+    [677800,"Tommy Pham","DH",.741,false],
+  ],
+  143: [ // PHI
+    [671218,"Trea Turner","SS",.856,true],
+    [641355,"Bryce Harper","1B",.924,true],
+    [665742,"Kyle Schwarber","LF",.878,true],
+    [624585,"J.T. Realmuto","C",.812,false],
+    [596019,"Nick Castellanos","RF",.784,false],
+    [683737,"Alec Bohm","3B",.812,false],
+    [641933,"Bryson Stott","2B",.762,false],
+    [668709,"Johan Rojas","CF",.701,false],
+    [677800,"Brandon Marsh","DH",.741,false],
+  ],
+  120: [ // WSH
+    [671218,"CJ Abrams","SS",.812,true],
+    [641355,"Joey Meneses","1B",.784,false],
+    [665742,"Lane Thomas","RF",.762,false],
+    [624585,"Keibert Ruiz","C",.784,false],
+    [596019,"Jeimer Candelario","3B",.762,false],
+    [683737,"Alex Call","CF",.712,false],
+    [641933,"Dominic Smith","LF",.724,false],
+    [668709,"Luis Garcia","2B",.741,false],
+    [677800,"Stone Garrett","DH",.698,false],
+  ],
+  112: [ // CHC
+    [671218,"Dansby Swanson","SS",.812,false],
+    [641355,"Cody Bellinger","CF",.834,true],
+    [665742,"Ian Happ","LF",.812,false],
+    [624585,"Seiya Suzuki","RF",.856,true],
+    [596019,"Patrick Wisdom","3B",.762,false],
+    [683737,"Yan Gomes","C",.724,false],
+    [641933,"Christopher Morel","2B",.784,false],
+    [668709,"Miles Mastrobuoni","1B",.712,false],
+    [677800,"Pete Crow-Armstrong","DH",.762,false],
+  ],
+  113: [ // CIN
+    [671218,"Elly De La Cruz","SS",.871,true],
+    [641355,"Jonathan India","2B",.812,false],
+    [665742,"Tyler Stephenson","C",.812,false],
+    [624585,"Spencer Steer","1B",.834,false],
+    [596019,"Stuart Fairchild","CF",.724,false],
+    [683737,"Will Benson","LF",.762,false],
+    [641933,"Jake Fraley","RF",.741,false],
+    [668709,"Noelvi Marte","3B",.784,false],
+    [677800,"TJ Friedl","DH",.791,false],
+  ],
+  158: [ // MIL
+    [671218,"William Contreras","C",.878,true],
+    [641355,"Christian Yelich","LF",.856,true],
+    [665742,"Willy Adames","SS",.834,false],
+    [624585,"Rhys Hoskins","1B",.834,false],
+    [596019,"Sal Frelick","CF",.784,false],
+    [683737,"Joey Wiemer","RF",.741,false],
+    [641933,"Abraham Toro","3B",.724,false],
+    [668709,"Brice Turang","2B",.712,false],
+    [677800,"Tyrone Taylor","DH",.741,false],
+  ],
+  134: [ // PIT
+    [671218,"Oneil Cruz","SS",.834,true],
+    [641355,"Andrew McCutchen","DH",.791,false],
+    [665742,"Bryan Reynolds","CF",.862,true],
+    [624585,"Henry Davis","C",.784,false],
+    [596019,"Carlos Santana","1B",.762,false],
+    [683737,"Ke'Bryan Hayes","3B",.784,false],
+    [641933,"Jack Suwinski","LF",.741,false],
+    [668709,"Jared Triolo","2B",.712,false],
+    [677800,"Ji Hwan Bae","RF",.724,false],
+  ],
+  138: [ // STL
+    [671218,"Paul Goldschmidt","1B",.834,true],
+    [641355,"Nolan Arenado","3B",.856,true],
+    [665742,"Willson Contreras","C",.812,false],
+    [624585,"Lars Nootbaar","RF",.812,false],
+    [596019,"Dylan Carlson","CF",.762,false],
+    [683737,"Brendan Donovan","2B",.784,false],
+    [641933,"Jordan Walker","LF",.798,false],
+    [668709,"Tommy Edman","SS",.798,false],
+    [677800,"Alec Burleson","DH",.784,false],
+  ],
+  109: [ // ARI
+    [671218,"Ketel Marte","2B",.891,true],
+    [641355,"Corbin Carroll","CF",.834,true],
+    [665742,"Christian Walker","1B",.856,false],
+    [624585,"Gabriel Moreno","C",.784,false],
+    [596019,"Lourdes Gurriel Jr.","LF",.791,false],
+    [683737,"Eugenio Suarez","3B",.762,false],
+    [641933,"Alek Thomas","RF",.741,false],
+    [668709,"Geraldo Perdomo","SS",.724,false],
+    [677800,"Randal Grichuk","DH",.741,false],
+  ],
+  115: [ // COL
+    [671218,"Ryan McMahon","3B",.784,false],
+    [641355,"Kris Bryant","LF",.741,false],
+    [665742,"C.J. Cron","1B",.762,false],
+    [624585,"Elias Diaz","C",.724,false],
+    [596019,"Charlie Blackmon","RF",.741,false],
+    [683737,"Randal Grichuk","CF",.712,false],
+    [641933,"Ezequiel Tovar","SS",.762,false],
+    [668709,"Alan Trejo","2B",.678,false],
+    [677800,"Michael Toglia","DH",.724,false],
+  ],
+  119: [ // LAD
+    [671218,"Mookie Betts","RF",.934,true],
+    [641355,"Freddie Freeman","1B",.939,true],
+    [665742,"Shohei Ohtani","DH",.982,true],
+    [624585,"Will Smith","C",.856,false],
+    [596019,"Max Muncy","3B",.841,false],
+    [683737,"Teoscar Hernandez","LF",.812,false],
+    [641933,"James Outman","CF",.762,false],
+    [668709,"Miguel Rojas","SS",.712,false],
+    [677800,"Gavin Lux","2B",.762,false],
+  ],
+  135: [ // SD
+    [671218,"Xander Bogaerts","SS",.812,false],
+    [641355,"Manny Machado","3B",.878,true],
+    [665742,"Fernando Tatis Jr.","RF",.912,true],
+    [624585,"Gary Sanchez","C",.762,false],
+    [596019,"Jake Cronenworth","2B",.784,false],
+    [683737,"Ha-Seong Kim","LF",.798,false],
+    [641933,"Jose Azocar","CF",.701,false],
+    [668709,"Ji Man Choi","1B",.762,false],
+    [677800,"Nelson Cruz","DH",.741,false],
+  ],
+  137: [ // SF
+    [671218,"Mike Yastrzemski","RF",.784,false],
+    [641355,"Wilmer Flores","1B",.784,false],
+    [665742,"LaMonte Wade Jr.","LF",.812,false],
+    [624585,"Patrick Bailey","C",.762,false],
+    [596019,"J.D. Davis","3B",.762,false],
+    [683737,"Mitch Haniger","DH",.784,false],
+    [641933,"Thairo Estrada","2B",.741,false],
+    [668709,"Brandon Crawford","SS",.698,false],
+    [677800,"Austin Slater","CF",.712,false],
+  ],
+};
+
+// ── LINEUP & KOKOONPANO ───────────────────────────────────────────────────
+let lineupA = null, lineupB = null;
+let lineupDataA = null, lineupDataB = null;
+
+// OPS -> väriluokka
+function opsClass(ops){return ops>=.850?'ops-hi':ops>=.750?'ops-mid':'ops-lo';}
+
+// Laske joukkueen efektiivinen OPS kun pelaaja X puuttuu
+function calcEffectiveOPS(lineup, missingId){
+  if(!lineup||!lineup.length) return null;
+  const active = missingId ? lineup.filter(p=>p[0]!==missingId) : lineup;
+  if(!active.length) return null;
+  return active.reduce((s,p)=>s+p[3],0)/active.length;
+}
+
+// Laske poissaolon vaikutus: palauttaa prosentin muutoksen OPS:ssa
+function absenceImpact(lineup, playerId){
+  if(!lineup) return 0;
+  const player = lineup.find(p=>p[0]===playerId);
+  if(!player) return 0;
+  const fullOPS = lineup.reduce((s,p)=>s+p[3],0)/lineup.length;
+  const withoutOPS = calcEffectiveOPS(lineup, playerId);
+  if(!withoutOPS||fullOPS===0) return 0;
+  return Math.round((withoutOPS/fullOPS-1)*100*10)/10; // % muutos
+}
+
+// Renderöi lineup-boksi
+function renderLineupBox(containerId, titleId, statusId, lineup, spName, spStats, confirmed){
+  document.getElementById(titleId).textContent = lineup ? 
+    (lineup[0]?'':'Tuntematon joukkue') : '—';
+  
+  const statusEl = document.getElementById(statusId);
+  statusEl.textContent = confirmed ? '✓ Vahvistettu' : '⚡ Oletus';
+  statusEl.className = 'lineup-status ' + (confirmed ? 'ls-confirmed' : 'ls-default');
+  
+  if(!lineup||!lineup.length){
+    document.getElementById(containerId).innerHTML = 
+      '<div class="lineup-load">Ei kokoonpanotietoa</div>';
+    return;
+  }
+  
+  // Aloitussyöttäjä
+  let spHtml = '';
+  if(spName){
+    const eraTxt = spStats?.era ? `ERA ${spStats.era.toFixed(2)}` : '';
+    const whipTxt = spStats?.whip ? `WHIP ${spStats.whip.toFixed(2)}` : '';
+    spHtml = `<div class="lineup-sp">
+      <span class="lineup-sp-lbl">SP</span>
+      <span class="lineup-sp-name">${spName}</span>
+      <span class="lineup-sp-stats">${[eraTxt,whipTxt].filter(Boolean).join(' · ')}</span>
+    </div>`;
+  }
+  
+  // Lyöntijärjestys
+  const rows = lineup.map((p,i) => {
+    const [id,name,pos,ops,isKey] = p;
+    const opsCl = opsClass(ops);
+    const keyMark = isKey ? '<span style="color:var(--gold);margin-left:3px;font-size:10px;">★</span>' : '';
+    return `<tr>
+      <td class="lineup-num">${i+1}</td>
+      <td class="lineup-name">${name}${keyMark}</td>
+      <td class="lineup-pos">${pos}</td>
+      <td class="lineup-ops ${opsCl}">${ops.toFixed(3)}</td>
+    </tr>`;
+  }).join('');
+  
+  // Joukkueen keskimääräinen OPS
+  const avgOPS = lineup.reduce((s,p)=>s+p[3],0)/lineup.length;
+  
+  document.getElementById(containerId).innerHTML = `
+    ${spHtml}
+    <table class="lineup-table">${rows}</table>
+    <div style="margin-top:8px;font-size:11px;color:var(--mu);font-family:'Barlow Condensed',sans-serif;">
+      Lineup avg OPS: <strong style="color:var(--tx)">${avgOPS.toFixed(3)}</strong>
+      ${confirmed?'':'<span style="color:var(--gold)"> · Oletus — päivitetään kun virallinen lineup julkistetaan</span>'}
+    </div>
+  `;
+}
+
+// Hae päivän peli-ID MLB API:sta
+async function fetchTodayGame(teamId){
+  try{
+    const now = new Date();
+    // Kokeile tänään, eilen ja huomenna (aikavyöhyke-ero Suomi/USA)
+    const dates = [-1,0,1].map(d=>{
+      const dt = new Date(now); dt.setDate(dt.getDate()+d);
+      return dt.toISOString().slice(0,10);
+    });
+    let bestGame = null;
+    for(const date of dates){
+      const r = await safeFetch(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=${teamId}&date=${date}&hydrate=lineups,probablePitcher`);
+      if(!r){continue;}
+      const d = await r.json();
+      const games = d.dates?.[0]?.games || [];
+      console.log(`[fetchTodayGame] ${date}: ${games.length} peliä, teamId=${teamId}`);
+      if(!games.length) continue;
+      // Priorisoi: live > pre-game > tuleva > mikä tahansa
+      const live = games.find(g=>['In Progress','Live','Pre-Game','Warmup','Preview'].includes(g.status?.detailedState));
+      if(live){ console.log(`[fetchTodayGame] live peli löytyi: ${live.gamePk}`); return live; }
+      // Tallenna varmuudeksi ensimmäinen löytynyt
+      if(!bestGame) bestGame = games[0];
+    }
+    if(bestGame) console.log(`[fetchTodayGame] fallback peli: ${bestGame.gamePk}`);
+    return bestGame;
+  }catch(e){ console.error('[fetchTodayGame] virhe:', e); return null; }
+}
+
+// Hae vahvistettu lineup API:sta
+async function fetchConfirmedLineup(gamePk, teamId){
+  try{
+    const r = await safeFetch(`https://statsapi.mlb.com/api/v1.1/game/${gamePk}/feed/live`);
+        if(!r){return null;}
+    const d = await r.json();
+    const teams = d.liveData?.boxscore?.teams;
+    if(!teams) return null;
+    
+    const side = teams.home?.team?.id === teamId ? teams.home : 
+                 teams.away?.team?.id === teamId ? teams.away : null;
+    if(!side?.battingOrder?.length) return null;
+    
+    const battingOrder = side.battingOrder.slice(0,9);
+    const lineup = [];
+    for(const pid of battingOrder){
+      const player = side.players?.[`ID${pid}`];
+      if(!player) continue;
+      const name = player.person?.fullName || '?';
+      const pos = player.position?.abbreviation || '?';
+      const ops = player.seasonStats?.batting?.ops ? 
+        parseFloat(player.seasonStats.batting.ops) : .720;
+      lineup.push([pid, name, pos, ops, ops >= .860]);
+    }
+    return lineup.length >= 7 ? lineup : null;
+  }catch(e){ return null; }
+}
+
+// Hae todennäköinen aloitussyöttäjä API:sta
+async function fetchProbablePitcher(gamePk, teamId){
+  try{
+    // Kokeile ensin game feed/live
+    const r = await safeFetch(`https://statsapi.mlb.com/api/v1.1/game/${gamePk}/feed/live`);
+        if(!r){return null;}
+    const d = await r.json();
+    let pitcher = null;
+    
+    // Yritä gameData.probablePitchers
+    const pp = d.gameData?.probablePitchers;
+    if(pp){
+      const side = d.gameData?.teams?.home?.id === teamId ? 'home' : 'away';
+      pitcher = pp[side];
+    }
+    
+    // Fallback: schedule API:sta hydrate=probablePitcher
+    if(!pitcher){
+      const sr = await safeFetch(`https://statsapi.mlb.com/api/v1/schedule?gamePks=${gamePk}&hydrate=probablePitcher`);
+      if(!sr) return null;
+      const sd = await sr.json();
+      const game = sd.dates?.[0]?.games?.[0];
+      if(game){
+        const isHome = game.teams?.home?.team?.id === teamId;
+        const tp = isHome ? game.teams?.home?.probablePitcher : game.teams?.away?.probablePitcher;
+        if(tp) pitcher = {id: tp.id, fullName: tp.fullName};
+      }
+    }
+    
+    if(!pitcher) return null;
+    const pid = pitcher.id;
+    const name = pitcher.fullName;
+    const stats = await fetchPitcherStats(pid);
+    return { id: pid, name, stats };
+  }catch(e){ return null; }
+}
+
+async function fetchPitcherStats(pid){
+  try{
+    for(const season of [2026,2025]){
+      const r = await safeFetch(`https://statsapi.mlb.com/api/v1/people/${pid}/stats?stats=season&group=pitching&season=${season}&sportId=1`);
+        if(!r){continue;}
+      const d = await r.json();
+      const st = d.stats?.[0]?.splits?.[0]?.stat || {};
+      const ip = parseFloat(st.inningsPitched)||0;
+      if(ip >= 5){
+        // Laske xFIP automaattisesti API-datasta
+        const k  = parseFloat(st.strikeOuts)||0;
+        const bb = parseFloat(st.baseOnBalls)||0;
+        const fb = parseFloat(st.airOuts)||0;  // airOuts ≈ fly balls
+        const gs = parseInt(st.gamesStarted)||0;
+        // xFIP = ((13*(FB*lgHRFB) + 3*BB - 2*K) / IP) + lgConst
+        const lgHRFB = 0.116;
+        const lgConst = 3.20;
+        let xfip = null;
+        if(ip > 0 && fb > 0){
+          xfip = Math.round(((13*(fb*lgHRFB) + 3*bb - 2*k) / ip + lgConst)*100)/100;
+          // Rajaa järkeviin arvoihin
+          xfip = Math.max(1.5, Math.min(7.5, xfip));
+        }
+        return {
+          era: parseFloat(st.era)||null,
+          whip: parseFloat(st.whip)||null,
+          kper9: parseFloat(st.strikeoutsPer9Inn)||null,
+          bbper9: parseFloat(st.walksPer9Inn)||null,
+          fip: xfip,  // käytetään xFIP:iä FIP:n sijasta
+          xfip: xfip,
+          ip, gs, season
+        };
+      }
+    }
+  }catch(e){}
+  return null;
+}
+
+// Hae joukkueen keskiarvotilastot (fallback overseas-syöttäjille)
+function getTeamAvgStats(teamId){
+  const st = getStats(teamId);
+  if(!st) return null;
+  return {
+    era: st.era, whip: st.whip, kper9: st.kper9,
+    bbper9: st.bbper9, fip: null, ip: 0,
+    wins: 0, losses: 0, season: 2025,
+    useTeamAvg: true
+  };
+}
+
+// Laske lineup-pohjainen OPS-korjaus todennäköisyysmalliin
+function lineupOPSAdj(teamId, confirmedLineup){
+  const defaultL = DEFAULT_LINEUPS[teamId];
+  if(!defaultL) return 0;
+  
+  const activeL = confirmedLineup || defaultL;
+  const defaultOPS = defaultL.reduce((s,p)=>s+p[3],0)/defaultL.length;
+  const activeOPS = activeL.reduce((s,p)=>s+p[3],0)/activeL.length;
+  
+  return activeOPS - defaultOPS; // Positiivinen = parempi kuin oletus
+}
+
+// Pääfunktio: lataa lineup ja syöttäjä
+async function loadLineup(slot){
+  const team = slot==='A' ? sA : sB;
+  if(!team) return;
+  
+  const containerId = `lineupContent${slot}`;
+  const titleId = `lineupTitle${slot}`;
+  const statusId = `lineupStatus${slot}`;
+  
+  document.getElementById(titleId).textContent = team.name;
+  document.getElementById(statusId).textContent = 'Ladataan...';
+  document.getElementById(statusId).className = 'lineup-status ls-loading';
+  document.getElementById(containerId).innerHTML = 
+    '<div class="lineup-load">Haetaan kokoonpanoa...</div>';
+  
+  // Hae päivän peli
+  const game = await fetchTodayGame(team.id);
+  console.log(`[loadLineup ${slot}] fetchTodayGame tulos:`, game?.gamePk, game?.status?.detailedState);
+  let lineup = null;
+  let confirmed = false;
+  let spName = null, spStats = null;
+  
+  if(game){
+    const gamePk = game.gamePk;
+    document.getElementById(containerId).innerHTML = 
+      `<div class="lineup-load">Peli löytyi (${gamePk}), haetaan kokoonpano...</div>`;
+    
+    // Yritä hakea vahvistettu lineup
+    const confirmedL = await fetchConfirmedLineup(gamePk, team.id);
+    if(confirmedL && confirmedL.length >= 7){
+      lineup = confirmedL;
+      confirmed = true;
+    } else {
+      document.getElementById(containerId).innerHTML = 
+        `<div class="lineup-load">Peli ${gamePk} löytyi, mutta kokoonpanoa ei vielä saatavilla</div>`;
+    }
+    
+    // Hae todennäköinen aloitussyöttäjä
+    const probPitcher = await fetchProbablePitcher(gamePk, team.id);
+    console.log(`[loadLineup ${slot}] probPitcher:`, probPitcher?.name, probPitcher?.id);
+    if(probPitcher){
+      spName = probPitcher.name;
+      spStats = probPitcher.stats;
+      // Aseta automaattisesti syöttäjäkenttään
+      const spInput = slot==='A' ? 'spA' : 'spB';
+      const spCard = slot==='A' ? 'spCA' : 'spCB';
+      if(!document.getElementById(spInput).value){
+        document.getElementById(spInput).value = probPitcher.name;
+        // Hae paikallinen data (FIP + overseas-kenttä)
+        const normN=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+        const localP = PITCHERS.find(x=>x.id===probPitcher.id||normN(x.n)===normN(probPitcher.name));
+        if(localP){
+          if(probPitcher.stats) probPitcher.stats.fip = localP.fip||null;
+          // Overseas-syöttäjä ilman riittävästi MLB-pelejä → käytä joukkueen ka
+          if(localP.overseas && (!probPitcher.stats || (probPitcher.stats.ip||0) < 5)){
+            probPitcher.stats = getTeamAvgStats(team.id);
+          }
+          if(probPitcher.stats) probPitcher.stats.overseas = localP.overseas||null;
+        }
+        const pit = {id:probPitcher.id, name:probPitcher.name, stats:probPitcher.stats};
+        if(slot==='A') pitA = pit; else pitB = pit;
+        if(probPitcher.stats){
+          const st = {
+            era:probPitcher.stats.era, fip:probPitcher.stats.fip||null,
+            whip:probPitcher.stats.whip, kper9:probPitcher.stats.kper9,
+            bbper9:probPitcher.stats.bbper9, ip:probPitcher.stats.ip,
+            gs:0, wins:0, losses:0, season:probPitcher.stats.season
+          };
+          showSpCard(spCard, probPitcher.name, st);
+          // Hae L5 ERA taustalla
+          if(probPitcher.id) fetchLastFiveERA(probPitcher.id).then(l5=>{
+            if(l5){
+              st.l5era=l5.era; st.l5starts=l5.starts;
+              // Käytä L5 xFIP jos saatavilla, muuten L5 ERA
+              const l5metric = l5.xfip||l5.era;
+              const baseFip = st.fip||st.era;
+              const l5w=(st.gs&&st.gs>=8)?0.75:0.70;
+              st.blendedEra=Math.round((baseFip*(1-l5w)+l5metric*l5w)*100)/100;
+              if(slot==='A') pitA.stats=st; else pitB.stats=st;
+              showSpCard(spCard, probPitcher.name, st);
+            }
+          }).catch(()=>{});
+          // Bullpen-pelin tunnistus gamePk:n avulla
+          if(gamePk) fetchIsBullpenGame(gamePk).then(bp=>{
+            if(!bp) return;
+            const isBp = slot==='A' ? bp.homeBullpen : bp.awayBullpen;
+            if(isBp){
+              if(slot==='A') bullpenGameA=true; else bullpenGameB=true;
+              if(pitA && pitA.stats) pitA.stats.isBullpen=(slot==='A'?isBp:false);
+              if(pitB && pitB.stats) pitB.stats.isBullpen=(slot==='B'?isBp:false);
+              showSpCard(spCard, probPitcher.name, {...(slot==='A'?pitA:pitB)?.stats, isBullpen:isBp});
+            }
+          }).catch(()=>{});
+        }
+      }
+    }
+  }
+  
+  // Käytä oletusta jos ei vahvistettua
+  if(!lineup){
+    lineup = DEFAULT_LINEUPS[team.id] || null;
+    confirmed = false;
+  }
+  
+  // Tallenna
+  if(slot==='A'){ lineupA = lineup; lineupDataA = {confirmed, spName, spStats}; }
+  else { lineupB = lineup; lineupDataB = {confirmed, spName, spStats}; }
+  
+  renderLineupBox(containerId, titleId, statusId, lineup, spName, spStats, confirmed);
+  // Hae loukkaantuneet syöttäjät taustalla
+  loadInjuries(slot).catch(()=>{});
+}
+
+async function refreshLineups(){
+  if(sA) await loadLineup('A');
+  if(sB) await loadLineup('B');
+}
+
+// Lineup-pohjainen OPS-korjaus todennäköisyysmalliin
+function computeProbWithLineup(a,b,homeA,spA,spB){
+  // Perus-OPS korjattu lineup-datalla
+  let adjA = {...a}, adjB = {...b};
+  
+  if(lineupA && sA){
+    const lineupOPS = lineupA.reduce((s,p)=>s+p[3],0)/lineupA.length;
+    // Skaala joukkueen OBP/SLG lineup-datan mukaan
+    const defaultL = DEFAULT_LINEUPS[sA.id];
+    if(defaultL){
+      const defaultOPS = defaultL.reduce((s,p)=>s+p[3],0)/defaultL.length;
+      const ratio = defaultOPS>0 ? lineupOPS/defaultOPS : 1;
+      adjA.obp = a.obp * ratio;
+      adjA.slg = a.slg * ratio;
+      adjA.ops = a.ops * ratio;
+    }
+  }
+  if(lineupB && sB){
+    const lineupOPS = lineupB.reduce((s,p)=>s+p[3],0)/lineupB.length;
+    const defaultL = DEFAULT_LINEUPS[sB.id];
+    if(defaultL){
+      const defaultOPS = defaultL.reduce((s,p)=>s+p[3],0)/defaultL.length;
+      const ratio = defaultOPS>0 ? lineupOPS/defaultOPS : 1;
+      adjB.obp = b.obp * ratio;
+      adjB.slg = b.slg * ratio;
+      adjB.ops = b.ops * ratio;
+    }
+  }
+  
+  return computeProb(adjA, adjB, homeA, spA, spB);
+}
+
+
+
+
+</script>
+</div>
+
+<!-- KERTOIMET PANEELI -->
+<div id="tab-kertoimet" class="tab-panel" style="display:none;">
+  <div style="max-width:960px;margin:0 auto;padding:20px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:10px;">
+      <div>
+        <h2 style="font-size:18px;font-weight:500;margin-bottom:2px;">Pinnacle MLB Kertoimet</h2>
+        <div id="odds-last-update" style="font-size:12px;color:var(--mu);">Ei päivitetty</div>
+      </div>
+      <div style="display:flex;gap:8px;">
+        <button onclick="fetchAndStoreOdds()" style="background:var(--ac);color:#fff;border:none;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;">↻ Päivitä kertoimet</button>
+        <button onclick="toggleAuto()" id="auto-btn" style="background:var(--s2);color:var(--tx);border:1px solid var(--br);padding:8px 16px;border-radius:8px;font-size:13px;cursor:pointer;">⏱ Auto OFF</button>
+        <button onclick="showServerSettings()" style="background:var(--s2);color:var(--mu);border:1px solid var(--br);padding:8px 12px;border-radius:8px;font-size:13px;cursor:pointer;">🖥 Palvelin</button>
+      </div>
+    </div>
+    <div id="odds-status" style="font-size:12px;color:var(--mu);margin-bottom:12px;padding:8px 12px;background:var(--s2);border-radius:8px;display:none;"></div>
+    <div id="odds-grid" style="display:grid;gap:10px;"></div>
+  </div>
+</div>
+
+<!-- TULOKSET PANEELI -->
+<div id="tab-tulokset" class="tab-panel" style="display:none;">
+  <div style="max-width:960px;margin:0 auto;padding:20px;">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:10px;">
+      <h2 style="font-size:18px;font-weight:500;">Tallennetut pelit & tulokset</h2>
+      <div style="display:flex;gap:8px;">
+        <button onclick="updateResults()" style="background:var(--ac);color:#fff;border:none;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;">↻ Päivitä tulokset</button>
+        <button onclick="clearOldGames()" style="background:var(--s2);color:var(--mu);border:1px solid var(--br);padding:8px 16px;border-radius:8px;font-size:13px;cursor:pointer;">🗑 Siivoa vanha</button>
+      </div>
+    </div>
+    <div id="results-summary" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:16px;"></div>
+    <div id="results-grid" style="display:grid;gap:8px;"></div>
+  </div>
+</div>
+
+<div id="tab-backtest" class="tab-panel" style="display:none;">
+  <div class="container" style="max-width:900px;margin:0 auto;padding:20px;">
+    <h2 style="font-size:18px;font-weight:500;margin-bottom:6px;">Backtesting 2026</h2>
+    <p style="font-size:13px;color:var(--mu);margin-bottom:20px;">Analysoi mallin ennustetarkkuus kaikista 2026 kauden peleistä</p>
+
+    <div class="card" style="margin-bottom:16px;">
+      <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:14px;">
+        <label style="font-size:13px;color:var(--mu);">Edge-kynnys:
+          <input id="bt-edgeMin" type="number" value="3" min="1" max="15"
+            style="width:55px;margin-left:6px;background:var(--s2);border:1px solid var(--br);color:var(--tx);border-radius:6px;padding:3px 7px;font-size:13px;">%
+        </label>
+        <label style="font-size:13px;color:var(--mu);">Max panos:
+          <input id="bt-maxStake" type="number" value="5" min="1" max="5"
+            style="width:45px;margin-left:6px;background:var(--s2);border:1px solid var(--br);color:var(--tx);border-radius:6px;padding:3px 7px;font-size:13px;">u
+        </label>
+      </div>
+      <button onclick="runBacktest()" id="bt-btn"
+        style="width:100%;background:var(--ac);color:#fff;border:none;padding:11px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;">
+        ▶ Aja backtesting
+      </button>
+      <div id="bt-progress-wrap" style="display:none;margin-top:10px;">
+        <div style="height:6px;background:var(--br);border-radius:4px;overflow:hidden;">
+          <div id="bt-progress-bar" style="height:100%;background:var(--ac);width:0%;transition:width 0.2s;border-radius:4px;"></div>
+        </div>
+        <div id="bt-log" style="font-size:11px;color:var(--mu);margin-top:6px;"></div>
+      </div>
+    </div>
+
+    <div id="bt-results" style="display:none;">
+      <div class="card" style="margin-bottom:12px;">
+        <div style="font-size:13px;font-weight:600;margin-bottom:12px;">Kokonaistulokset</div>
+        <div id="bt-summary" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;"></div>
+      </div>
+
+      <div class="card" style="margin-bottom:12px;">
+        <div style="font-size:13px;font-weight:600;margin-bottom:12px;">Panoskoko jakauma</div>
+        <div id="bt-stake-dist"></div>
+      </div>
+
+      <div class="card" style="margin-bottom:12px;">
+        <div style="font-size:13px;font-weight:600;margin-bottom:12px;">Edge-jakauma</div>
+        <div id="bt-edge-dist"></div>
+      </div>
+
+      <div class="card">
+        <div style="font-size:13px;font-weight:600;margin-bottom:12px;">Kalibrointi — osuuko malli oikeaan todennäköisyyteen</div>
+        <div id="bt-calibration"></div>
+      </div>
+
+      <!-- OMA DATA: avaus vs päätöskertoimet -->
+      <div class="card" style="margin-top:12px;">
+        <div style="font-size:13px;font-weight:600;margin-bottom:4px;">📊 Oma data — avaus vs päätöskertoimet</div>
+        <div style="font-size:12px;color:var(--mu);margin-bottom:12px;">Perustuu tallennettuihin Pinnacle-kertoimiin. Kasvaa automaattisesti kauden edetessä.</div>
+        <div id="bt-own-data"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function switchTab(tab){
+  document.querySelectorAll('.tab-panel').forEach(p=>p.style.display='none');
+  document.querySelectorAll('.app-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('tab-'+tab).style.display='block';
+  event.target.classList.add('active');
+}
+
+async function runBacktest(){
+  const ODDS_KEY='7fa8ca447db0c0c4be1a38719aec7486';
+  const btn=document.getElementById('bt-btn');
+  const log=document.getElementById('bt-log');
+  const pw=document.getElementById('bt-progress-wrap');
+  const pb=document.getElementById('bt-progress-bar');
+  btn.disabled=true;
+  pw.style.display='block';
+  document.getElementById('bt-results').style.display='none';
+
+  const edgeMin=parseFloat(document.getElementById('bt-edgeMin').value)/100;
+  const maxStake=parseInt(document.getElementById('bt-maxStake').value);
+
+  function setLog(msg){ log.textContent=msg; }
+  function setProgress(pct){ pb.style.width=pct+'%'; }
+
+  setLog('Haetaan Pinnacle-kertoimet The Odds API:sta...');
+
+  // Vaihe 1: Hae historialliset kertoimet The Odds API:sta
+  let oddsData={};
+  try{
+    // Hae historialliset MLB-kertoimet (h2h = moneyline)
+    const oddsUrl=`https://api.the-odds-api.com/v4/historical/sports/baseball_mlb/odds/?apiKey=${ODDS_KEY}&regions=us&markets=h2h&bookmakers=pinnacle&dateFormat=iso&oddsFormat=decimal`;
+    const oddsResp=await fetch(oddsUrl);
+    if(!oddsResp.ok) throw new Error(`Odds API virhe: ${oddsResp.status}`);
+    const oddsJson=await oddsResp.json();
+    setLog(`✓ Kertoimet haettu — käyttöä jäljellä: ${oddsResp.headers.get('x-requests-remaining')} kutsua`);
+
+    // Muodosta hakemisto pelien löytämiseksi
+    for(const game of (oddsJson.data||[])) {
+      // Avain: kotijoukkue + päivämäärä
+      const key=`${game.home_team}_${game.commence_time?.slice(0,10)}`;
+      const pinnacle=game.bookmakers?.find(b=>b.key==='pinnacle');
+      if(pinnacle){
+        const h2h=pinnacle.markets?.find(m=>m.key==='h2h');
+        if(h2h?.outcomes){
+          const homeOut=h2h.outcomes.find(o=>o.name===game.home_team);
+          const awayOut=h2h.outcomes.find(o=>o.name===game.away_team);
+          if(homeOut&&awayOut){
+            oddsData[key]={
+              homeOdds:homeOut.price,
+              awayOdds:awayOut.price,
+              homeTeam:game.home_team,
+              awayTeam:game.away_team
+            };
+          }
+        }
+      }
+    }
+    setLog(`✓ ${Object.keys(oddsData).length} peliä kertoimilla`);
+  }catch(e){
+    setLog(`⚠ Odds API ei tavoitettavissa: ${e.message} — käytetään tasapelikertoimia`);
+    oddsData={};
+  }
+
+  // Vaihe 2: Hae MLB-pelilista
+  setLog('Haetaan 2026 pelilista MLB:stä...');
+  let games=[];
+  try{
+    const r=await fetch('https://statsapi.mlb.com/api/v1/schedule?sportId=1&season=2026&gameType=R&startDate=2026-03-26&endDate=2026-05-31&hydrate=probablePitcher');
+    const d=await r.json();
+    for(const date of (d.dates||[])){
+      for(const g of (date.games||[])){
+        if(g.status?.abstractGameState==='Final'){
+          games.push({
+            date:date.date,
+            homeId:g.teams.home.team.id,
+            homeName:g.teams.home.team.name,
+            awayId:g.teams.away.team.id,
+            awayName:g.teams.away.team.name,
+            homeWon:(g.teams.home.score||0)>(g.teams.away.score||0),
+            homePitId:g.teams.home.probablePitcher?.id||null,
+            awayPitId:g.teams.away.probablePitcher?.id||null,
+          });
+        }
+      }
+    }
+    setLog(`✓ ${games.length} päättynyttä peliä`);
+  }catch(e){
+    setLog('MLB API virhe: '+e.message);
+    btn.disabled=false;
+    return;
+  }
+
+  // Vaihe 3: Analysoi jokainen peli
+  const allResults=[], edgeBets=[];
+  let oddsMatched=0;
+
+  for(let i=0;i<games.length;i++){
+    const g=games[i];
+    setProgress(Math.round(i/games.length*100));
+    if(i%15===0) setLog(`Analysoidaan... ${i}/${games.length} (kertoimia löydetty: ${oddsMatched})`);
+
+    const stHome=getTeamStatsForBacktest(g.homeId);
+    const stAway=getTeamStatsForBacktest(g.awayId);
+    if(!stHome||!stAway) continue;
+
+    const pitHome=g.homePitId?{stats:getLocalPitcher(g.homePitId)}:null;
+    const pitAway=g.awayPitId?{stats:getLocalPitcher(g.awayPitId)}:null;
+
+    const res=computeProb(stHome,stAway,true,pitHome,pitAway);
+    const pHome=res.pA, pAway=1-pHome;
+
+    // Etsi Pinnacle kertoimet
+    const oddsKey=`${g.homeName}_${g.date}`;
+    const odds=oddsData[oddsKey]||null;
+    let pinnHomeOdds=null, pinnAwayOdds=null;
+    let pinnHomeProb=0.50, pinnAwayProb=0.50;
+
+    if(odds){
+      oddsMatched++;
+      pinnHomeOdds=odds.homeOdds;
+      pinnAwayOdds=odds.awayOdds;
+      // Implied probability vig poistettu
+      const raw=1/pinnHomeOdds+1/pinnAwayOdds;
+      pinnHomeProb=(1/pinnHomeOdds)/raw;
+      pinnAwayProb=(1/pinnAwayOdds)/raw;
+    }
+
+    // Edge = mallin tod.näk - Pinnaclen implied prob
+    const homeEdge=pHome-pinnHomeProb;
+    const awayEdge=pAway-pinnAwayProb;
+    const betHome=homeEdge>awayEdge;
+    const betEdge=Math.max(homeEdge,awayEdge);
+    const betProb=betHome?pHome:pAway;
+    const betOdds=betHome?(pinnHomeOdds||2.00):(pinnAwayOdds||2.00);
+    const betWon=betHome?g.homeWon:!g.homeWon;
+
+    allResults.push({pHome,pAway,pinnHomeProb,pinnAwayProb,homeWon:g.homeWon,hasOdds:!!odds});
+
+    if(betEdge>=edgeMin){
+      const stake=Math.min(calcStake(betEdge*100), maxStake);
+      edgeBets.push({betEdge,betProb,betOdds,betWon,stake,date:g.date,hasOdds:!!odds});
+    }
+  }
+
+  setProgress(100);
+  setLog(`Valmis — ${allResults.length} peliä, ${edgeBets.length} edge-vetoa, ${oddsMatched} Pinnacle-kertoimilla`);
+  renderBacktestResults(allResults,edgeBets,edgeMin,maxStake,oddsMatched);
+  btn.disabled=false;
+}
+
+function getTeamStatsForBacktest(teamId){
+  const s=STATS[teamId];
+  if(!s) return null;
+  const w=(s.w25||0.500),l=Math.round(w*162),lo=Math.round((1-w)*162);
+  return {
+    wrc:s.wrc25||100,obp:s.obp25||.320,slg:s.slg25||.400,
+    ops:s.ops25||.720,era:s.era25||4.20,whip:s.whip25||1.28,
+    kper9:s.k25||8.8,bbper9:s.bb25||3.2,
+    wpct:w,bera:s.bera25||4.20,bwhip:s.bwhip25||1.28,w:l,l:lo
+  };
+}
+
+function getLocalPitcher(pid){
+  const p=PITCHERS.find(x=>x.id===pid);
+  if(!p) return null;
+  return {era:p.era,fip:p.fip||null,whip:p.whip,kper9:p.k,bbper9:p.bb,ip:p.ip,gs:p.gs||0,wins:p.w||0,losses:p.l||0,season:p.s};
+}
+
+function renderBacktestResults(all,bets,edgeMin,maxStake){
+  document.getElementById('bt-results').style.display='block';
+
+  const wins=bets.filter(b=>b.betWon).length;
+  const hitRate=bets.length?wins/bets.length:0;
+  const totalStake=bets.reduce((s,b)=>s+b.stake,0);
+  // Käytä todellisia Pinnacle-kertoimia jos saatavilla, muuten 2.00
+  const totalReturn=bets.reduce((s,b)=>s+(b.betWon?b.stake*(b.betOdds||2.00):0),0);
+  const profit=totalReturn-totalStake;
+  const roi=totalStake?profit/totalStake:0;
+  const avgEdge=bets.length?bets.reduce((s,b)=>s+b.betEdge,0)/bets.length:0;
+  const oddsCount=bets.filter(b=>b.hasOdds).length;
+  const avgOdds=bets.length?bets.reduce((s,b)=>s+(b.betOdds||2.00),0)/bets.length:2.00;
+
+  // Yhteenveto
+  const sumEl=document.getElementById('bt-summary');
+  const oddsMatched2=arguments[4]||0;
+  const sc=(v,g,r)=>`<div style="background:var(--s2);border-radius:8px;padding:12px;text-align:center;">
+    <div style="font-size:22px;font-weight:600;color:${v>0?'#27ae60':v<0?'#e74c3c':'var(--tx)'}">${g}</div>
+    <div style="font-size:11px;color:var(--mu);margin-top:3px;">${r}</div></div>`;
+  const roiLabel=oddsCount>0?`ROI (Pinnacle, ka. ${avgOdds.toFixed(2)})`:'ROI (tasapeli 2.00)';
+  sumEl.innerHTML=
+    sc(0,all.length,'Pelejä analysoitu')+
+    sc(0,oddsMatched2,`Pinnacle-kertoimilla`)+
+    sc(0,bets.length,`Edge-vetoja (≥${Math.round(edgeMin*100)}%)`)+
+    sc(hitRate-0.5,(hitRate*100).toFixed(1)+'%','Osumisprosentti')+
+    sc(roiOpen/100,(roiOpen>0?'+':'')+roiOpen.toFixed(1)+'%','ROI avauskertoimilla')+
+    sc(roiClose/100,(roiClose>0?'+':'')+roiClose.toFixed(1)+'%','ROI päätöskertoimilla')+
+    sc(0,(avgEdge*100).toFixed(1)+'%','Ka. edge')+
+    sc(profitOpen,(profitOpen>0?'+':'')+profitOpen.toFixed(1)+'u','Tuotto avaus')+
+    sc(profitClose,(profitClose>0?'+':'')+profitClose.toFixed(1)+'u','Tuotto päätös');
+
+  // Panoskoko jakauma
+  const sdEl=document.getElementById('bt-stake-dist');
+  const sd={};
+  for(let i=1;i<=maxStake;i++) sd[i]={n:0,w:0};
+  bets.forEach(b=>{if(sd[b.stake]){sd[b.stake].n++;if(b.betWon)sd[b.stake].w++;}});
+  const maxN=Math.max(...Object.values(sd).map(d=>d.n),1);
+  sdEl.innerHTML=Object.entries(sd).filter(([,d])=>d.n>0).map(([k,d])=>{
+    const hr=d.n?d.w/d.n:0;
+    const col=hr>0.55?'#27ae60':hr>0.50?'#e67e22':'#e74c3c';
+    return `<div style="display:flex;align-items:center;gap:10px;margin-bottom:7px;">
+      <div style="width:60px;font-size:12px;color:var(--mu)">${k}u</div>
+      <div style="flex:1;height:22px;background:var(--br);border-radius:4px;overflow:hidden;">
+        <div style="width:${d.n/maxN*100}%;height:100%;background:${col};display:flex;align-items:center;padding-left:8px;font-size:11px;color:#fff;font-weight:600;">${d.n} vetoa</div>
+      </div>
+      <div style="width:50px;font-size:12px;color:var(--mu);text-align:right;">${(hr*100).toFixed(0)}% ✓</div>
+    </div>`;
+  }).join('');
+
+  // Edge-jakauma
+  const edEl=document.getElementById('bt-edge-dist');
+  const buckets=[['3-5%',3,5],['5-7%',5,7],['7-10%',7,10],['10-15%',10,15],['15+%',15,100]];
+  const bdata=buckets.map(([l,lo,hi])=>{
+    const bs=bets.filter(b=>b.betEdge*100>=lo&&b.betEdge*100<hi);
+    const w=bs.filter(b=>b.betWon).length;
+    return {l,n:bs.length,w,hr:bs.length?w/bs.length:0};
+  }).filter(d=>d.n>0);
+  const maxE=Math.max(...bdata.map(d=>d.n),1);
+  edEl.innerHTML=bdata.map(d=>{
+    const col=d.hr>0.55?'#27ae60':d.hr>0.50?'#e67e22':'#e74c3c';
+    return `<div style="display:flex;align-items:center;gap:10px;margin-bottom:7px;">
+      <div style="width:60px;font-size:12px;color:var(--mu)">${d.l}</div>
+      <div style="flex:1;height:22px;background:var(--br);border-radius:4px;overflow:hidden;">
+        <div style="width:${d.n/maxE*100}%;height:100%;background:${col};display:flex;align-items:center;padding-left:8px;font-size:11px;color:#fff;font-weight:600;">${d.n} vetoa</div>
+      </div>
+      <div style="width:50px;font-size:12px;color:var(--mu);text-align:right;">${(d.hr*100).toFixed(0)}% ✓</div>
+    </div>`;
+  }).join('');
+
+  // Kalibrointi
+  const calEl=document.getElementById('bt-calibration');
+  const levels=[[50,54],[54,58],[58,62],[62,66],[66,100]];
+  calEl.innerHTML='<table style="width:100%;border-collapse:collapse;font-size:12px;"><thead><tr>'+
+    ['Mallin tod.näk.','Pelejä','Osunut','Osumis%','Odotettu','Ero'].map(h=>`<th style="text-align:left;padding:6px 8px;color:var(--mu);border-bottom:1px solid var(--br);">${h}</th>`).join('')+
+    '</tr></thead><tbody>'+
+    levels.map(([lo,hi])=>{
+      const bucket=all.filter(r=>(r.pHome*100>=lo&&r.pHome*100<hi)||(r.pAway*100>=lo&&r.pAway*100<hi));
+      const w=bucket.filter(r=>r.pHome*100>=lo&&r.pHome*100<hi?r.homeWon:!r.homeWon).length;
+      if(!bucket.length) return '';
+      const hr=w/bucket.length;
+      const exp=(lo+Math.min(hi,100))/2/100;
+      const diff=hr-exp;
+      const col=diff>0.02?'#27ae60':diff<-0.02?'#e74c3c':'var(--tx)';
+      return `<tr><td style="padding:6px 8px;border-bottom:1px solid var(--br);">${lo}-${Math.min(hi,100)}%</td>
+        <td style="padding:6px 8px;border-bottom:1px solid var(--br);">${bucket.length}</td>
+        <td style="padding:6px 8px;border-bottom:1px solid var(--br);">${w}</td>
+        <td style="padding:6px 8px;border-bottom:1px solid var(--br);color:${col};font-weight:500;">${(hr*100).toFixed(1)}%</td>
+        <td style="padding:6px 8px;border-bottom:1px solid var(--br);">${(exp*100).toFixed(1)}%</td>
+        <td style="padding:6px 8px;border-bottom:1px solid var(--br);color:${col};font-weight:500;">${diff>0?'+':''}${(diff*100).toFixed(1)}pp</td></tr>`;
+    }).join('')+
+    '</tbody></table>';
+  // Renderöi myös oma data
+  renderOwnDataBacktest(edgeMin);
+}
+
+function renderOwnDataBacktest(edgeMin){
+  const el = document.getElementById('bt-own-data');
+  if(!el) return;
+  const db = getDB();
+  const games = Object.values(db).filter(g=>g.result&&g.openHome&&g.openAway);
+
+  if(!games.length){
+    el.innerHTML='<div style="color:var(--mu);font-size:13px;padding:12px;">Ei vielä omaa dataa. Keräysjärjestelmä alkaa tallentaa automaattisesti kun otat Auto ON käyttöön.</div>';
+    return;
+  }
+
+  // Laske tulokset avaus- ja päätöskertoimilla erikseen
+  function calcStats(useClose){
+    let bets=[], totalStake=0, totalReturnOpen=0, totalReturnClose=0;
+    for(const g of games){
+      const raw1=1/g.openHome, raw2=1/g.openAway;
+      const tot=raw1+raw2;
+      const pinnH=raw1/tot, pinnA=raw2/tot;
+      const edgeH=g.modelPHome?(g.modelPHome-pinnH)*100:null;
+      const edgeA=g.modelPAway?(g.modelPAway-pinnA)*100:null;
+      if(edgeH===null) continue;
+      const bestEdge=Math.max(edgeH,edgeA);
+      if(bestEdge<(edgeMin||3)*100) continue;
+      const betHome=edgeH>edgeA;
+      const betWon=(betHome&&g.result==='home')||(!betHome&&g.result==='away');
+      const stake=calcStake(bestEdge);
+      const openOdds=betHome?g.openHome:g.openAway;
+      const closeOdds=betHome?bestOdds(g.closeHome,g.openHome):bestOdds(g.closeAway,g.openAway);
+      totalStake+=stake;
+      if(betWon){
+        totalReturnOpen+=stake*openOdds;
+        totalReturnClose+=stake*closeOdds;
+      }
+      bets.push({betWon,stake,openOdds,closeOdds,bestEdge,g});
+    }
+    return {bets, totalStake, totalReturnOpen, totalReturnClose};
+  }
+
+  const {bets, totalStake, totalReturnOpen, totalReturnClose} = calcStats(edgeMin);
+  const wins = bets.filter(b=>b.betWon).length;
+  const hitRate = bets.length ? wins/bets.length*100 : 0;
+  const profitOpen = totalReturnOpen-totalStake;
+  const profitClose = totalReturnClose-totalStake;
+  const roiOpen = totalStake ? profitOpen/totalStake*100 : 0;
+  const roiClose = totalStake ? profitClose/totalStake*100 : 0;
+
+  const sc=(val,lbl,sub)=>`<div style="background:var(--s2);border-radius:8px;padding:12px;text-align:center;">
+    <div style="font-size:20px;font-weight:600;color:${typeof val==='number'&&val>0?'#27ae60':typeof val==='number'&&val<0?'#e74c3c':'var(--tx)'}">${typeof val==='number'?val.toFixed(1):val}</div>
+    <div style="font-size:11px;color:var(--mu);margin-top:3px;">${lbl}</div>
+    ${sub?`<div style="font-size:10px;color:var(--mu);margin-top:1px;">${sub}</div>`:''}
+  </div>`;
+
+  let html = `<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:16px;">
+    ${sc(games.length,'Pelejä datassa','kaikki tallennetut')}
+    ${sc(bets.length,`Edge-vetoja (≥${edgeMin||3}%)`,'mallin mukaan')}
+    ${sc(hitRate+'%','Osumisprosentti','')}
+    ${sc((profitOpen>0?'+':'')+profitOpen.toFixed(1)+'u','Tuotto avauskertoimilla',`ROI: ${roiOpen.toFixed(1)}%`)}
+    ${sc((profitClose>0?'+':'')+profitClose.toFixed(1)+'u','Tuotto päätöskertoimilla',`ROI: ${roiClose.toFixed(1)}%`)}
+    ${sc((profitClose-profitOpen>0?'+':'')+(profitClose-profitOpen).toFixed(1)+'u','CLV-vaikutus','avaus→päätös liike')}
+  </div>`;
+
+  // Vertailutaulukko avaus vs päätös per peli
+  html += `<table style="width:100%;border-collapse:collapse;font-size:12px;">
+    <thead><tr>
+      ${['Peli','Päivä','Edge','Panos','Avausk.','Päätösk.','Linja liike','Tulos','Tuotto avaus','Tuotto päätös'].map(h=>`<th style="text-align:left;padding:5px 8px;color:var(--mu);border-bottom:1px solid var(--br);white-space:nowrap;">${h}</th>`).join('')}
+    </tr></thead><tbody>`;
+
+  for(const b of bets.slice(0,50)){
+    const g=b.g;
+    const betHome=b.openOdds===(g.closeHome||g.openHome)&&g.openHome===b.openOdds;
+    const lineMoved = b.closeOdds-b.openOdds;
+    const lineCol = lineMoved>0.05?'#27ae60':lineMoved<-0.05?'#e74c3c':'var(--mu)';
+    const profOpen = b.betWon?b.stake*b.openOdds-b.stake:-b.stake;
+    const profClose = b.betWon?b.stake*b.closeOdds-b.stake:-b.stake;
+    const side = b.g.modelPHome>b.g.modelPAway ? g.homeTeam.split(' ').pop() : g.awayTeam.split(' ').pop();
+    html += `<tr style="border-bottom:1px solid var(--br);">
+      <td style="padding:5px 8px;white-space:nowrap;">${g.awayTeam?.split(' ').pop()||'?'} @ ${g.homeTeam?.split(' ').pop()||'?'}</td>
+      <td style="padding:5px 8px;color:var(--mu);">${g.date||'?'}</td>
+      <td style="padding:5px 8px;color:#e67e22;font-weight:600;">${b.bestEdge.toFixed(1)}% ${side}</td>
+      <td style="padding:5px 8px;">${b.stake}u</td>
+      <td style="padding:5px 8px;">${b.openOdds?.toFixed(2)||'?'}</td>
+      <td style="padding:5px 8px;">${b.closeOdds?.toFixed(2)||'?'}</td>
+      <td style="padding:5px 8px;color:${lineCol};font-weight:600;">${lineMoved>0?'+':''}${lineMoved.toFixed(3)}</td>
+      <td style="padding:5px 8px;color:${b.betWon?'#27ae60':'#e74c3c'};font-weight:600;">${b.betWon?'✓':'✗'}</td>
+      <td style="padding:5px 8px;color:${profOpen>0?'#27ae60':'#e74c3c'};font-weight:600;">${profOpen>0?'+':''}${profOpen.toFixed(2)}u</td>
+      <td style="padding:5px 8px;color:${profClose>0?'#27ae60':'#e74c3c'};font-weight:600;">${profClose>0?'+':''}${profClose.toFixed(2)}u</td>
+    </tr>`;
+  }
+  if(bets.length>50) html+=`<tr><td colspan="10" style="padding:8px;color:var(--mu);text-align:center;">+${bets.length-50} peliä lisää...</td></tr>`;
+  html += '</tbody></table>';
+  el.innerHTML = html;
+}
+
+// ═══════════════════════════════════════════════════════
+// KERTOIMIEN KERÄYSJÄRJESTELMÄ
+// ═══════════════════════════════════════════════════════
+// ── KERROINVALIDOINTI ────────────────────────────────────────
+function validOdds(odds){
+  // Hyväksytään vain realistiset MLB-kertoimet 1.01-15.0 väliltä
+  if(!odds || isNaN(odds)) return null;
+  if(odds < 1.01 || odds > 15.0) return null;
+  return odds;
+}
+function bestOdds(close, open){
+  // Käytä sulkeutumiskerrointa jos validi, muuten avauskertoin
+  // EI koskaan live-kertoimia (live = kerroin alle 1.10 tai yli 5.0 ML:ssä)
+  const v = validOdds(close);
+  return v || validOdds(open) || null;
+}
+
+function openOnlyOdds(open){
+  return validOdds(open) || null;
+}
+
+function closeOnlyOdds(close, open){
+  // Palauta sulkeutumiskerroin VAIN jos se eroaa avauskertoimesta
+  const c = validOdds(close);
+  const o = validOdds(open);
+  if(!c || !o) return null;
+  if(Math.abs(c - o) < 0.001) return null; // sama kerroin = ei päivitetty
+  return c;
+}
+
+// ── YHTEINEN PANOSKOKO-FUNKTIO (sama kuin laskin-sivu) ──────
+function calcStake(edgePct){
+  // edge on prosentteina (esim. 5.2)
+  if(edgePct >= 16) return 5;
+  if(edgePct >= 12) return 4;
+  if(edgePct >= 8)  return 3;
+  if(edgePct >= 5)  return 2;
+  if(edgePct >= 3)  return 1;
+  return 0;
+}
+
+const ODDS_API_KEY = '7fa8ca447db0c0c4be1a38719aec7486';
+const STORAGE_KEY = 'mlb_odds_db';
+// Palvelimen osoite — päivitä tämä Railway-deployn jälkeen
+const SERVER_URL = localStorage.getItem('mlb_server_url') || 'https://mlb-edge-server-production.up.railway.app';
+let autoCollectInterval = null;
+let isAutoOn = false;
+
+// ── STORAGE HELPERS ──────────────────────────────────
+function getDB(){
+  try{ return JSON.parse(localStorage.getItem(STORAGE_KEY)||'{}'); }
+  catch{return {};}
+}
+function saveDB(db){
+  try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(db)); }
+  catch(e){ console.error('Storage virhe:', e); }
+}
+
+// ── JOUKKUENIMIEN KÄÄNNÖS (The Odds API → malli) ─────
+const TEAM_MAP = {
+  // AL East — kaikki variantit
+  'New York Yankees':147,'Yankees':147,
+  'Boston Red Sox':111,'Red Sox':111,
+  'Toronto Blue Jays':141,'Blue Jays':141,
+  'Baltimore Orioles':110,'Orioles':110,
+  'Tampa Bay Rays':139,'Rays':139,
+  // AL Central
+  'Cleveland Guardians':114,'Guardians':114,'Cleveland':114,
+  'Detroit Tigers':116,'Tigers':116,
+  'Kansas City Royals':118,'Royals':118,
+  'Minnesota Twins':142,'Twins':142,
+  'Chicago White Sox':145,'White Sox':145,
+  // AL West
+  'Houston Astros':117,'Astros':117,
+  'Los Angeles Angels':108,'Angels':108,'LA Angels':108,
+  'Oakland Athletics':133,'Athletics':133,
+  'Seattle Mariners':136,'Mariners':136,
+  'Texas Rangers':140,'Rangers':140,
+  // NL East
+  'Atlanta Braves':144,'Braves':144,
+  'Miami Marlins':146,'Marlins':146,
+  'New York Mets':121,'Mets':121,
+  'Philadelphia Phillies':143,'Phillies':143,
+  'Washington Nationals':120,'Nationals':120,
+  // NL Central
+  'Chicago Cubs':112,'Cubs':112,
+  'Cincinnati Reds':113,'Reds':113,
+  'Milwaukee Brewers':158,'Brewers':158,
+  'Pittsburgh Pirates':134,'Pirates':134,
+  'St. Louis Cardinals':138,'Cardinals':138,
+  // NL West
+  'Arizona Diamondbacks':109,'Diamondbacks':109,'D-backs':109,
+  'Colorado Rockies':115,'Rockies':115,
+  'Los Angeles Dodgers':119,'Dodgers':119,'LA Dodgers':119,
+  'San Diego Padres':135,'Padres':135,
+  'San Francisco Giants':137,'Giants':137
+};
+
+// Laske mallin todennäköisyys pelille
+function calcModelProb(homeId, awayId, homePitId, awayPitId){
+  const stHome = getTeamStatsForBacktest(homeId);
+  const stAway = getTeamStatsForBacktest(awayId);
+  if(!stHome||!stAway) return null;
+  const pitHome = homePitId?{stats:getLocalPitcher(homePitId)}:null;
+  const pitAway = awayPitId?{stats:getLocalPitcher(awayPitId)}:null;
+  const res = computeProb(stHome, stAway, true, pitHome, pitAway);
+  return {pHome:res.pA, pAway:1-res.pA, comp:res.comp};
+}
+
+// Täysi laskenta syöttäjillä — päivittää tallennetun pelin ja renderöi uudelleen
+async function enrichGameWithPitchers(gameId){
+  const db = getDB();
+  const g = db[gameId];
+  if(!g||!g.homeId||!g.awayId) return;
+
+  try{
+    // Hae molemmat syöttäjät yhdellä kutsulla kotijoukkueen scheduleesta
+    const schedR = await safeFetch(
+      `https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=${g.homeId}&date=${g.date}&hydrate=probablePitcher`
+    );
+
+    let homePit = null, awayPit = null;
+    let foundGame = null;
+
+    if(schedR){
+      const dh = await schedR.json();
+      // Etsi peli jossa kotijoukkue pelaa kotona
+      for(const dt of (dh.dates||[])){
+        for(const gm of (dt.games||[])){
+          if(gm.teams?.home?.team?.id===g.homeId){
+            foundGame = gm; break;
+          }
+        }
+        if(foundGame) break;
+      }
+      // Jos ei löydy kotipelinä, etsi vieraspelinä
+      if(!foundGame){
+        for(const dt of (dh.dates||[])){
+          for(const gm of (dt.games||[])){
+            if(gm.teams?.away?.team?.id===g.homeId){
+              foundGame = gm; break;
+            }
+          }
+          if(foundGame) break;
+        }
+      }
+    }
+
+    // Jos ei löydy kotijoukkueen schedulesta, kokeile vierasjoukkueen schedulea
+    if(!foundGame){
+      const schedR2 = await safeFetch(
+        `https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=${g.awayId}&date=${g.date}&hydrate=probablePitcher`
+      );
+      if(schedR2){
+        const da = await schedR2.json();
+        for(const dt of (da.dates||[])){
+          for(const gm of (dt.games||[])){
+            if((gm.teams?.home?.team?.id===g.homeId)||(gm.teams?.away?.team?.id===g.awayId)){
+              foundGame = gm; break;
+            }
+          }
+          if(foundGame) break;
+        }
+      }
+    }
+
+    if(foundGame){
+      // Tallenna MLB gamePk myöhempää käyttöä varten
+      g.mlbGamePk = foundGame.gamePk;
+    }
+
+    // Hae kotisyöttäjä
+    const homePitId = foundGame?.teams?.home?.probablePitcher?.id;
+    if(true){ // käytetään homePitId muuttujaa
+      const pid = homePitId;
+      if(pid){
+        const local = PITCHERS.find(p=>p.id===pid);
+        if(local) homePit = {stats:{era:local.era,fip:local.fip,whip:local.whip,kper9:local.k,bbper9:local.bb,ip:local.ip,gs:local.gs||0,wins:local.w||0,losses:local.l||0,season:local.s}};
+        // Hae myös live-tilastot ja L5
+        const [liveStats, l5] = await Promise.all([
+          fetchPitcherStats(pid),
+          fetchLastFiveERA(pid)
+        ]);
+        if(liveStats){
+          if(local) liveStats.fip = local.fip||liveStats.fip;
+          homePit = {id:pid, stats:liveStats};
+        }
+        if(l5 && homePit){
+          homePit.stats.l5era = l5.era;
+          homePit.stats.l5starts = l5.starts;
+          const l5metric = l5.xfip||l5.era;
+          const baseFip = homePit.stats.fip||homePit.stats.era||l5metric;
+          const l5w = (homePit.stats.gs>=8)?0.75:0.70;
+          homePit.stats.blendedEra = Math.round((baseFip*(1-l5w)+l5metric*l5w)*100)/100;
+        }
+        // Hae nimi: paikallinen tietokanta → API → ID
+        if(local?.n) g.homePitName = local.n;
+        else{
+          try{
+            const nr = await safeFetch(`https://statsapi.mlb.com/api/v1/people/${pid}`);
+            if(nr){ const nd=await nr.json(); g.homePitName=nd.people?.[0]?.lastName||pid; }
+            else g.homePitName = String(pid);
+          }catch{ g.homePitName = String(pid); }
+        }
+        g.homePitId = pid;
+      }
+    }
+
+    // Hae vierasyöttäjä samasta foundGame:sta
+    if(true){
+      const pid = foundGame?.teams?.away?.probablePitcher?.id;
+      if(pid){
+        const local = PITCHERS.find(p=>p.id===pid);
+        if(local) awayPit = {stats:{era:local.era,fip:local.fip,whip:local.whip,kper9:local.k,bbper9:local.bb,ip:local.ip,gs:local.gs||0,wins:local.w||0,losses:local.l||0,season:local.s}};
+        const [liveStats, l5] = await Promise.all([
+          fetchPitcherStats(pid),
+          fetchLastFiveERA(pid)
+        ]);
+        if(liveStats){
+          if(local) liveStats.fip = local.fip||liveStats.fip;
+          awayPit = {id:pid, stats:liveStats};
+        }
+        if(l5 && awayPit){
+          awayPit.stats.l5era = l5.era;
+          awayPit.stats.l5starts = l5.starts;
+          const l5metric = l5.xfip||l5.era;
+          const baseFip = awayPit.stats.fip||awayPit.stats.era||l5metric;
+          const l5w = (awayPit.stats.gs>=8)?0.75:0.70;
+          awayPit.stats.blendedEra = Math.round((baseFip*(1-l5w)+l5metric*l5w)*100)/100;
+        }
+        if(local?.n) g.awayPitName = local.n;
+        else{
+          try{
+            const nr2 = await safeFetch(`https://statsapi.mlb.com/api/v1/people/${pid}`);
+            if(nr2){ const nd2=await nr2.json(); g.awayPitName=nd2.people?.[0]?.lastName||pid; }
+            else g.awayPitName = String(pid);
+          }catch{ g.awayPitName = String(pid); }
+        }
+        g.awayPitId = pid;
+      }
+    }
+
+    // Laske uusi todennäköisyys syöttäjillä
+    const stHome = getTeamStatsForBacktest(g.homeId);
+    const stAway = getTeamStatsForBacktest(g.awayId);
+    if(stHome && stAway){
+      const res = computeProb(stHome, stAway, true, homePit, awayPit);
+      g.modelPHome = res.pA;
+      g.modelPAway = 1-res.pA;
+      g.modelHasPitchers = true;
+    }
+
+    // 3. Hae bullpen-väsymys viimeisiltä 3 päivältä
+    try{
+      const [bpHome, bpAway] = await Promise.all([
+        fetchBullpenFatigue(g.homeId, g.date),
+        fetchBullpenFatigue(g.awayId, g.date)
+      ]);
+      if(bpHome!==null) g.bpFatigueHome = bpHome;
+      if(bpAway!==null) g.bpFatigueAway = bpAway;
+
+      // Päivitä todennäköisyys bullpen-väsymyksellä
+      if((bpHome!==null||bpAway!==null) && stHome && stAway){
+        // Kopioi tilastot ja sovella väsymys
+        const stH = {...stHome};
+        const stA = {...stAway};
+        // Bullpen-väsymys: jos viimeiset 3pv yli 12 inningiä → ERA +0.8
+        if(bpHome>12) stH.bera = (stH.bera||stH.era||4.20) + 0.8;
+        if(bpAway>12) stA.bera = (stA.bera||stA.era||4.20) + 0.8;
+        const res2 = computeProb(stH, stA, true, homePit, awayPit);
+        g.modelPHome = res2.pA;
+        g.modelPAway = 1-res2.pA;
+      }
+    }catch(e){}
+
+    saveDB(db);
+    renderOddsGrid();
+  }catch(e){
+    console.log('enrichGameWithPitchers virhe:', e);
+  }
+}
+
+// Hae bullpen-käyttö viimeisiltä 3 päivältä (innings pitched)
+async function fetchBullpenFatigue(teamId, gameDate){
+  try{
+    const end = new Date(gameDate);
+    const start = new Date(end); start.setDate(start.getDate()-3);
+    const startStr = start.toISOString().slice(0,10);
+    const endStr = new Date(end.getTime()-86400000).toISOString().slice(0,10);
+
+    const r = await safeFetch(
+      `https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=${teamId}&startDate=${startStr}&endDate=${endStr}&gameType=R&hydrate=boxscore`
+    );
+    if(!r) return null;
+    const d = await r.json();
+
+    let totalBullpenIP = 0;
+    for(const date of (d.dates||[])){
+      for(const game of (date.games||[])){
+        if(game.status?.abstractGameState!=='Final') continue;
+        const isHome = game.teams?.home?.team?.id===teamId;
+        const pitchers = isHome
+          ? game.teams?.home?.pitchers||[]
+          : game.teams?.away?.pitchers||[];
+        const players = isHome
+          ? game.teams?.home?.players||{}
+          : game.teams?.away?.players||{};
+
+        // Laske bullpen-syöttäjien (ei aloittajan) inningit
+        for(let i=1; i<pitchers.length; i++){
+          const p = players[`ID${pitchers[i]}`];
+          const ip = parseFloat(p?.stats?.pitching?.inningsPitched||'0');
+          totalBullpenIP += ip;
+        }
+      }
+    }
+    return totalBullpenIP;
+  }catch(e){ return null; }
+}
+
+// ── HAKA ODDS API:STA ─────────────────────────────────
+async function fetchAndStoreOdds(){
+  const statusEl = document.getElementById('odds-status');
+  if(statusEl){ statusEl.style.display='block'; statusEl.textContent='Haetaan kertoimia...'; }
+
+  // Jos palvelin on konfiguroitu, hae sieltä
+  if(SERVER_URL){
+    try{
+      const sr = await fetch(`${SERVER_URL}/api/all`);
+      if(sr.ok){
+        const games = await sr.json();
+        const db = getDB();
+        for(const g of games){
+          db[g.id] = {
+            id:g.id, date:g.date, commence:g.commence,
+            homeTeam:g.home_team, awayTeam:g.away_team,
+            homeId:g.home_id, awayId:g.away_id,
+            openHome:g.open_home, openAway:g.open_away, openTime:g.open_time,
+            closeHome:g.close_home, closeAway:g.close_away, closeTime:g.close_time,
+            modelPHome:g.model_p_home, modelPAway:g.model_p_away,
+            result:g.result, homeScore:g.home_score, awayScore:g.away_score
+          };
+        }
+        saveDB(db);
+        const now = new Date().toLocaleTimeString('fi-FI',{hour:'2-digit',minute:'2-digit'});
+        if(statusEl) statusEl.textContent = `✓ ${games.length} peliä palvelimelta · ${now}`;
+        const lu = document.getElementById('odds-last-update');
+        if(lu) lu.textContent = `Päivitetty: ${now}`;
+        renderOddsGrid();
+        renderResultsGrid();
+        return;
+      }
+    }catch(e){ console.log('Palvelin ei saatavilla, käytetään suoraa API:a'); }
+  }
+
+  try{
+    // Hae tulevan 2 päivän MLB kertoimet
+    const url = `https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/?apiKey=${ODDS_API_KEY}&regions=eu&markets=h2h&bookmakers=pinnacle&oddsFormat=decimal`;
+    const resp = await fetch(url);
+    const remaining = resp.headers.get('x-requests-remaining');
+    if(!resp.ok) throw new Error(`API virhe ${resp.status}`);
+    const games = await resp.json();
+
+    const db = getDB();
+    const now = new Date().toISOString();
+    let newCount=0, updCount=0;
+
+    for(const g of games){
+      const gameDate = g.commence_time?.slice(0,10);
+      const pk = g.id; // The Odds API game ID
+      const pinnacle = g.bookmakers?.find(b=>b.key==='pinnacle');
+      if(!pinnacle) continue;
+
+      const h2h = pinnacle.markets?.find(m=>m.key==='h2h');
+      if(!h2h) continue;
+
+      const homeOut = h2h.outcomes?.find(o=>o.name===g.home_team);
+      const awayOut = h2h.outcomes?.find(o=>o.name===g.away_team);
+      if(!homeOut||!awayOut) continue;
+
+      // Hae myös MLB team ID:t
+      // Etsi joukkue-ID täydellä tai osittaisella nimellä
+      const findTeamId = (name) => {
+        if(!name) return null;
+        // Täsmällinen haku
+        let found = TEAM_MAP[name];
+        if(found) return found;
+        // Osittainen haku (esim. "Athletics" → "Oakland Athletics")
+        const entry = Object.entries(TEAM_MAP).find(([k])=>
+          k.includes(name)||name.includes(k.split(' ').pop())
+        );
+        return entry?.[1]||null;
+      };
+      const homeId = findTeamId(g.home_team);
+      const awayId = findTeamId(g.away_team);
+      if(!homeId||!awayId){
+        console.warn(`Joukkue-ID puuttuu: "${g.home_team}" (${homeId}) vs "${g.away_team}" (${awayId})`);
+      }
+
+      // Laske mallin todennäköisyys
+      const modelRes = homeId&&awayId ? calcModelProb(homeId, awayId, null, null) : null;
+
+      if(!db[pk]){
+        // Uusi peli — tallenna avauskertoimet
+        db[pk] = {
+          id: pk,
+          date: gameDate,
+          commence: g.commence_time,
+          homeTeam: g.home_team,
+          awayTeam: g.away_team,
+          homeId, awayId,
+          openHome: homeOut.price,
+          openAway: awayOut.price,
+          openTime: now,
+          closeHome: null,
+          closeAway: null,
+          closeTime: null,
+          modelPHome: modelRes?.pHome||null,
+          modelPAway: modelRes?.pAway||null,
+          result: null, // 'home'|'away'|null
+          homeScore: null,
+          awayScore: null,
+          mlbGamePk: null
+        };
+        newCount++;
+      } else {
+        // Päivitä sulkeutumiskertoimet VAIN jos peli ei ole alkanut
+        const gameStart = new Date(g.commence_time);
+        const nowTime = new Date();
+        if(nowTime < gameStart){
+          db[pk].closeHome = homeOut.price;
+          db[pk].closeAway = awayOut.price;
+          db[pk].closeTime = now;
+        };
+        updCount++;
+      }
+    }
+
+    saveDB(db);
+    const msg = `✓ ${games.length} peliä haettu — ${newCount} uutta, ${updCount} päivitetty. API-kutsuja jäljellä: ${remaining||'?'}`;
+    statusEl.textContent = msg;
+    document.getElementById('odds-last-update').textContent = `Päivitetty: ${new Date().toLocaleTimeString('fi-FI')}`;
+    renderOddsGrid();
+
+    // Hae syöttäjät kaikille peleille taustalla
+    setTimeout(()=>{
+      const currentDb = getDB();
+      const today = new Date().toISOString().slice(0,10);
+      const tomorrow = new Date(Date.now()+86400000).toISOString().slice(0,10);
+      for(const gameId in currentDb){
+        const g = currentDb[gameId];
+        if((g.date===today||g.date===tomorrow)){
+          // Hae aina uudelleen — syöttäjät varmistuvat lähempänä peliä
+          enrichGameWithPitchers(gameId);
+        }
+      }
+    }, 500);
+
+    // Käynnistä automaattinen tulos-päivitys
+    setTimeout(updateResults, 1000);
+
+  }catch(e){
+    statusEl.textContent = '✗ Virhe: ' + e.message;
+    statusEl.style.color='#e74c3c';
+  }
+}
+
+// ── TULOKSIEN AUTOMAATTINEN PÄIVITYS ─────────────────
+async function updateResults(){
+  const db = getDB();
+  const today = new Date().toISOString().slice(0,10);
+  const yesterday = new Date(Date.now()-86400000).toISOString().slice(0,10);
+
+  // Etsi pelit joilla ei ole tulosta
+  const pending = Object.values(db).filter(g=>
+    !g.result && g.date && (g.date===today||g.date===yesterday)
+  );
+
+  for(const game of pending){
+    try{
+      // Hae tulos MLB API:sta joukkueen ja päivämäärän perusteella
+      if(!game.homeId) continue;
+      const r = await safeFetch(
+        `https://statsapi.mlb.com/api/v1/schedule?sportId=1&teamId=${game.homeId}&date=${game.date}&gameType=R`
+      );
+      if(!r) continue;
+      const d = await r.json();
+
+      for(const dateObj of (d.dates||[])){
+        for(const g of (dateObj.games||[])){
+          if(g.status?.abstractGameState==='Final'){
+            const hScore = g.teams?.home?.score||0;
+            const aScore = g.teams?.away?.score||0;
+            db[game.id].result = hScore>aScore?'home':'away';
+            db[game.id].homeScore = hScore;
+            db[game.id].awayScore = aScore;
+            db[game.id].mlbGamePk = g.gamePk;
+
+            // Hae myös sulkeutumiskertoimet jos puuttuu
+            if(!db[game.id].closeHome && db[game.id].openHome){
+              db[game.id].closeHome = db[game.id].openHome;
+              db[game.id].closeAway = db[game.id].openAway;
+            }
+          }
+        }
+      }
+    }catch(e){}
+  }
+
+  saveDB(db);
+  renderResultsGrid();
+}
+
+// ── AUTOMAATTINEN KERÄYS ──────────────────────────────
+function scheduleSmartFetch(){
+  if(!isAutoOn) return;
+  const now = new Date();
+  const db = getDB();
+  const today = now.toISOString().slice(0,10);
+
+  // Hae kaikki tänään pelattavat pelit joilla ei vielä ole sulkeutumiskerrointa
+  const todayGames = Object.values(db).filter(g=>g.date===today&&g.commence);
+
+  // Löydetään seuraava peli joka alkaa kohta (Suomen aika)
+  let nextGameMs = null;
+  let nextGameName = '';
+  for(const g of todayGames){
+    const gameTime = new Date(g.commence);
+    // Haluamme hakea: 2h, 1h ja 30min ennen alkua
+    const checkPoints = [120, 60, 30].map(m=>new Date(gameTime-m*60000));
+    for(const cp of checkPoints){
+      const diff = cp-now;
+      if(diff>0 && (nextGameMs===null||diff<nextGameMs)){
+        nextGameMs = diff;
+        const mins = Math.round(diff/60000);
+        nextGameName = `${g.awayTeam?.split(' ').pop()||'?'} @ ${g.homeTeam?.split(' ').pop()||'?'} (${mins}min)`;
+      }
+    }
+  }
+
+  // Kiinteät hakuajat Suomen aikana:
+  // Klo 10: avauskertoimet
+  // Klo 19: välikertoimen (itärannikko alkaa)
+  // Klo 02: länsirannikon pelit
+  const hour = now.getHours();
+  const min = now.getMinutes();
+  const fixedPoints = [
+    {h:10,m:0}, {h:19,m:0}, {h:2,m:0}
+  ];
+
+  // Laske aika seuraavaan kiinteään hakuun
+  let nextFixedMs = null;
+  for(const fp of fixedPoints){
+    const target = new Date(now);
+    target.setHours(fp.h, fp.m, 0, 0);
+    if(target<=now) target.setDate(target.getDate()+1);
+    const diff = target-now;
+    if(nextFixedMs===null||diff<nextFixedMs) nextFixedMs=diff;
+  }
+
+  // Aja haku aina kun Auto ON käynnistyy tai ajastus laukeaa
+  fetchAndStoreOdds();
+
+  // Valitse seuraava ajastus: pelin lähestyminen tai kiinteä aika — kumpi tulee ensin
+  let nextMs = nextFixedMs;
+  let nextLabel = '';
+  if(nextGameMs!==null && nextGameMs<nextFixedMs){
+    nextMs = nextGameMs;
+    nextLabel = `ennen: ${nextGameName}`;
+  } else {
+    const nextFixed = fixedPoints
+      .map(fp=>{ const t=new Date(now); t.setHours(fp.h,fp.m,0,0); if(t<=now)t.setDate(t.getDate()+1); return t; })
+      .sort((a,b)=>a-b)[0];
+    nextLabel = `klo ${nextFixed.getHours().toString().padStart(2,'0')}:00`;
+  }
+
+  if(nextMs && isAutoOn){
+    const mins = Math.round(nextMs/60000);
+    const display = mins>90 ? `${Math.round(mins/60*10)/10}h` : `${mins}min`;
+    document.getElementById('odds-last-update').textContent =
+      `Auto ON — seuraava haku ${display} kuluttua (${nextLabel}) · ~120-150 hakua/kk`;
+    autoCollectInterval = setTimeout(scheduleSmartFetch, nextMs);
+  }
+}
+
+function toggleAuto(){
+  isAutoOn = !isAutoOn;
+  const btn = document.getElementById('auto-btn');
+  if(isAutoOn){
+    btn.textContent='⏱ Auto ON';
+    btn.style.background='#27ae60';
+    btn.style.color='#fff';
+    // Älykäs ajastus — max 2 hakua/päivä
+    scheduleSmartFetch();
+  }else{
+    btn.textContent='⏱ Auto OFF';
+    btn.style.background='var(--s2)';
+    btn.style.color='var(--tx)';
+    if(autoCollectInterval) clearTimeout(autoCollectInterval);
+  }
+}
+
+// ── KERTOIMET-GRIDIN RENDERÖINTI ─────────────────────
+function renderOddsGrid(){
+  const db = getDB();
+  const el = document.getElementById('odds-grid');
+  if(!el) return;
+
+  const today = new Date().toISOString().slice(0,10);
+  const tomorrow = new Date(Date.now()+86400000).toISOString().slice(0,10);
+
+  const games = Object.values(db)
+    .filter(g=>g.date===today||g.date===tomorrow)
+    .sort((a,b)=>a.commence?.localeCompare(b.commence));
+
+  if(!games.length){
+    el.innerHTML='<div style="color:var(--mu);font-size:13px;padding:20px;text-align:center;">Ei tulevia pelejä tallennettu. Paina "Päivitä kertoimet".</div>';
+    return;
+  }
+
+  el.innerHTML = games.map(g=>{
+    // Implied probabilities (vig poistettu)
+    const rawH = 1/g.openHome, rawA = 1/g.openAway;
+    const tot = rawH+rawA;
+    const pinnH = rawH/tot, pinnA = rawA/tot;
+    const vig = (tot-1)*100;
+
+    // Edge
+    const edgeH = g.modelPHome ? (g.modelPHome-pinnH)*100 : null;
+    const edgeA = g.modelPAway ? (g.modelPAway-pinnA)*100 : null;
+    const bestEdge = edgeH!==null ? Math.max(edgeH,edgeA) : null;
+    const edgeSide = edgeH>edgeA ? g.homeTeam : g.awayTeam;
+    const edgeCls = bestEdge>5?'#27ae60':bestEdge>3?'#e67e22':'#e74c3c';
+
+    // Aika
+    const gameTime = g.commence ? new Date(g.commence).toLocaleTimeString('fi-FI',{hour:'2-digit',minute:'2-digit'}) : '?';
+
+    const hasClose = g.closeHome && g.closeHome!==g.openHome;
+    const closeInfo = hasClose ?
+      `<span style="font-size:11px;color:var(--mu)">Sulk: ${g.closeHome?.toFixed(2)} / ${g.closeAway?.toFixed(2)}</span>` : '';
+
+    const resultBadge = g.result ?
+      `<span style="background:${g.result==='home'?'#27ae60':'#e74c3c'};color:#fff;font-size:11px;padding:2px 8px;border-radius:4px;font-weight:600;">
+        ${g.homeScore}-${g.awayScore} ${g.result==='home'?g.homeTeam.split(' ').pop():g.awayTeam.split(' ').pop()} ✓
+      </span>` : '';
+
+    return `<div style="background:var(--s1);border:1px solid var(--br);border-radius:10px;padding:14px 16px;">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:8px;">
+        <div>
+          <div style="font-size:14px;font-weight:600;color:#fff;margin-bottom:2px;">
+            ${g.awayTeam.split(' ').pop()} @ ${g.homeTeam.split(' ').pop()}
+            <span style="font-size:11px;color:var(--mu);font-weight:400;margin-left:6px;">${gameTime} (FIN)</span>
+          </div>
+          <div style="font-size:12px;color:var(--mu);">
+          ${g.awayTeam} @ ${g.homeTeam}
+          ${g.awayPitName||g.homePitName
+  ? `<span style="margin-left:8px;color:var(--mu);">⚾ ${g.awayPitName||'?'} vs ${g.homePitName||'?'}${g.modelHasPitchers?' ✓':''}</span>`
+  : g.homeId&&g.awayId
+    ? '<span style="margin-left:8px;color:var(--mu);font-size:11px;">⚾ Haetaan syöttäjiä...</span>'
+    : '<span style="margin-left:8px;color:#e74c3c;font-size:11px;">⚠ Joukkue-ID puuttuu</span>'
+}
+        </div>
+        </div>
+        <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
+          ${resultBadge}
+          ${bestEdge!==null && bestEdge>=3 ? (() => {
+            const stake = calcStake(bestEdge);
+            return `<span style="background:${edgeCls};color:#fff;font-size:12px;padding:4px 12px;border-radius:6px;font-weight:700;">
+              ${stake}u — ${edgeSide.split(' ').pop()} +${bestEdge.toFixed(1)}%
+            </span>`;
+          })() : bestEdge!==null ? `<span style="background:var(--s2);color:var(--mu);font-size:12px;padding:3px 10px;border-radius:6px;border:1px solid var(--br);">Edge: ${bestEdge.toFixed(1)}%</span>` : ''}
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px;">
+        <div style="background:var(--s2);border-radius:8px;padding:10px;">
+          <div style="font-size:11px;color:var(--mu);margin-bottom:4px;">${g.awayTeam.split(' ').pop()} (vieras)</div>
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:18px;font-weight:600;color:#fff;">${g.openAway?.toFixed(2)}</span>
+            <span style="font-size:12px;color:var(--mu);">${(pinnA*100).toFixed(1)}%</span>
+          </div>
+          ${g.modelPAway ? `<div style="font-size:11px;color:${edgeA>3?'#27ae60':edgeA>0?'#e67e22':'#e74c3c'};margin-top:3px;">Malli: ${(g.modelPAway*100).toFixed(1)}% (${edgeA>0?'+':''}${edgeA?.toFixed(1)}%)</div>` : ''}
+        </div>
+        <div style="background:var(--s2);border-radius:8px;padding:10px;">
+          <div style="font-size:11px;color:var(--mu);margin-bottom:4px;">${g.homeTeam.split(' ').pop()} (koti)</div>
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:18px;font-weight:600;color:#fff;">${g.openHome?.toFixed(2)}</span>
+            <span style="font-size:12px;color:var(--mu);">${(pinnH*100).toFixed(1)}%</span>
+          </div>
+          ${g.modelPHome ? `<div style="font-size:11px;color:${edgeH>3?'#27ae60':edgeH>0?'#e67e22':'#e74c3c'};margin-top:3px;">Malli: ${(g.modelPHome*100).toFixed(1)}% (${edgeH>0?'+':''}${edgeH?.toFixed(1)}%)</div>` : ''}
+        </div>
+      </div>
+      ${bestEdge>=3 ? (() => {
+        const stake=calcStake(bestEdge);
+        const betOdds=edgeH>edgeA?bestOdds(g.closeHome,g.openHome):bestOdds(g.closeAway,g.openAway);
+        const impliedWin=edgeH>edgeA?pinnH:pinnA;
+        return `<div style="margin-top:8px;padding:8px 10px;border-radius:6px;background:${edgeCls}15;border:1px solid ${edgeCls}40;display:flex;justify-content:space-between;align-items:center;">
+          <span style="font-size:12px;font-weight:700;color:${edgeCls};">🎯 Pelaa: ${edgeSide.split(' ').pop()} @ ${betOdds?.toFixed(2)||'?'}</span>
+          <span style="font-size:12px;color:${edgeCls};font-weight:600;">${stake}u · Edge +${bestEdge.toFixed(1)}% · Pinnacle: ${(impliedWin*100).toFixed(1)}% → Malli: ${((edgeH>edgeA?g.modelPHome:g.modelPAway)*100).toFixed(1)}%</span>
+        </div>`;
+      })() : ''}
+      <div style="margin-top:6px;display:flex;justify-content:space-between;font-size:11px;color:var(--mu);flex-wrap:wrap;gap:4px;">
+        <span>${hasClose ? `Sulk: ${g.closeAway?.toFixed(2)} / ${g.closeHome?.toFixed(2)}` : ''}</span>
+        <span style="display:flex;gap:8px;">
+          ${g.bpFatigueAway>12?`<span style="color:#e67e22;">⚡ ${g.awayTeam?.split(' ').pop()} bullpen väsynyt (${g.bpFatigueAway?.toFixed(1)}ip/3pv)</span>`:''}
+          ${g.bpFatigueHome>12?`<span style="color:#e67e22;">⚡ ${g.homeTeam?.split(' ').pop()} bullpen väsynyt (${g.bpFatigueHome?.toFixed(1)}ip/3pv)</span>`:''}
+          <span>Vig: ${vig.toFixed(1)}%</span>
+        </span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ── TULOKSET-GRIDIN RENDERÖINTI ───────────────────────
+function renderResultsGrid(){
+  const db = getDB();
+  const el = document.getElementById('results-grid');
+  const sumEl = document.getElementById('results-summary');
+  if(!el) return;
+
+  const games = Object.values(db)
+    .filter(g=>g.result)
+    .sort((a,b)=>b.date?.localeCompare(a.date));
+
+  if(!games.length){
+    el.innerHTML='<div style="color:var(--mu);font-size:13px;padding:20px;text-align:center;">Ei tuloksia vielä. Tulokset päivittyvät automaattisesti pelin jälkeen.</div>';
+    return;
+  }
+
+  // Laske tilastot
+  let totalBets=0, wins=0, totalStake=0, totalReturn=0;
+  for(const g of games){
+    const oH=validOdds(g.openHome)||2.00, oA=validOdds(g.openAway)||2.00;
+    const raw1=1/oH, raw2=1/oA;
+    const tot=raw1+raw2;
+    const pinnH=raw1/tot, pinnA=raw2/tot;
+    const edgeH=g.modelPHome?(g.modelPHome-pinnH)*100:null;
+    const edgeA=g.modelPAway?(g.modelPAway-pinnA)*100:null;
+    const bestEdge=edgeH!==null?Math.max(edgeH,edgeA):null;
+    if(bestEdge!==null&&bestEdge>=3){
+      const betHome=edgeH>edgeA;
+      const betOdds=betHome?bestOdds(g.closeHome,g.openHome):bestOdds(g.closeAway,g.openAway);
+      const stake=calcStake(bestEdge);
+      const won=(betHome&&g.result==='home')||(!betHome&&g.result==='away');
+      totalBets++;
+      if(won){wins++;totalReturn+=stake*betOdds;}
+      totalStake+=stake;
+    }
+  }
+  const roi=totalStake?(totalReturn-totalStake)/totalStake*100:0;
+  const hitRate=totalBets?wins/totalBets*100:0;
+
+  // Yhteenveto
+  if(sumEl){
+    const sc=(val,lbl)=>`<div style="background:var(--s1);border:1px solid var(--br);border-radius:8px;padding:12px;text-align:center;">
+      <div style="font-size:20px;font-weight:600;color:${typeof val==='number'&&val>0?'#27ae60':typeof val==='number'&&val<0?'#e74c3c':'#fff'}">${typeof val==='number'?val.toFixed(1):val}</div>
+      <div style="font-size:11px;color:var(--mu);margin-top:3px;">${lbl}</div></div>`;
+    sumEl.innerHTML=
+      sc(games.length,'Pelejä tallennettu')+
+      sc(totalBets,'Edge-vetoja (≥3%)')+
+      sc(hitRate+'%','Osumisprosentti')+
+      sc((roi>0?'+':'')+roi.toFixed(1)+'%','ROI')+
+      sc((totalReturn-totalStake>0?'+':'')+(totalReturn-totalStake).toFixed(1)+'u','Tuotto');
+  }
+
+  // Pelilista
+  el.innerHTML = games.map(g=>{
+    const oH=validOdds(g.openHome)||2.00, oA=validOdds(g.openAway)||2.00;
+    const raw1=1/oH, raw2=1/oA;
+    const tot=raw1+raw2;
+    const pinnH=raw1/tot, pinnA=raw2/tot;
+    const edgeH=g.modelPHome?(g.modelPHome-pinnH)*100:null;
+    const edgeA=g.modelPAway?(g.modelPAway-pinnA)*100:null;
+    const bestEdge=edgeH!==null?Math.max(edgeH,edgeA):null;
+    const betHome=edgeH!==null&&edgeH>edgeA;
+    const betWon=(betHome&&g.result==='home')||(!betHome&&g.result==='away');
+    const hasEdge=bestEdge!==null&&bestEdge>=3;
+    const stake=hasEdge?calcStake(bestEdge):null;
+    // Avaus- ja päätöskertoimet erikseen — ei live-kertoimia
+    const openOdds = betHome?openOnlyOdds(g.openHome):openOnlyOdds(g.openAway);
+    const closeOdds = betHome?closeOnlyOdds(g.closeHome,g.openHome):closeOnlyOdds(g.closeAway,g.openAway);
+    const betOdds = closeOdds||openOdds||2.00;
+    const profitOpen = hasEdge&&openOdds?(betWon?stake*openOdds-stake:-stake):null;
+    const profitClose = hasEdge&&closeOdds?(betWon?stake*closeOdds-stake:-stake):null;
+    const profit = profitClose!==null ? profitClose : profitOpen;
+
+    return `<div style="background:var(--s1);border:1px solid ${hasEdge&&betWon?'#27ae6040':hasEdge?'#e74c3c40':'var(--br)'};border-radius:10px;padding:12px 14px;display:grid;grid-template-columns:1fr auto;gap:8px;align-items:center;">
+      <div>
+        <div style="font-size:13px;font-weight:600;color:#fff;margin-bottom:3px;">
+          ${g.awayTeam.split(' ').pop()} @ ${g.homeTeam.split(' ').pop()}
+          <span style="font-size:11px;color:var(--mu);font-weight:400;margin-left:6px;">${g.date}</span>
+        </div>
+        <div style="font-size:12px;color:var(--mu);display:flex;gap:12px;flex-wrap:wrap;">
+          <span>Pinnacle: ${g.openAway?.toFixed(2)} / ${g.openHome?.toFixed(2)}</span>
+          ${g.closeHome&&g.closeHome!==g.openHome?`<span>Sulk: ${g.closeAway?.toFixed(2)} / ${g.closeHome?.toFixed(2)}</span>`:''}
+          ${g.modelPHome?`<span>Malli: ${(g.modelPAway*100).toFixed(0)}% / ${(g.modelPHome*100).toFixed(0)}%</span>`:''}
+        </div>
+      </div>
+      <div style="text-align:right;">
+        <div style="font-size:13px;font-weight:600;color:#fff;margin-bottom:3px;">
+          ${g.homeScore}-${g.awayScore}
+          <span style="color:${g.result==='home'?'#27ae60':'#e74c3c'};font-size:12px;">(${g.result==='home'?g.homeTeam.split(' ').pop():g.awayTeam.split(' ').pop()})</span>
+        </div>
+        ${hasEdge?`<div style="font-size:12px;color:${betWon?'#27ae60':'#e74c3c'};font-weight:600;">
+          ${stake}u · ${bestEdge.toFixed(1)}% edge
+          <br>Avaus: ${openOdds?.toFixed(2)} → <span style="color:${profitOpen>0?'#27ae60':'#e74c3c'}">${profitOpen>0?'+':''}${profitOpen?.toFixed(2)}u</span>
+          ${closeOdds&&closeOdds!==openOdds?`<br>Päätös: ${closeOdds?.toFixed(2)} → <span style="color:${profitClose>0?'#27ae60':'#e74c3c'}">${profitClose>0?'+':''}${profitClose?.toFixed(2)}u</span>`:'<br><span style="font-size:10px;color:var(--mu)">Päätöskerrointa ei tallennettu</span>'}
+        </div>`:''}
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function clearOldGames(){
+  const db = getDB();
+  const cutoff = new Date(Date.now()-30*86400000).toISOString().slice(0,10);
+  let removed=0;
+  for(const k in db){
+    if(db[k].date<cutoff&&db[k].result){delete db[k];removed++;}
+  }
+  saveDB(db);
+  renderResultsGrid();
+  alert(`Poistettu ${removed} vanhaa peliä`);
+}
+
+// ── PALVELIN ASETUKSET ───────────────────────────────────────
+function showServerSettings(){
+  const current = localStorage.getItem('mlb_server_url')||'';
+  const url = prompt('Anna Railway-palvelimen osoite:\n(esim. https://mlb-edge.railway.app)\n\nJätä tyhjäksi käyttääksesi suoraa The Odds API:a:', current);
+  if(url !== null){
+    if(url.trim()){
+      localStorage.setItem('mlb_server_url', url.trim());
+      location.reload();
+    } else {
+      localStorage.removeItem('mlb_server_url');
+      location.reload();
+    }
+  }
+}
+
+// ── KÄYNNISTYS ────────────────────────────────────────
+// Kun sivu ladataan, päivitä renderoinnit
+document.addEventListener('DOMContentLoaded', ()=>{
+  renderOddsGrid();
+  renderResultsGrid();
+  // Päivitä kertoimet automaattisesti kerran tunnissa jos auto on päällä
+  // Tarkista myös tulokset 5min välein
+  setInterval(()=>{
+    const db = getDB();
+    const hasUnresolved = Object.values(db).some(g=>!g.result&&g.date);
+    if(hasUnresolved) updateResults();
+  }, 5*60*1000);
+});
+
+// Laajennettu switchTab
+const _switchTab = switchTab;
+function switchTab(tab){
+  document.querySelectorAll('.tab-panel').forEach(p=>p.style.display='none');
+  document.querySelectorAll('.app-tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('tab-'+tab).style.display='block';
+  event.target.classList.add('active');
+  if(tab==='kertoimet') renderOddsGrid();
+  if(tab==='tulokset') renderResultsGrid();
+}
+</script>
 </body>
 </html>
